@@ -1,7 +1,7 @@
 "use strict";
 import Game from "./lib/Game";
+import PaintingScene from "./scenes/PaintingScene";
 
-import MachineScene  from "./scenes/MachineScene";
 
 
 /**
@@ -13,10 +13,10 @@ export default class MyGame extends Game {
   
   constructor(container:string|HTMLElement) {
     super(container, 960);
-    this.frameRate = 12;
-    this.addScene("space", new MachineScene(this, "./assets/maps/space.json"));
-    this.joypad.mode = "rc";
-    this.joypad.enable();
+    // this.frameRate = 12;
+    this.addScene("space", new PaintingScene(this, "./assets/maps/space.json"));
+    /*this.joypad.mode = "gc";
+    this.joypad.enable();*/
     this.startScene("space");
   }
 

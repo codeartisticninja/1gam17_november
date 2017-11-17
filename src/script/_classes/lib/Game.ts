@@ -144,7 +144,7 @@ export default class Game {
     this.canvas.width = width;
     this.canvas.height = height;
     this.ctx = <CanvasRenderingContext2D>this.canvas.getContext("2d");
-    for (let event of ["mousedown", "mousemove", "mouseup", "touchstart", "touchmove", "touchend"]) {
+    for (let event of ["mousedown", "mousemove", "mouseup", "mousecancel", "mouseleave", "touchstart", "touchmove", "touchend", "touchleave", "touchcancel"]) {
       this._canvas.addEventListener(event, this._mouseEvent.bind(this));
     }
     this._tick();
@@ -229,13 +229,8 @@ export default class Game {
         fn = this.scene.mouseMove;
         break;
 
-      case "mouseup":
-      case "touchend":
-        fn = this.scene.mouseUp;
-        break;
-
       default:
-        fn = console.log;
+        fn = this.scene.mouseUp;
         break;
     }
     if (fn) {
