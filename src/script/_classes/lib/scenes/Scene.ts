@@ -13,7 +13,7 @@ import Text from "./actors/Text";
 /**
  * Scene class
  * 
- * @date 16-nov-2017
+ * @date 17-nov-2017
  */
 
 
@@ -30,7 +30,8 @@ export default class Scene {
   public cameraRotation: Angle = new Angle();
   public boundCamera = true;
   public mouse: Vector2 = new Vector2();
-  public mouseIsDown: boolean;
+  public mousePressed: boolean;
+  public mouseJustPressed: number = 0;
   public mapData: any;
   public backgroundColor: string;
 
@@ -108,6 +109,7 @@ export default class Scene {
       this.camera.x = Math.min(this.camera.x, this.size.x - this.game.canvas.width);
       this.camera.y = Math.min(this.camera.y, this.size.y - this.game.canvas.height);
     }
+    this.mouseJustPressed = 0;
   }
 
   render() {
@@ -276,7 +278,8 @@ export default class Scene {
     let m = Vector2.dispense().set(x, y);
     let p = Vector2.dispense();
     this.mouseMove(x, y);
-    this.mouseIsDown = true;
+    this.mousePressed = true;
+    this.mouseJustPressed++;
     for (var actor of this.actors) {
       p.copyFrom(this.camera).multiplyXY(actor.parallax).add(m);
       if (actor.overlapsWithPoint(p)) this._toBeClicked = actor;
@@ -292,9 +295,12 @@ export default class Scene {
     let m = Vector2.dispense().set(x, y);
     let p = Vector2.dispense();
     this.mouseMove(x, y);
-    this.mouseIsDown = false;
-    p.copyFrom(this.camera).multiplyXY(this._toBeClicked.parallax).add(m);
-    if (this._toBeClicked.overlapsWithPoint(p)) this._toBeClicked.click();
+    this.mousePressed = false;
+    this.mouseJustPressed--;
+    if (this._toBeClicked) {
+      p.copyFrom(this.camera).multiplyXY(this._toBeClicked.parallax).add(m);
+      if (this._toBeClicked.overlapsWithPoint(p)) this._toBeClicked.click();
+    }
     m.recycle();
     p.recycle();
   }

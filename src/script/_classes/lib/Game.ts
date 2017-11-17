@@ -20,7 +20,7 @@ if (!window.requestAnimationFrame) {
 /**
  * BaseGameApp class
  * 
- * @date 16-nov-2017
+ * @date 17-nov-2017
  */
 
 export default class Game {
@@ -144,12 +144,9 @@ export default class Game {
     this.canvas.width = width;
     this.canvas.height = height;
     this.ctx = <CanvasRenderingContext2D>this.canvas.getContext("2d");
-    this._canvas.addEventListener("mousedown", this._mouseDown.bind(this));
-    this._canvas.addEventListener("touchstart", this._mouseDown.bind(this));
-    this._canvas.addEventListener("mousemove", this._mouseMove.bind(this));
-    this._canvas.addEventListener("touchmove", this._mouseMove.bind(this));
-    this._canvas.addEventListener("mouseup", this._mouseUp.bind(this));
-    this._canvas.addEventListener("touchend", this._mouseUp.bind(this));
+    for (let event of ["mousedown", "mousemove", "mouseup", "touchstart", "touchmove", "touchend"]) {
+      this._canvas.addEventListener(event, this._mouseEvent.bind(this));
+    }
     this._tick();
   }
   private _initAudio() {
@@ -216,19 +213,52 @@ export default class Game {
     this.container.style.cursor = "none";
   }
 
-  private _mouseDown(e: MouseEvent) {
+  private _mouseEvent(e: MouseEvent | TouchEvent) {
+    if (!this.scene) return;
     let scaleX = this._canvas.width / this._canvas.offsetWidth;
     let scaleY = this._canvas.height / this._canvas.offsetHeight;
-    if (this.scene) this.scene.mouseDown(e.offsetX * scaleX, e.offsetY * scaleY);
+    let x: number, y: number, fn: Function;
+    switch (e.type) {
+      case "mousedown":
+      case "touchstart":
+        fn = this.scene.mouseDown;
+        break;
+
+      case "mousemove":
+      case "touchmove":
+        fn = this.scene.mouseMove;
+        break;
+
+      case "mouseup":
+      case "touchend":
+        fn = this.scene.mouseUp;
+        break;
+
+      default:
+        fn = console.log;
+        break;
+    }
+    if (fn) {
+      if (e instanceof TouchEvent) {
+        [x, y] = this._absolutePosition(this._canvas);
+        x = e.changedTouches[0].pageX - x;
+        y = e.changedTouches[0].pageY - y;
+      } else {
+        x = e.offsetX;
+        y = e.offsetY;
+      }
+      fn.call(this.scene, x * scaleX, y * scaleY);
+    }
   }
-  private _mouseMove(e: MouseEvent) {
-    let scaleX = this._canvas.width / this._canvas.offsetWidth;
-    let scaleY = this._canvas.height / this._canvas.offsetHeight;
-    if (this.scene) this.scene.mouseMove(e.offsetX * scaleX, e.offsetY * scaleY);
-  }
-  private _mouseUp(e: MouseEvent) {
-    let scaleX = this._canvas.width / this._canvas.offsetWidth;
-    let scaleY = this._canvas.height / this._canvas.offsetHeight;
-    if (this.scene) this.scene.mouseUp(e.offsetX * scaleX, e.offsetY * scaleY);
+
+  private _absolutePosition(el: HTMLElement) {
+    let x = el.offsetLeft;
+    let y = el.offsetTop;
+    while (el.offsetParent) {
+      el = <HTMLElement>el.offsetParent;
+      x += el.offsetLeft;
+      y += el.offsetTop;
+    }
+    return [x, y];
   }
 }
