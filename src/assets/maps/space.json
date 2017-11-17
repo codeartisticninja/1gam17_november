@@ -1,5 +1,5 @@
 { "backgroundcolor":"#ffffff",
- "height":48,
+ "height":9,
  "layers":[
         {
          "image":"..\/..\/style\/paper_texture.png",
@@ -23,16 +23,15 @@
          "name":"objects",
          "objects":[
                 {
-                 "gid":1,
-                 "height":128,
-                 "id":1,
+                 "height":540,
+                 "id":146,
                  "name":"",
                  "rotation":0,
-                 "type":"Aye",
+                 "type":"Canvas",
                  "visible":true,
-                 "width":128,
-                 "x":150,
-                 "y":240
+                 "width":960,
+                 "x":0,
+                 "y":0
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -40,7 +39,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":146,
+ "nextobjectid":147,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.0.3",
@@ -62,5 +61,5 @@
  "tilewidth":60,
  "type":"map",
  "version":1,
- "width":48
+ "width":16
 }

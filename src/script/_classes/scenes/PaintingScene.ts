@@ -3,6 +3,7 @@ import MyGame from "../MyGame";
 import Vector2 from "../lib/utils/Vector2";
 
 import Aye from "./actors/Aye";
+import Canvas from "./actors/Canvas";
 
 
 /**
@@ -15,6 +16,7 @@ export default class PaintingScene extends Scene {
   constructor(game: MyGame, map: string) {
     super(game, map);
     this.actorTypes["Aye"] = Aye;
+    this.actorTypes["Canvas"] = Canvas;
     this.boundCamera = false;
   }
 
