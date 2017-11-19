@@ -21,16 +21,15 @@ export default class Canvas extends Actor {
     this.canvasEl.width = this.size.x;
     this.canvasEl.height = this.size.y;
     this.canvasCtx = <CanvasRenderingContext2D>this.canvasEl.getContext("2d");
+    this.canvasCtx.fillStyle = "rgba(255,255,255,0)";
+    this.canvasCtx.fillRect(0, 0, this.canvasEl.width, this.canvasEl.height);
 
     this.brushEl = document.createElement("canvas");
     this.brushEl.width =
       this.brushEl.height = this.brushSize;
     this.brushCtx = <CanvasRenderingContext2D>this.brushEl.getContext("2d");
 
-    this.brushCtx.beginPath();
-    this.brushCtx.arc(this.brushSize / 2, this.brushSize / 2, this.brushSize / 2, 0, 2 * Math.PI);
-    this.brushCtx.fill();
-    this.brushCtx.globalCompositeOperation = "source-atop";
+    // this.resetBrush();
 
     this.splat();
   }
@@ -43,21 +42,22 @@ export default class Canvas extends Actor {
     let bs = this.brushSize;
     let d = Vector2.dispense().copyFrom(mp).subtract(bp);
     super.update();
-    if (this.scene.mousePressed) {
+    if (this.scene.mouseJustPressed) {
+      bp.copyFrom(mp);
+    } else if (this.scene.mousePressed) {
       while (d.magnitude > 2) {
         d.normalize();
         bp.add(d);
-        bg.drawImage(this.canvasEl, bp.x - bs / 2, bp.y - bs / 2, bs, bs, 0, 0, bs, bs);
-        bp.add(d);
         cg.drawImage(this.brushEl, 0, 0, bs, bs, bp.x - bs / 2, bp.y - bs / 2, bs, bs);
+        this.resetBrush();
+        bp.add(d);
+        bg.drawImage(this.canvasEl, bp.x - bs / 2, bp.y - bs / 2, bs, bs, 0, 0, bs, bs);
         d.copyFrom(mp).subtract(bp);
       }
-    } else {
-      bp.copyFrom(mp);
     }
-    if (this.scene.mouseJustPressed) {
+    /*if (this.scene.mouseJustPressed) {
       cg.drawImage(this.scene.game.canvas, 0, 0);
-    }
+    }*/
   }
 
   render() {
@@ -73,6 +73,17 @@ export default class Canvas extends Actor {
     g.arc(Math.random() * this.size.x, Math.random() * this.size.y, 128, 0, 2 * Math.PI);
     g.fill();
     this.scene.setAlarm(this.scene.game.frameRate * 10, this.splat.bind(this));
+  }
+
+  resetBrush() {
+    this.brushCtx.globalCompositeOperation = "source-over";
+    this.brushEl.width += 0;
+    this.brushCtx.fillStyle = "white";
+    this.brushCtx.beginPath();
+    this.brushCtx.arc(this.brushSize / 2, this.brushSize / 2, this.brushSize / 2, 0, 2 * Math.PI);
+    this.brushCtx.fill();
+    this.brushCtx.globalCompositeOperation = "source-in";
+    this.brushCtx.fillRect(0, 0, this.brushSize, this.brushSize);
   }
 
 
