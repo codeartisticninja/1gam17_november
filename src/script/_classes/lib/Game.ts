@@ -20,7 +20,7 @@ if (!window.requestAnimationFrame) {
 /**
  * BaseGameApp class
  * 
- * @date 17-nov-2017
+ * @date 20-nov-2017
  */
 
 export default class Game {
@@ -144,7 +144,7 @@ export default class Game {
     this.canvas.width = width;
     this.canvas.height = height;
     this.ctx = <CanvasRenderingContext2D>this.canvas.getContext("2d");
-    for (let event of ["mousedown", "mousemove", "mouseup", "mousecancel", "mouseleave", "touchstart", "touchmove", "touchend", "touchleave", "touchcancel"]) {
+    for (let event of ["mousedown", "mousemove", "mouseup", "mousecancel", "touchstart", "touchmove", "touchend", "touchcancel"]) {
       this._canvas.addEventListener(event, this._mouseEvent.bind(this));
     }
     this._tick();
