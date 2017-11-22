@@ -13,7 +13,7 @@ import Text from "./actors/Text";
 /**
  * Scene class
  * 
- * @date 17-nov-2017
+ * @date 22-nov-2017
  */
 
 
@@ -85,14 +85,14 @@ export default class Scene {
 
   update() {
     let i = 0;
-    for (var alarm of this._alarms) {
+    this._alarms.forEach(alarm => {
       alarm.frames--;
       if (alarm.frames <= 0) {
         this.clearAlarm(alarm);
         alarm.cb();
       }
-    }
-    for (var actor of this.actors) {
+    });
+    this.actors.forEach(actor => {
       actor.update();
       if (i) {
         if (this.actors[i].order < this.actors[i - 1].order) {
@@ -102,7 +102,7 @@ export default class Scene {
         }
       }
       i++;
-    }
+    });
     if (this.boundCamera) {
       this.camera.x = Math.max(this.camera.x, 0);
       this.camera.y = Math.max(this.camera.y, 0);
@@ -115,7 +115,7 @@ export default class Scene {
   render() {
     if (!this.game) return false;
     var g = this.game.ctx;
-    for (var actor of this.actors) {
+    this.actors.forEach(actor => {
       if (actor.visible) {
         g.save();
         if (this.cameraRotation.rad) {
@@ -131,7 +131,7 @@ export default class Scene {
         actor.render();
         g.restore();
       }
-    }
+    });
     if (this.game.debug) {
       g.globalAlpha = 1;
       for (var actor of this.actors) {
@@ -174,19 +174,17 @@ export default class Scene {
     return actor;
   }
 
-  removeActor(actor: Actor, ...fromGroup: Array<Actor>[]) {
-    var i = -1;
-    setTimeout(() => {
-      fromGroup.push(this.actors);
-      fromGroup.push(this.actorsByType[actor.type]);
-      for (var group of fromGroup) {
-        if (group) i = group.indexOf(actor); else i = -1;
-        if (i !== -1) {
-          group.splice(i, 1);
-        }
+  removeActor(actor: Actor, ...fromGroup: Array<Actor | null>[]) {
+    let i = -1;
+    fromGroup.push(this.actors);
+    fromGroup.push(this.actorsByType[actor.type]);
+    for (var group of fromGroup) {
+      if (group) i = group.indexOf(actor); else i = -1;
+      if (i >= 0) {
+        group.splice(i, 1);
       }
-      delete this.actorsByName[actor.name];
-    });
+    }
+    delete this.actorsByName[actor.name];
     return actor;
   }
 
@@ -243,13 +241,13 @@ export default class Scene {
     if (!(a && b && resolver)) return;
     if (a instanceof Actor) a = [a];
     if (b instanceof Actor) b = [b];
-    for (var actorA of a) {
-      for (var actorB of b) {
+    (<Actor[]>a).forEach(actorA => {
+      (<Actor[]>b).forEach(actorB => {
         if (actorA !== actorB && actorA.overlapsWith(actorB)) {
           resolver.call(context, actorA, actorB);
         }
-      }
-    }
+      });
+    });
   }
 
   clearAllAlarms() {
@@ -266,12 +264,10 @@ export default class Scene {
   }
 
   clearAlarm(alarm: any) {
-    setTimeout(() => {
-      let i = this._alarms.indexOf(alarm);
-      if (i > -1) {
-        this._alarms.splice(i, 1);
-      }
-    });
+    let i = this._alarms.indexOf(alarm);
+    if (i >= 0) {
+      this._alarms.splice(i, 1);
+    }
   }
 
   mouseDown(x: number, y: number) {
@@ -309,7 +305,7 @@ export default class Scene {
   /*
     _privates
   */
-  private _alarms: Array<any> = [];
+  private _alarms: any[] = [];
   private _toBeClicked: Actor;
 
 }
