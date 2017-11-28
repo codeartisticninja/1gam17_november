@@ -4,43 +4,59 @@ import lazyJSON from "./lazyJSON";
 /**
  * web module
  * 
- * @date 04-oct-2017
+ * @date 28-nov-2017
  */
 
 module web {
-  export function get(url:string, options?:any, cb?:Function) {
+  export function get(url: string, options?: any, cb?: Function) {
     let req = new XMLHttpRequest();
+    req.open("GET", url, true);
     if (options) {
       if (typeof options === "function") cb = <Function>options;
       else {
         lazyJSON.setProperties(options, req);
       }
     }
-    req.open("GET", url, true);
-    req.addEventListener("loadend", function(e:ProgressEvent){
+    req.addEventListener("loadend", function (e: ProgressEvent) {
       cb && cb(req);
     })
     req.send();
     return req;
   }
 
-  export function basename(path:string) {
-    return path.substr(path.lastIndexOf("/")+1);
-  }
-  export function dirname(path:string) {
-    if (path.substr(-3) === "/..") return path + "/..";
-    if (path.indexOf("/")<0) path = "./" + path;
-    return path.substr(0, path.lastIndexOf("/")||1);
+  export function post(url: string, data: string, options?: any, cb?: Function) {
+    let req = new XMLHttpRequest();
+    req.open("POST", url, true);
+    if (options) {
+      if (typeof options === "function") cb = <Function>options;
+      else {
+        lazyJSON.setProperties(options, req);
+      }
+    }
+    req.addEventListener("loadend", function (e: ProgressEvent) {
+      cb && cb(req);
+    })
+    req.send(data);
+    return req;
   }
 
-  export function parseUrl(url:string) {
-    let out:{[index:string]:string} = {};
-    if (url.indexOf("#")>=0) {
-      out.fragment = url.substr(url.indexOf("#")+1);
+  export function basename(path: string) {
+    return path.substr(path.lastIndexOf("/") + 1);
+  }
+  export function dirname(path: string) {
+    if (path.substr(-3) === "/..") return path + "/..";
+    if (path.indexOf("/") < 0) path = "./" + path;
+    return path.substr(0, path.lastIndexOf("/") || 1);
+  }
+
+  export function parseUrl(url: string) {
+    let out: { [index: string]: string } = {};
+    if (url.indexOf("#") >= 0) {
+      out.fragment = url.substr(url.indexOf("#") + 1);
       url = url.substr(0, url.indexOf("#"));
     }
-    if (url.indexOf("?")>=0) {
-      out.query = url.substr(url.indexOf("?")+1);
+    if (url.indexOf("?") >= 0) {
+      out.query = url.substr(url.indexOf("?") + 1);
       url = url.substr(0, url.indexOf("?"));
     }
     if (url[0] === "/") {
@@ -50,29 +66,29 @@ module web {
         out.path = url;
         url = "";
       }
-    } 
+    }
     if (url) {
-      if (url.indexOf(":")>=0) {
-        if (url.indexOf("://")>=0) {
-          out.scheme = url.substr(0, url.indexOf("://")+3);
-          url = url.substr(url.indexOf("://")+3);
+      if (url.indexOf(":") >= 0) {
+        if (url.indexOf("://") >= 0) {
+          out.scheme = url.substr(0, url.indexOf("://") + 3);
+          url = url.substr(url.indexOf("://") + 3);
           if (out.scheme[0] === ":") out.scheme = "//";
         } else {
-          out.scheme = url.substr(0, url.indexOf(":")+1);
-          url = url.substr(url.indexOf(":")+1);
+          out.scheme = url.substr(0, url.indexOf(":") + 1);
+          url = url.substr(url.indexOf(":") + 1);
         }
-        if (url.indexOf("@")>=0) {
+        if (url.indexOf("@") >= 0) {
           out.user = url.substr(0, url.indexOf("@"));
-          url = url.substr(url.indexOf("@")+1);
-          if (out.user.indexOf(":")>=0) {
-            out.password = out.user.substr(url.indexOf(":")+1);
+          url = url.substr(url.indexOf("@") + 1);
+          if (out.user.indexOf(":") >= 0) {
+            out.password = out.user.substr(url.indexOf(":") + 1);
             out.user = out.user.substr(0, url.indexOf(":"));
           }
         }
-        if (url.indexOf("/")<0) url += "/";
-        if (url.indexOf(":")>=0) {
+        if (url.indexOf("/") < 0) url += "/";
+        if (url.indexOf(":") >= 0) {
           out.host = url.substr(0, url.indexOf(":"));
-          url = url.substr(url.indexOf(":")+1);
+          url = url.substr(url.indexOf(":") + 1);
           out.port = url.substr(0, url.indexOf("/"));
           url = url.substr(url.indexOf("/"));
         }
@@ -85,7 +101,7 @@ module web {
     return out;
   }
 
-  export function stringifyUrl(url:{[index:string]:string}) {
+  export function stringifyUrl(url: { [index: string]: string }) {
     let str = "";
     if (url.scheme) str += url.scheme;
     if (url.user) {
@@ -103,7 +119,7 @@ module web {
     return str;
   }
 
-  export function resolveUrl(abs:string, rel:string) {
+  export function resolveUrl(abs: string, rel: string) {
     let absUrl = parseUrl(abs);
     let relUrl = parseUrl(rel);
     absUrl.fragment = relUrl.fragment;
@@ -122,7 +138,7 @@ module web {
       absUrl.host = relUrl.host;
       absUrl.port = relUrl.port;
     }
-    if ((relUrl.scheme||"").length > 3) {
+    if ((relUrl.scheme || "").length > 3) {
       absUrl.scheme = relUrl.scheme;
     }
     let dirs = absUrl.path.substr(1).split("/");

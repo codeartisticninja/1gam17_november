@@ -3,6 +3,8 @@ import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 import Aye from "./Aye";
 
+import web from "../../lib/utils/web";
+
 
 /**
  * Canvas class
@@ -39,7 +41,7 @@ export default class Canvas extends Actor {
       cg.fillStyle = this.aye.inkColor;
       if (this.scene.mouseJustPressed < 0 && this._thisStroke < 8) {
         this.aye.goTo(this.scene.mouse);
-        this.canvasEl.width += 0;
+        this.submit();
       } else {
         this.aye.stop();
       }
@@ -66,6 +68,16 @@ export default class Canvas extends Actor {
     let g = this.scene.game.ctx;
     g.drawImage(this.canvasEl, this.offset.x, this.offset.y);
     return super.render();
+  }
+
+  submit() {
+    let data = {
+      left: this.scene.camera.x,
+      top: this.scene.camera.y,
+      img: this.canvasEl.toDataURL("image/png")
+    }
+    web.post("./php/submit.php", JSON.stringify(data), { setRequestHeader: ["Content-Type", "application/json"] });
+    this.canvasEl.width += 0;
   }
 
 
