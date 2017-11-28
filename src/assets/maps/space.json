@@ -5,6 +5,14 @@
          "image":"..\/..\/style\/paper_texture.png",
          "name":"background",
          "opacity":1,
+         "properties":
+            {
+             "order":-8
+            },
+         "propertytypes":
+            {
+             "order":"int"
+            },
          "type":"imagelayer",
          "visible":true,
          "x":0,
@@ -18,6 +26,14 @@
                  "height":540,
                  "id":146,
                  "name":"Canvas",
+                 "properties":
+                    {
+                     "order":512
+                    },
+                 "propertytypes":
+                    {
+                     "order":"int"
+                    },
                  "rotation":0,
                  "type":"Canvas",
                  "visible":true,
@@ -30,6 +46,14 @@
                  "height":128,
                  "id":147,
                  "name":"Aye",
+                 "properties":
+                    {
+                     "order":1024
+                    },
+                 "propertytypes":
+                    {
+                     "order":"int"
+                    },
                  "rotation":0,
                  "type":"Aye",
                  "visible":true,

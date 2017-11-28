@@ -1,5 +1,5 @@
+import PaintingScene from "../PaintingScene";
 import Actor from "../../lib/scenes/actors/Actor";
-import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 import Aye from "./Aye";
 
@@ -11,19 +11,19 @@ import web from "../../lib/utils/web";
  */
 
 export default class Canvas extends Actor {
+  public scene: PaintingScene;
   public canvasEl: HTMLCanvasElement;
   public canvasCtx: CanvasRenderingContext2D;
   public brushPos: Vector2 = new Vector2();
   public brushSize: number = 4;
   public aye: Aye;
 
-  constructor(scene: Scene, obj: any) {
+  constructor(scene: PaintingScene, obj: any) {
     super(scene, obj);
     this.canvasEl = document.createElement("canvas");
     this.canvasEl.width = this.size.x;
     this.canvasEl.height = this.size.y;
     this.canvasCtx = <CanvasRenderingContext2D>this.canvasEl.getContext("2d");
-    this.parallax = 0;
   }
 
   update() {
@@ -38,15 +38,18 @@ export default class Canvas extends Actor {
     super.update();
     if (this.scene.mouseJustPressed) {
       bp.copyFrom(mp);
-      cg.fillStyle = this.aye.inkColor;
       if (this.scene.mouseJustPressed < 0 && this._thisStroke < 8) {
         this.aye.goTo(this.scene.mouse);
         this.submit();
-      } else {
+      } else if (this._dirty && this.scene.mouseJustPressed > 0) {
         this.aye.stop();
+        this.canvasEl.width += 0;
+        this.position.copyFrom(this.scene.camera).subtract(this.offset);
+        this._dirty = false;
       }
       this._thisStroke = 0;
     } else if (this.scene.mousePressed) {
+      cg.fillStyle = this.aye.inkColor;
       while (d.magnitude > 2 && this.aye.inkLeft > 0) {
         d.normalize();
         bp.add(d);
@@ -76,8 +79,13 @@ export default class Canvas extends Actor {
       top: this.scene.camera.y,
       img: this.canvasEl.toDataURL("image/png")
     }
-    web.post("./php/submit.php", JSON.stringify(data), { setRequestHeader: ["Content-Type", "application/json"] });
-    this.canvasEl.width += 0;
+    web.post(
+      "./php/submit.php",
+      JSON.stringify(data),
+      { setRequestHeader: ["Content-Type", "application/json"] },
+      this.scene.updateTiles.bind(this.scene)
+    );
+    this._dirty = true;
   }
 
 
@@ -87,5 +95,6 @@ export default class Canvas extends Actor {
     _privates
   */
   private _thisStroke: number = 0;
+  private _dirty: boolean;
 
 }

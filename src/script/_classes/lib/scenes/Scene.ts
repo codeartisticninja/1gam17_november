@@ -13,7 +13,7 @@ import Text from "./actors/Text";
 /**
  * Scene class
  * 
- * @date 22-nov-2017
+ * @date 28-nov-2017
  */
 
 
@@ -273,9 +273,9 @@ export default class Scene {
   mouseDown(x: number, y: number) {
     let m = Vector2.dispense().set(x, y);
     let p = Vector2.dispense();
-    this.mouseMove(x, y);
     this.mousePressed = true;
-    this.mouseJustPressed++;
+    this.mouseJustPressed = 1;
+    this.mouseMove(x, y);
     for (var actor of this.actors) {
       p.copyFrom(this.camera).multiplyXY(actor.parallax).add(m);
       if (actor.overlapsWithPoint(p)) this._toBeClicked = actor;
@@ -290,9 +290,9 @@ export default class Scene {
   mouseUp(x: number, y: number) {
     let m = Vector2.dispense().set(x, y);
     let p = Vector2.dispense();
-    this.mouseMove(x, y);
     this.mousePressed = false;
-    this.mouseJustPressed--;
+    this.mouseJustPressed = -1;
+    this.mouseMove(x, y);
     if (this._toBeClicked) {
       p.copyFrom(this.camera).multiplyXY(this._toBeClicked.parallax).add(m);
       if (this._toBeClicked.overlapsWithPoint(p)) this._toBeClicked.click();

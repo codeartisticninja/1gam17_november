@@ -16,7 +16,7 @@ export default class Aye extends Actor {
     super(scene, obj);
     this.addAnimation("idle", [0, 1, 2, 3, 4, 5, 6, 7]);
     this.addAnimation("walk", [8, 9, 10, 11, 12, 13, 14, 15]);
-    this._fillSize.copyFrom(this.size).multiplyXY(.5);
+    this.position.set(0);
   }
 
   update() {
@@ -36,10 +36,7 @@ export default class Aye extends Actor {
       let dist = Vector2.dispense();
       dist.copyFrom(this.target).subtract(this.position);
       if (dist.magnitude >= this._lastDist) {
-        this.target.recycle();
-        this.target = null;
-        this.velocity.set(0);
-        this.playAnimation("idle");
+        this.stop();
       } else {
         this._lastDist = dist.magnitude;
       }
@@ -54,7 +51,7 @@ export default class Aye extends Actor {
     if (this.animation !== this.animations["idle"]) {
       if (this.inkLeft < 1) this.inkLeft += .01;
     }
-}
+  }
 
   render() {
     if (this.sprite) {
@@ -65,14 +62,17 @@ export default class Aye extends Actor {
     return super.render();
   }
 
-  goTo(pos:Vector2) {
+  goTo(pos: Vector2) {
     if (!this.target) this.target = Vector2.dispense();
     this.target.copyFrom(pos);
   }
 
   stop() {
     if (this.target) {
-      this.target.copyFrom(this.position);
+      this.target.recycle();
+      this.target = null;
+      this.velocity.set(0);
+      this.playAnimation("idle");
     }
   }
 
@@ -81,7 +81,6 @@ export default class Aye extends Actor {
     _privates
   */
   private _lastDist: number;
-  private _fillSize: Vector2 = new Vector2();
   private _origImg: HTMLImageElement;
   private _spriteCtx: CanvasRenderingContext2D;
 
@@ -93,7 +92,6 @@ export default class Aye extends Actor {
     canvas.height = this._origImg.height;
     let g = this._spriteCtx = <CanvasRenderingContext2D>canvas.getContext("2d");
     g.drawImage(this._origImg, 0, 0);
-    document.body.appendChild(canvas);
   }
 
   private _updateSprite() {

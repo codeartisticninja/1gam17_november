@@ -10,7 +10,8 @@
     $name = "tile_".intval($col)."_".intval($row).".png";
     if (is_file(DATADIR.$name)) {
       $img = imagecreatefrompng(DATADIR.$name);
-    } else {
+    }
+    if (!$img) {
       $img = imagecreatetruecolor(TILESIZE, TILESIZE);
       $c = imagecolorallocatealpha($img, 255,255,255, 127);
       imagefill($img, 0,0, $c);
@@ -22,7 +23,9 @@
   }
   
   function put_tile($col, $row, $img) {
+    $tmp = md5(date("r").rand());
+    imagepng($img, DATADIR.$tmp);
     $name = "tile_".intval($col)."_".intval($row).".png";
-    imagepng($img, DATADIR.$name);
+    rename(DATADIR.$tmp, DATADIR.$name);
   }
 ?>
