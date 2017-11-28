@@ -8,7 +8,7 @@ import Vector2 from "../../lib/utils/Vector2";
  */
 
 export default class Aye extends Actor {
-  public target: Vector2 | null = new Vector2(1024, 1024);
+  public target: Vector2 | null;
   public inkColor: string = "red";
   public inkLeft: number = .25;
 
@@ -51,20 +51,29 @@ export default class Aye extends Actor {
     this.scene.camera.y = Math.min(this.scene.camera.y, this.position.y - 192);
     this.scene.camera.x = Math.max(this.scene.camera.x, this.position.x - this.scene.size.x + 256);
     this.scene.camera.y = Math.max(this.scene.camera.y, this.position.y - this.scene.size.y + 192);
-  }
+    if (this.animation !== this.animations["idle"]) {
+      if (this.inkLeft < 1) this.inkLeft += .01;
+    }
+}
 
   render() {
     if (this.sprite) {
       if (this.sprite.img.complete && !this._origImg) this._prepSprite();
-      if (this.animation === this.animations["idle"]) {
-        if (this.inkLeft < 1) this.inkLeft += .01;
-      } else {
-        if (this.inkLeft > 0) this.inkLeft += -.01;
-      }
       this._updateSprite();
       this.sprite.draw(this.frame + 16, 0, this.offset);
     }
     return super.render();
+  }
+
+  goTo(pos:Vector2) {
+    if (!this.target) this.target = Vector2.dispense();
+    this.target.copyFrom(pos);
+  }
+
+  stop() {
+    if (this.target) {
+      this.target.copyFrom(this.position);
+    }
   }
 
 

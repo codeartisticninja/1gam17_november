@@ -30,19 +30,6 @@ export default class PaintingScene extends Scene {
     super.update();
   }
 
-  mouseDown(x: number, y: number) {
-    super.mouseDown(x, y);
-    let aye = (<Aye>this.actorsByName["Aye"]);
-    if (aye.target) aye.target.copyFrom(aye.position);
-  }
-
-  mouseUp(x: number, y: number) {
-    super.mouseDown(x, y);
-    let aye = (<Aye>this.actorsByName["Aye"]);
-    if (!aye.target) aye.target = Vector2.dispense();
-    aye.target.copyFrom(this.mouse);
-  }
-
 
   /*
     _privates
