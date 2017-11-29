@@ -43,7 +43,6 @@ export default class PaintingScene extends Scene {
   }
 
   updateTiles() {
-    console.log(arguments);
     this.actorsByType["Tile"].forEach(tile => (<Tile>tile).updateTile());
   }
 

@@ -2,6 +2,7 @@ import Actor from "../../lib/scenes/actors/Actor";
 import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 
+let cache: any = {};
 
 /**
  * Tile class
@@ -49,16 +50,19 @@ export default class Tile extends Actor {
     if (this.col !== col || this.row !== row) {
       this.col = col;
       this.row = row;
-      this.updateTile();
+      if (cache[`${col}_${row}`]) {
+        this.img = cache[`${col}_${row}`];
+      } else {
+        this.updateTile();
+      }
     }
   }
   updateTile() {
     let col = this.col;
     let row = this.row;
     this.img = new Image();
-    // this.img.onerror = e => setTimeout(this.updateTile.bind(this), 1024);
     this.img.src = `./php/get_tile.php?col=${col}&row=${row}&now=${Date.now()}`;
-    // this.scene.setAlarm(this.scene.game.frameRate * 10, this.updateTile.bind(this));
+    cache[`${col}_${row}`] = this.img;
   }
 
   /*
