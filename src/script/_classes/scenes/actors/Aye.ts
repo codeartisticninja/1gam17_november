@@ -1,6 +1,7 @@
 import Actor from "../../lib/scenes/actors/Actor";
 import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
+import PaintingScene from "../PaintingScene";
 
 
 /**
@@ -8,12 +9,15 @@ import Vector2 from "../../lib/utils/Vector2";
  */
 
 export default class Aye extends Actor {
+  public scene: PaintingScene;
   public target: Vector2 | null;
-  public inkColor: string = "red";
+  public inkColor: string = "blue";
   public inkLeft: number = .25;
+  public dna: any;
 
-  constructor(scene: Scene, obj: any) {
+  constructor(scene: PaintingScene, obj: any) {
     super(scene, obj);
+    this.dna = obj;
     this.addAnimation("idle", [0, 1, 2, 3, 4, 5, 6, 7]);
     this.addAnimation("walk", [8, 9, 10, 11, 12, 13, 14, 15]);
     this.position.set(0);
@@ -43,11 +47,13 @@ export default class Aye extends Actor {
       dist.recycle();
     }
     super.update();
-    this.scene.camera.add(this.velocity).add(this.velocity);
-    this.scene.camera.x = Math.min(this.scene.camera.x, this.position.x - 256);
-    this.scene.camera.y = Math.min(this.scene.camera.y, this.position.y - 192);
-    this.scene.camera.x = Math.max(this.scene.camera.x, this.position.x - this.scene.size.x + 256);
-    this.scene.camera.y = Math.max(this.scene.camera.y, this.position.y - this.scene.size.y + 192);
+    if (this.name === "Aye") {
+      this.scene.camera.add(this.velocity).add(this.velocity);
+      this.scene.camera.x = Math.min(this.scene.camera.x, this.position.x - 256);
+      this.scene.camera.y = Math.min(this.scene.camera.y, this.position.y - 192);
+      this.scene.camera.x = Math.max(this.scene.camera.x, this.position.x - this.scene.size.x + 256);
+      this.scene.camera.y = Math.max(this.scene.camera.y, this.position.y - this.scene.size.y + 192);
+    }
     if (this.animation !== this.animations["idle"]) {
       if (this.inkLeft < 1) this.inkLeft += .01;
     }
@@ -95,6 +101,7 @@ export default class Aye extends Actor {
   }
 
   private _updateSprite() {
+    if (!this._spriteCtx) return;
     let g = this._spriteCtx;
     g.globalCompositeOperation = "source-over";
     this.sprite.img.width += 0;

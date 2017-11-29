@@ -39,7 +39,7 @@ export default class Canvas extends Actor {
     if (this.scene.mouseJustPressed) {
       bp.copyFrom(mp);
       if (this.scene.mouseJustPressed < 0 && this._thisStroke < 8) {
-        this.aye.goTo(this.scene.mouse);
+        // this.aye.goTo(this.scene.mouse);
         this.submit();
       } else if (this._dirty && this.scene.mouseJustPressed > 0) {
         this.aye.stop();
@@ -86,6 +86,15 @@ export default class Canvas extends Actor {
       this.scene.updateTiles.bind(this.scene)
     );
     this._dirty = true;
+    let obj: any = {
+      aye: {
+        target: this.scene.mouse,
+        inkColor: this.aye.inkColor,
+        inkLeft: this.aye.inkLeft
+      }
+    };
+    this.scene.updateServer(obj);
+
   }
 
 

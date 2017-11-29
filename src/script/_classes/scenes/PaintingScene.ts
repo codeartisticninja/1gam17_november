@@ -1,6 +1,7 @@
 import Scene from "../lib/scenes/Scene";
 import MyGame from "../MyGame";
 import Vector2 from "../lib/utils/Vector2";
+import web from "../lib/utils/web";
 
 import Aye from "./actors/Aye";
 import Canvas from "./actors/Canvas";
@@ -44,6 +45,30 @@ export default class PaintingScene extends Scene {
 
   updateTiles() {
     this.actorsByType["Tile"].forEach(tile => (<Tile>tile).updateTile());
+  }
+
+  updateServer(obj: any) {
+    web.post(
+      "./php/update.php",
+      JSON.stringify(obj),
+      { setRequestHeader: ["Content-Type", "application/json"] },
+      (req: XMLHttpRequest) => {
+        let resp: any = JSON.parse(req.responseText);
+        if (resp.ayes) {
+          resp.ayes.forEach((ayeObj: any) => {
+            let aye: Aye = <Aye>this.actorsByName[ayeObj.name];
+            if (!aye) {
+              aye = <Aye>this.createActor((<Aye>this.actorsByName["Aye"]).dna);
+              aye.name = ayeObj.name;
+              this.addActor(aye);
+            }
+            aye.goTo(ayeObj.target);
+            aye.inkColor = ayeObj.inkColor;
+            aye.inkLeft = ayeObj.inkLeft;
+          });
+        }
+      }
+    );
   }
 
   mouseMove(x: number, y: number) {
