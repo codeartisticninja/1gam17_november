@@ -9,6 +9,7 @@
     "watch": "jake watch"
   },
   "devDependencies": {
+    "@types/peerjs": "0.0.29",
     "browserify": "^14.5.0",
     "cssmin": "^0.4.3",
     "file-watch": "^0.1.0",
