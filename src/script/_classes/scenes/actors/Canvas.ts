@@ -87,13 +87,20 @@ export default class Canvas extends Actor {
     );
     this._dirty = true;
     let obj: any = {
-      aye: {
-        target: this.scene.mouse,
-        inkColor: this.aye.inkColor,
-        inkLeft: this.aye.inkLeft
+      ayes: {
+        [this.scene.collab.peer.id]: {
+          id: this.scene.collab.peer.id,
+          target: {
+            x: this.scene.mouse.x,
+            y: this.scene.mouse.y
+          },
+          inkColor: this.aye.inkColor,
+          inkLeft: this.aye.inkLeft
+        }
       }
     };
-    this.scene.updateServer(obj);
+
+    this.scene.sendPatch(obj);
 
   }
 

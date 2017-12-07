@@ -6,6 +6,7 @@ import web from "../lib/utils/web";
 import Aye from "./actors/Aye";
 import Canvas from "./actors/Canvas";
 import Tile from "./actors/Tile";
+import Collab from "../lib/utils/Collab";
 
 
 /**
@@ -14,6 +15,7 @@ import Tile from "./actors/Tile";
 
 export default class PaintingScene extends Scene {
   public game: MyGame;
+  public collab: Collab;
 
   constructor(game: MyGame, map: string) {
     super(game, map);
@@ -21,6 +23,8 @@ export default class PaintingScene extends Scene {
     this.actorTypes["Canvas"] = Canvas;
     this.actorTypes["Tile"] = Tile;
     this.boundCamera = false;
+    this.collab = new Collab("./php/check_in.php");
+    this.collab.onPatch(this.patch.bind(this));
   }
 
   reset() {
@@ -47,35 +51,38 @@ export default class PaintingScene extends Scene {
     this.actorsByType["Tile"].forEach(tile => (<Tile>tile).updateTile());
   }
 
-  updateServer(obj: any) {
-    web.post(
-      "./php/update.php",
-      JSON.stringify(obj),
-      { setRequestHeader: ["Content-Type", "application/json"] },
-      (req: XMLHttpRequest) => {
-        let resp: any = JSON.parse(req.responseText);
-        if (resp.ayes) {
-          resp.ayes.forEach((ayeObj: any) => {
-            let aye: Aye = <Aye>this.actorsByName[ayeObj.name];
-            if (!aye) {
-              aye = <Aye>this.createActor((<Aye>this.actorsByName["Aye"]).dna);
-              aye.name = ayeObj.name;
-              this.addActor(aye);
-            }
-            aye.goTo(ayeObj.target);
-            aye.inkColor = ayeObj.inkColor;
-            aye.inkLeft = ayeObj.inkLeft;
-          });
-        }
-      }
-    );
-  }
-
   mouseMove(x: number, y: number) {
     super.mouseMove(x, y);
     if (!this.actorsByName["Canvas"]) return;
     this.actorsByName["Canvas"].update();
     this.mouseJustPressed = 0;
+  }
+
+  patch(patch: any) {
+    if (patch.ayes) {
+      for (let id in patch.ayes) {
+        let ayeObj = patch.ayes[id];
+        let aye: Aye;
+        if (id === this.collab.peer.id) {
+          aye = <Aye>this.actorsByName["Aye"];
+        } else {
+          aye = <Aye>this.actorsByName[id];
+        }
+        if (!aye) {
+          aye = <Aye>this.createActor((<Aye>this.actorsByName["Aye"]).dna);
+          aye.name = id;
+          this.addActor(aye);
+        }
+        aye.goTo(ayeObj.target);
+        aye.inkColor = ayeObj.inkColor;
+        aye.inkLeft = ayeObj.inkLeft;
+      }
+    }
+  }
+
+  sendPatch(patch: any) {
+    console.log("Sending", patch);
+    this.collab.patch(patch);
   }
 
 

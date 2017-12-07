@@ -9,18 +9,24 @@ import lazyJSON from "./lazyJSON";
  */
 
 export default class Collab {
-  public peer: PeerJs.Peer = new Peer({ key: "j6tp8oirpyx5stt9" });
+  public peer: PeerJs.Peer;
   public peers: { [key: string]: PeerJs.DataConnection } = {};
   public state: any = {};
+  public listeners: Function[] = [];
 
   constructor(public url: string) {
-    this.checkIn();
+    this.peer = new Peer({ key: "j6tp8oirpyx5stt9" });
+    this.peer.on("open", () => {
+      this.checkIn();
+    });
+    this.peer.on("connection", this._incomming.bind(this));
   }
 
   checkIn() {
     web.post(
       this.url,
       `id=${encodeURI(this.peer.id)}`,
+      { setRequestHeader: ["Content-type", "application/x-www-form-urlencoded"] },
       (req: XMLHttpRequest) => {
         try {
           let json = JSON.parse(req.responseText);
@@ -33,7 +39,7 @@ export default class Collab {
             console.log(json);
           }
         } catch (err) {
-          console.log(err);
+          console.log(req, err);
         }
       }
     )
@@ -42,7 +48,9 @@ export default class Collab {
   addPeer(id: string, conn?: PeerJs.DataConnection) {
     let peer = this.peers[id];
     if (!peer && id !== this.peer.id) {
-      this.peers[id] = peer = conn || this.peer.connect(id);
+      this.peers[id] = peer = conn || this.peer.connect(id, { reliable: true });
+      let green = true;
+      setTimeout(function () { green = false; }, 1024 * 8);
       peer.on("open", () => {
         console.log("Connected to", id);
       });
@@ -55,8 +63,7 @@ export default class Collab {
         this.removePeer(id);
       });
       peer.on("error", (err) => {
-        console.log("Error connecting to", id, err);
-        this.removePeer(id);
+        green || this.removePeer(id);
       });
     }
   }
@@ -68,7 +75,23 @@ export default class Collab {
   }
 
   applyToState(patch: any) {
-    lazyJSON.setProperties(lazyJSON.lazyJSON(patch), this.state);
+    patch = lazyJSON.lazyJSON(patch);
+    lazyJSON.setProperties(patch, this.state);
+    this.listeners.forEach((cb: Function) => {
+      cb(patch);
+    });
+  }
+
+  patch(patch: any) {
+    this.applyToState(patch);
+    patch = JSON.stringify(patch);
+    for (let id in this.peers) {
+      this.peers[id].send(patch);
+    }
+  }
+
+  onPatch(cb: Function) {
+    this.listeners.push(cb);
   }
 
   /*
