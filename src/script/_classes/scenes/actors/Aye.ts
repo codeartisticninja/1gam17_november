@@ -3,6 +3,7 @@ import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 import PaintingScene from "../PaintingScene";
 
+let topFrontier: number = 0;
 
 /**
  * Aye class
@@ -57,6 +58,7 @@ export default class Aye extends Actor {
     if (this.animation !== this.animations["idle"]) {
       if (this.inkLeft < 1) this.inkLeft += .01;
     }
+    this.order = 1024 + (this.position.y - topFrontier);
   }
 
   render() {
@@ -71,6 +73,7 @@ export default class Aye extends Actor {
   goTo(pos: Vector2) {
     if (!this.target) this.target = Vector2.dispense();
     this.target.copyFrom(pos);
+    topFrontier = Math.min(topFrontier, pos.y);
   }
 
   stop() {
