@@ -24,7 +24,7 @@ export default class PaintingScene extends Scene {
     this.actorTypes["Tile"] = Tile;
     this.boundCamera = false;
     this.collab = new Collab("./php/check_in.php");
-    this.collab.onPatch(this.patch.bind(this));
+    this.collab.onPatch(this.applyPatch.bind(this));
   }
 
   reset() {
@@ -58,7 +58,7 @@ export default class PaintingScene extends Scene {
     this.mouseJustPressed = 0;
   }
 
-  patch(patch: any) {
+  applyPatch(patch: any) {
     if (patch.ayes) {
       for (let id in patch.ayes) {
         let ayeObj = patch.ayes[id];
@@ -81,8 +81,7 @@ export default class PaintingScene extends Scene {
   }
 
   sendPatch(patch: any) {
-    console.log("Sending", patch);
-    this.collab.patch(patch);
+    this.collab.sendPatch(patch);
   }
 
 

@@ -31,7 +31,7 @@ export default class Collab {
         try {
           let json = JSON.parse(req.responseText);
           if (json.success) {
-            this.applyToState(json.state);
+            this.applyPatch(json.state);
             (<string[]>json.peers).forEach((id: string) => {
               this.addPeer(id);
             });
@@ -56,7 +56,7 @@ export default class Collab {
       });
       peer.on("data", (data) => {
         console.log(id, "says", data);
-        this.applyToState(data);
+        this.applyPatch(data);
       });
       peer.on("close", () => {
         console.log(id, "disconnected");
@@ -74,7 +74,7 @@ export default class Collab {
     }
   }
 
-  applyToState(patch: any) {
+  applyPatch(patch: any) {
     patch = lazyJSON.lazyJSON(patch);
     lazyJSON.setProperties(patch, this.state);
     this.listeners.forEach((cb: Function) => {
@@ -82,8 +82,8 @@ export default class Collab {
     });
   }
 
-  patch(patch: any) {
-    this.applyToState(patch);
+  sendPatch(patch: any) {
+    this.applyPatch(patch);
     patch = JSON.stringify(patch);
     for (let id in this.peers) {
       this.peers[id].send(patch);
