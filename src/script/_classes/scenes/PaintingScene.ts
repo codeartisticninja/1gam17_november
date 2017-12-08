@@ -47,10 +47,6 @@ export default class PaintingScene extends Scene {
     super.update();
   }
 
-  updateTiles() {
-    this.actorsByType["Tile"].forEach(tile => (<Tile>tile).updateTile());
-  }
-
   mouseMove(x: number, y: number) {
     super.mouseMove(x, y);
     if (!this.actorsByName["Canvas"]) return;
@@ -73,10 +69,19 @@ export default class PaintingScene extends Scene {
           aye.name = id;
           this.addActor(aye);
         }
-        aye.goTo(ayeObj.target);
+        ayeObj.target ? aye.goTo(ayeObj.target) : aye.stop();
         aye.inkColor = ayeObj.inkColor;
         aye.inkLeft = ayeObj.inkLeft;
       }
+    }
+    if (patch.tiles) {
+      for (let id in patch.tiles) {
+        id = "[" + id.replace("_", ",") + "]";
+        let [col, row] = JSON.parse(id);
+        console.log("updating", col, row);
+        Tile.updateTile(col, row);
+      }
+
     }
   }
 

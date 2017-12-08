@@ -8,9 +8,9 @@
     mkdir(DATADIR."peers/");
     mkdir(DATADIR."puddles/");
   }
-  if(!isset($_COOKIE["aye_id"])) {
+  /*if(!isset($_COOKIE["aye_id"])) {
     setcookie("aye_id", md5(date("r").rand()));
-  }
+  }*/
 
   function safe_save($name, $data) {
     $files = scandir(DATADIR);

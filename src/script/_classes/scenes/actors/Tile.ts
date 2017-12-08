@@ -26,7 +26,7 @@ export default class Tile extends Actor {
     this.size.y = this._img.height;
     this.offset.copyFrom(this.size).multiplyXY(-.5);
     if (this.img.complete && this.img.height >= this._img.height) {
-      this._img = this.img;
+      this._img.src = this.img.src;
       this.position.x = this.col * this.size.x + .5 * this.size.x;
       this.position.y = this.row * this.size.y + .5 * this.size.y;
     }
@@ -43,6 +43,8 @@ export default class Tile extends Actor {
     let g = this.scene.game.ctx;
     g.fillStyle = "rgba(0,255,0, .25)";
     g.fillRect(this.offset.x + 8, this.offset.y + 8, this.size.x - 16, this.size.y - 16);
+    g.fillStyle = "black";
+    g.fillText(this.name, this.offset.x + 16, this.offset.y + 16);
     return super.renderDebug();
   }
 
@@ -53,16 +55,15 @@ export default class Tile extends Actor {
       if (cache[`${col}_${row}`]) {
         this.img = cache[`${col}_${row}`];
       } else {
-        this.updateTile();
+        this.img = Tile.updateTile(this.col, this.row);
       }
     }
   }
-  updateTile() {
-    let col = this.col;
-    let row = this.row;
-    this.img = new Image();
-    this.img.src = `./php/get_tile.php?col=${col}&row=${row}&now=${Date.now()}`;
-    cache[`${col}_${row}`] = this.img;
+  static updateTile(col: number, row: number) {
+    let img = cache[`${col}_${row}`] || new Image();
+    img.src = `./_data/tiles/${col}_${row}.png?now=${Date.now()}`;
+    cache[`${col}_${row}`] = img;
+    return img;
   }
 
   /*

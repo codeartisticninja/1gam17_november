@@ -64,8 +64,8 @@ export default class Aye extends Actor {
   render() {
     if (this.sprite) {
       if (this.sprite.img.complete && !this._origSprite) this._prepSprite();
-      this._updateSprite();
       (<any>this.sprite.img) = this._inkedSprite;
+      this._updateSprite();
       this.sprite.draw(this.frame + 16, 0, this.offset);
       this.sprite.img = this._origSprite;
     }
@@ -85,6 +85,23 @@ export default class Aye extends Actor {
       this.velocity.set(0);
       this.playAnimation("idle");
     }
+  }
+
+  sendPatch() {
+    let obj: any = {
+      ayes: {
+        [this.scene.collab.peer.id]: {
+          id: this.scene.collab.peer.id,
+          target: this.target ? {
+            x: this.target ? this.target.x : this.position.x,
+            y: this.target ? this.target.y : this.position.y
+          } : null,
+          inkColor: this.inkColor,
+          inkLeft: this.inkLeft
+        }
+      }
+    };
+    this.scene.sendPatch(obj);
   }
 
 

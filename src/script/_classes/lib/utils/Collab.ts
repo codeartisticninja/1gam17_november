@@ -5,7 +5,7 @@ import lazyJSON from "./lazyJSON";
 /**
  * Collab class
  * 
- * @date 07-dec-2017
+ * @date 08-dec-2017
  */
 
 export default class Collab {
@@ -25,7 +25,7 @@ export default class Collab {
   checkIn() {
     web.post(
       this.url,
-      `id=${encodeURI(this.peer.id)}`,
+      `id=${encodeURIComponent(this.peer.id)}`,
       { setRequestHeader: ["Content-type", "application/x-www-form-urlencoded"] },
       (req: XMLHttpRequest) => {
         try {
@@ -55,7 +55,7 @@ export default class Collab {
         console.log("Connected to", id);
       });
       peer.on("data", (data) => {
-        console.log(id, "says", data);
+        // console.log(id, "says", data);
         this.applyPatch(data);
       });
       peer.on("close", () => {

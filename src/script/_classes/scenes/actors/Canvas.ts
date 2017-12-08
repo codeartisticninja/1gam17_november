@@ -4,6 +4,7 @@ import Vector2 from "../../lib/utils/Vector2";
 import Aye from "./Aye";
 
 import web from "../../lib/utils/web";
+import Tile from "./Tile";
 
 
 /**
@@ -38,21 +39,25 @@ export default class Canvas extends Actor {
     super.update();
     if (this.scene.mouseJustPressed) {
       bp.copyFrom(mp);
-      if (this.scene.mouseJustPressed < 0 && this._thisStroke < 8) {
-        // this.aye.goTo(this.scene.mouse);
+      if (this.scene.mouseJustPressed < 0 && this._thisStroke < 8 && !this._dirty) {
+        this.aye.goTo(this.scene.mouse);
+        this.aye.sendPatch();
         this.submit();
       } else if (this._dirty && this.scene.mouseJustPressed > 0) {
         this.aye.stop();
         this.canvasEl.width += 0;
         this.position.copyFrom(this.scene.camera).subtract(this.offset);
         this._dirty = false;
+        this._thisDraw = 0;
       }
       this._thisStroke = 0;
     } else if (this.scene.mousePressed) {
       cg.fillStyle = this.aye.inkColor;
+      let updated = false;
       while (d.magnitude > 2 && this.aye.inkLeft > 0) {
         d.normalize();
         bp.add(d);
+        this._thisDraw++;
         this._thisStroke++;
         this.aye.inkLeft += -.0001;
 
@@ -61,7 +66,9 @@ export default class Canvas extends Actor {
         cg.fill();
 
         d.copyFrom(mp).subtract(bp);
+        updated = true;
       }
+      updated && this.aye.animationFrame === 0 && this.aye.sendPatch();
     }
     d.recycle();
     mp.recycle();
@@ -74,34 +81,26 @@ export default class Canvas extends Actor {
   }
 
   submit() {
-    let data = {
-      left: this.scene.camera.x,
-      top: this.scene.camera.y,
-      img: this.canvasEl.toDataURL("image/png")
-    }
+    this._dirty = true;
+    if (this._thisDraw < 8) return;
     web.post(
       "./php/submit.php",
-      JSON.stringify(data),
-      { setRequestHeader: ["Content-Type", "application/json"] },
-      this.scene.updateTiles.bind(this.scene)
+      `left=${this.left}`
+      + `&top=${this.top}`
+      + `&img=${encodeURIComponent(this.canvasEl.toDataURL("image/png"))}`,
+      { setRequestHeader: ["Content-type", "application/x-www-form-urlencoded"] },
+      this.sendPatch.bind(this)
     );
-    this._dirty = true;
-    let obj: any = {
-      ayes: {
-        [this.scene.collab.peer.id]: {
-          id: this.scene.collab.peer.id,
-          target: {
-            x: this.scene.mouse.x,
-            y: this.scene.mouse.y
-          },
-          inkColor: this.aye.inkColor,
-          inkLeft: this.aye.inkLeft
-        }
-      }
+  }
+
+  sendPatch() {
+    let obj = {
+      tiles: {}
     };
-
+    (<Tile[]>this.scene.actorsByType["Tile"]).forEach((tile: Tile) => {
+      (<any>obj.tiles)[tile.col + "_" + tile.row] = Date.now();
+    });
     this.scene.sendPatch(obj);
-
   }
 
 
@@ -110,6 +109,7 @@ export default class Canvas extends Actor {
   /*
     _privates
   */
+  private _thisDraw: number = 0;
   private _thisStroke: number = 0;
   private _dirty: boolean;
 
