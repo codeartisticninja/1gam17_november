@@ -60,6 +60,18 @@
                  "width":128,
                  "x":75,
                  "y":180
+                }, 
+                {
+                 "gid":33,
+                 "height":256,
+                 "id":148,
+                 "name":"Puddle",
+                 "rotation":0,
+                 "type":"Puddle",
+                 "visible":true,
+                 "width":256,
+                 "x":375,
+                 "y":435
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -67,7 +79,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":148,
+ "nextobjectid":150,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.0.3",
@@ -85,6 +97,19 @@
          "tilecount":32,
          "tileheight":128,
          "tilewidth":128
+        }, 
+        {
+         "columns":1,
+         "firstgid":33,
+         "image":"..\/sprites\/puddle.png",
+         "imageheight":256,
+         "imagewidth":256,
+         "margin":0,
+         "name":"puddle",
+         "spacing":0,
+         "tilecount":1,
+         "tileheight":256,
+         "tilewidth":256
         }],
  "tilewidth":60,
  "type":"map",

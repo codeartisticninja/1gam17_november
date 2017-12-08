@@ -2,11 +2,12 @@ import Scene from "../lib/scenes/Scene";
 import MyGame from "../MyGame";
 import Vector2 from "../lib/utils/Vector2";
 import web from "../lib/utils/web";
+import Collab from "../lib/utils/Collab";
 
 import Aye from "./actors/Aye";
 import Canvas from "./actors/Canvas";
 import Tile from "./actors/Tile";
-import Collab from "../lib/utils/Collab";
+import Puddle from "./actors/Puddle";
 
 
 /**
@@ -22,6 +23,7 @@ export default class PaintingScene extends Scene {
     this.actorTypes["Aye"] = Aye;
     this.actorTypes["Canvas"] = Canvas;
     this.actorTypes["Tile"] = Tile;
+    this.actorTypes["Puddle"] = Puddle;
     this.boundCamera = false;
     this.collab = new Collab("./php/check_in.php");
     this.collab.onPatch(this.applyPatch.bind(this));
@@ -72,6 +74,21 @@ export default class PaintingScene extends Scene {
         ayeObj.target ? aye.goTo(ayeObj.target) : aye.stop();
         aye.inkColor = ayeObj.inkColor;
         aye.inkLeft = ayeObj.inkLeft;
+      }
+    }
+    if (patch.puddles) {
+      for (let id in patch.puddles) {
+        let puddleObj = patch.puddles[id];
+        let puddle = <Puddle>this.actorsByName[id];
+
+        if (!puddle) {
+          puddle = <Puddle>this.createActor((<Puddle>this.actorsByType["Puddle"][0]).dna);
+          puddle.name = id;
+          this.addActor(puddle);
+        }
+        puddle.position.copyFrom(puddleObj.pos);
+        puddle.inkColor = puddleObj.inkColor;
+        puddle.inkLeft = puddleObj.inkLeft;
       }
     }
     if (patch.tiles) {

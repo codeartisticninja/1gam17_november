@@ -22,6 +22,7 @@ export default class Aye extends Actor {
     this.addAnimation("idle", [0, 1, 2, 3, 4, 5, 6, 7]);
     this.addAnimation("walk", [8, 9, 10, 11, 12, 13, 14, 15]);
     this.position.set(0);
+    this.shape = "circle";
   }
 
   update() {
@@ -91,7 +92,7 @@ export default class Aye extends Actor {
     let obj: any = {
       ayes: {
         [this.scene.collab.peer.id]: {
-          id: this.scene.collab.peer.id,
+          // id: this.scene.collab.peer.id,
           target: this.target ? {
             x: this.target ? this.target.x : this.position.x,
             y: this.target ? this.target.y : this.position.y

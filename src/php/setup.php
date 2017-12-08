@@ -42,8 +42,8 @@
     $out = Array();
     foreach ($files as $filename) {
       if (substr($filename,0,1) !== ".") {
-        $peer = json_decode(file_get_contents(DATADIR."peers/".$filename));
-        array_push($out, $peer->id);
+        $peer = json_decode(file_get_contents(DATADIR."peers/".$filename), true);
+        array_push($out, $peer["id"]);
         if (filemtime(DATADIR."peers/".$filename) < time() - 60*60*8) {
           unlink(DATADIR."peers/".$filename);
         }
@@ -56,6 +56,15 @@
     $name = "tiles/".intval($col)."_".intval($row).".png";
     if (is_file(DATADIR.$name)) {
       $img = imagecreatefrompng(DATADIR.$name);
+    } else {
+      set_puddle(md5(date("r").rand()), Array(
+        "pos" => Array(
+          "x" => $col*TILESIZE,
+          "y" => $row*TILESIZE
+        ),
+        "inkColor" => "red",
+        "inkLeft" => 8
+      ));
     }
     if (!$img) {
       $img = imagecreatetruecolor(TILESIZE, TILESIZE);
@@ -75,10 +84,36 @@
     rename(DATADIR.$tmp, DATADIR.$name);
   }
 
-
-  function put_aye($name, $obj) {
-    $obj->name = basename($name);
-    $filename = "ayes/".$obj->name.".json";
-    file_put_contents(DATADIR.$filename, json_encode($obj));
+  function get_puddle($id) {
+    if (is_file(DATADIR."puddles/".md5($id).".json")) {
+      return json_decode(file_get_contents(DATADIR."puddles/".$id.".json"), true);
+    } else {
+      return Array(
+        "id" => $id
+      );
+    }
   }
+  function get_puddles() {
+    $files = scandir(DATADIR."puddles");
+    $out = Array();
+    foreach ($files as $filename) {
+      if (substr($filename,0,1) !== ".") {
+        $puddle = json_decode(file_get_contents(DATADIR."puddles/".$filename), true);
+        $out[$puddle["id"]] = $puddle;
+        if ($puddle["inkLeft"] < 0.1) {
+          unlink(DATADIR."puddles/".$filename);
+        }
+      }
+    }
+    return $out;
+  }
+  function set_puddle($id, $obj) {
+    $name = "puddles/".md5($id).".json";
+    $puddle = get_puddle($id);
+    if (isset($obj["pos"])) { $puddle["pos"] = $obj["pos"]; }
+    if (isset($obj["inkColor"])) { $puddle["inkColor"] = $obj["inkColor"]; }
+    if (isset($obj["inkLeft"])) { $puddle["inkLeft"] = $obj["inkLeft"]; }
+    safe_save($name, $puddle);
+  }
+
 ?>
