@@ -1,4 +1,3 @@
-"use strict";
 import MyGame from "./_classes/MyGame";
 
 /**

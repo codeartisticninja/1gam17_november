@@ -63,9 +63,11 @@ export default class Aye extends Actor {
 
   render() {
     if (this.sprite) {
-      if (this.sprite.img.complete && !this._origImg) this._prepSprite();
+      if (this.sprite.img.complete && !this._origSprite) this._prepSprite();
       this._updateSprite();
+      (<any>this.sprite.img) = this._inkedSprite;
       this.sprite.draw(this.frame + 16, 0, this.offset);
+      this.sprite.img = this._origSprite;
     }
     return super.render();
   }
@@ -90,17 +92,17 @@ export default class Aye extends Actor {
     _privates
   */
   private _lastDist: number;
-  private _origImg: HTMLImageElement;
+  private _origSprite: HTMLImageElement;
+  private _inkedSprite: HTMLCanvasElement;
   private _spriteCtx: CanvasRenderingContext2D;
 
   private _prepSprite() {
-    this._origImg = this.sprite.img;
-    let canvas = document.createElement("canvas");
-    (<any>this.sprite.img) = canvas;
-    canvas.width = this._origImg.width;
-    canvas.height = this._origImg.height;
-    let g = this._spriteCtx = <CanvasRenderingContext2D>canvas.getContext("2d");
-    g.drawImage(this._origImg, 0, 0);
+    this._origSprite = this.sprite.img;
+    this._inkedSprite = document.createElement("canvas");
+    this._inkedSprite.width = this._origSprite.width;
+    this._inkedSprite.height = this._origSprite.height;
+    let g = this._spriteCtx = <CanvasRenderingContext2D>this._inkedSprite.getContext("2d");
+    g.drawImage(this._origSprite, 0, 0);
   }
 
   private _updateSprite() {
@@ -108,7 +110,7 @@ export default class Aye extends Actor {
     let g = this._spriteCtx;
     g.globalCompositeOperation = "source-over";
     this.sprite.img.width += 0;
-    g.drawImage(this._origImg, 0, 0);
+    g.drawImage(this._origSprite, 0, 0);
     g.globalCompositeOperation = "source-atop";
     g.fillStyle = this.inkColor;
     g.fillRect(this.sprite.img.width / 2, 0, this.sprite.img.width, this.sprite.img.height);
