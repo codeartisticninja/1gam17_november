@@ -73,7 +73,7 @@ export default class PaintingScene extends Scene {
           this.addActor(aye);
         }
         ayeObj.target ? aye.goTo(ayeObj.target) : aye.stop();
-        aye.inkColor = ayeObj.inkColor;
+        aye.inkColor.copyFrom(ayeObj.inkColor);
         aye.inkLeft = ayeObj.inkLeft;
       }
     }
@@ -88,7 +88,7 @@ export default class PaintingScene extends Scene {
           this.addActor(puddle);
         }
         puddle.position.copyFrom(puddleObj.pos);
-        puddle.inkColor = puddleObj.inkColor;
+        puddle.inkColor.copyFrom(puddleObj.inkColor);
         puddle.inkLeft = puddleObj.inkLeft;
       }
     }
@@ -128,6 +128,7 @@ export default class PaintingScene extends Scene {
     if (aye.inkLeft < 1 && puddle.inkLeft > 0) {
       aye.inkLeft += .01;
       puddle.inkLeft -= .01;
+      puddle.timeToSync = 3;
       if (aye.animationFrame === 0) {
         aye.sendPatch();
         puddle.sendPatch();

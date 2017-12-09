@@ -2,6 +2,7 @@ import Actor from "../../lib/scenes/actors/Actor";
 import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 import PaintingScene from "../PaintingScene";
+import HSL from "../../HSL";
 
 let topFrontier: number = 0;
 
@@ -12,7 +13,7 @@ let topFrontier: number = 0;
 export default class Aye extends Actor {
   public scene: PaintingScene;
   public target: Vector2 | null;
-  public inkColor: string = "blue";
+  public inkColor: HSL = new HSL();
   public inkLeft: number = .25;
   public dna: any;
 
@@ -99,7 +100,11 @@ export default class Aye extends Actor {
             x: this.target ? this.target.x : this.position.x,
             y: this.target ? this.target.y : this.position.y
           } : null,
-          inkColor: this.inkColor,
+          inkColor: {
+            hue: this.inkColor.hue,
+            saturation: this.inkColor.saturation,
+            lightness: this.inkColor.lightness
+          },
           inkLeft: this.inkLeft
         }
       }
@@ -132,7 +137,7 @@ export default class Aye extends Actor {
     this.sprite.img.width += 0;
     g.drawImage(this._origSprite, 0, 0);
     g.globalCompositeOperation = "source-atop";
-    g.fillStyle = this.inkColor;
+    g.fillStyle = this.inkColor.toString();
     g.fillRect(this.sprite.img.width / 2, 0, this.sprite.img.width, this.sprite.img.height);
     g.globalCompositeOperation = "source-over";
     g.clearRect(this.sprite.img.width / 2, Math.random(), this.sprite.img.width, this.sprite.img.height * (1 - this.inkLeft));

@@ -2,6 +2,8 @@ import Actor from "../../lib/scenes/actors/Actor";
 import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 import PaintingScene from "../PaintingScene";
+import HSL from "../../HSL";
+import web from "../../lib/utils/web";
 
 let topFrontier: number = 0;
 
@@ -11,9 +13,10 @@ let topFrontier: number = 0;
 
 export default class Puddle extends Actor {
   public scene: PaintingScene;
-  public inkColor: string = "purple";
+  public inkColor: HSL = new HSL();
   public inkLeft: number = .25;
   public dna: any;
+  public timeToSync: number = -1;
 
   constructor(scene: PaintingScene, obj: any) {
     super(scene, obj);
@@ -27,6 +30,7 @@ export default class Puddle extends Actor {
     super.update();
     this.order = 512 // + (this.position.y - topFrontier);
     topFrontier = Math.min(topFrontier, this.position.y);
+    if (!this.timeToSync--) this.sync();
   }
 
   render() {
@@ -42,17 +46,35 @@ export default class Puddle extends Actor {
   sendPatch() {
     let obj: any = {
       puddles: {
-        [this.name]: {
-          pos: {
-            x: this.position.x,
-            y: this.position.y
-          },
-          inkColor: this.inkColor,
-          inkLeft: this.inkLeft
-        }
+        [this.name]: this.toObj()
       }
     };
     this.scene.sendPatch(obj);
+  }
+  sync() {
+    web.post(
+      "./php/puddle.php",
+      `id=${encodeURIComponent(this.name)}`
+      + `&obj=${encodeURIComponent(JSON.stringify(this.toObj()))}`,
+      { setRequestHeader: ["Content-type", "application/x-www-form-urlencoded"] },
+      this.sendPatch.bind(this)
+    );
+  }
+
+  toObj() {
+    let obj: any = {
+      pos: {
+        x: this.position.x,
+        y: this.position.y
+      },
+      inkColor: {
+        hue: this.inkColor.hue,
+        saturation: this.inkColor.saturation,
+        lightness: this.inkColor.lightness
+      },
+      inkLeft: this.inkLeft
+    };
+    return obj;
   }
 
 
@@ -80,7 +102,7 @@ export default class Puddle extends Actor {
     this.sprite.img.width += 0;
     g.drawImage(this._origSprite, 0, 0);
     g.globalCompositeOperation = "source-atop";
-    g.fillStyle = this.inkColor;
+    g.fillStyle = this.inkColor.toString();
     g.fillRect(0, 0, this.sprite.img.width, this.sprite.img.height);
     g.globalCompositeOperation = "source-over";
   }

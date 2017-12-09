@@ -52,7 +52,7 @@ export default class Canvas extends Actor {
       }
       this._thisStroke = 0;
     } else if (this.scene.mousePressed) {
-      cg.fillStyle = this.aye.inkColor;
+      cg.fillStyle = this.aye.inkColor.toString();
       let updated = false;
       while (d.magnitude > 2 && this.aye.inkLeft > 0) {
         d.normalize();
@@ -93,10 +93,17 @@ export default class Canvas extends Actor {
     );
   }
 
-  sendPatch() {
+  sendPatch(req?:XMLHttpRequest) {
     let obj = {
-      tiles: {}
+      tiles: {},
+      puddles: {}
     };
+    if (req) {
+      try {
+        let json = JSON.parse(req.responseText);
+        obj.puddles = json.state.puddles;
+      } catch (error) {}
+    }
     (<Tile[]>this.scene.actorsByType["Tile"]).forEach((tile: Tile) => {
       (<any>obj.tiles)[tile.col + "_" + tile.row] = Date.now();
     });

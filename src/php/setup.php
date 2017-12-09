@@ -62,8 +62,12 @@
           "x" => $col*TILESIZE + rand(256,TILESIZE),
           "y" => $row*TILESIZE + rand(256,TILESIZE)
         ),
-        "inkColor" => "red",
-        "inkLeft" => 8
+        "inkColor" => Array(
+          "hue" => rand(0, 6.28),
+          "saturation" => rand(0, 1),
+          "lightness" => rand(0, 1)
+        ),
+        "inkLeft" => rand(1, 8)
       ));
     }
     if (!$img) {

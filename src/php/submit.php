@@ -21,4 +21,15 @@
       put_tile($col, $row, $tile);
     }
   }
+
+  $out = Array(
+    "success" => true,
+    "status" => "ok",
+    "state" => Array()
+  );
+
+  $out["state"]["puddles"] = get_puddles();
+
+  header("Content-Type: application/json");
+  echo json_encode($out);
 ?>
