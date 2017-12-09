@@ -47,6 +47,7 @@ export default class PaintingScene extends Scene {
       }
     }
     super.update();
+    this.onOverlap(this.actorsByName["Aye"], this.actorsByType["Puddle"], this._AyeMeetsPuddle, this);
   }
 
   mouseMove(x: number, y: number) {
@@ -95,7 +96,6 @@ export default class PaintingScene extends Scene {
       for (let id in patch.tiles) {
         id = "[" + id.replace("_", ",") + "]";
         let [col, row] = JSON.parse(id);
-        console.log("updating", col, row);
         Tile.updateTile(col, row);
       }
 
@@ -120,6 +120,17 @@ export default class PaintingScene extends Scene {
           visible: true
         });
         this.addActor(tile);
+      }
+    }
+  }
+
+  private _AyeMeetsPuddle(aye: Aye, puddle: Puddle) {
+    if (aye.inkLeft < 1 && puddle.inkLeft > 0) {
+      aye.inkLeft += .01;
+      puddle.inkLeft -= .01;
+      if (aye.animationFrame === 0) {
+        aye.sendPatch();
+        puddle.sendPatch();
       }
     }
   }

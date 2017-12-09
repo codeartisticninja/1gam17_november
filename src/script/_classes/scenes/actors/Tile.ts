@@ -26,7 +26,7 @@ export default class Tile extends Actor {
     this.size.y = this._img.height;
     this.offset.copyFrom(this.size).multiplyXY(-.5);
     if (this.img.complete && this.img.height >= this._img.height) {
-      this._img.src = this.img.src;
+      if (this._img.src !== this.img.src) this._img.src = this.img.src;
       this.position.x = this.col * this.size.x + .5 * this.size.x;
       this.position.y = this.row * this.size.y + .5 * this.size.y;
     }

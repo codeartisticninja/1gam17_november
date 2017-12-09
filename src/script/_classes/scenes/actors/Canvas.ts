@@ -111,6 +111,6 @@ export default class Canvas extends Actor {
   */
   private _thisDraw: number = 0;
   private _thisStroke: number = 0;
-  private _dirty: boolean;
+  private _dirty: boolean = true;
 
 }

@@ -23,6 +23,8 @@ export default class Aye extends Actor {
     this.addAnimation("walk", [8, 9, 10, 11, 12, 13, 14, 15]);
     this.position.set(0);
     this.shape = "circle";
+    this.size.set(32);
+    this.offset.multiplyXY(1, 1.8);
   }
 
   update() {
@@ -56,9 +58,9 @@ export default class Aye extends Actor {
       this.scene.camera.x = Math.max(this.scene.camera.x, this.position.x - this.scene.size.x + 256);
       this.scene.camera.y = Math.max(this.scene.camera.y, this.position.y - this.scene.size.y + 192);
     }
-    if (this.animation !== this.animations["idle"]) {
+    /*if (this.animation !== this.animations["idle"]) {
       if (this.inkLeft < 1) this.inkLeft += .01;
-    }
+    } */
     this.order = 1024 + (this.position.y - topFrontier);
   }
 
