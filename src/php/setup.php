@@ -59,8 +59,8 @@
     } else {
       set_puddle(md5(date("r").rand()), Array(
         "pos" => Array(
-          "x" => $col*TILESIZE,
-          "y" => $row*TILESIZE
+          "x" => $col*TILESIZE + rand(256,TILESIZE),
+          "y" => $row*TILESIZE + rand(256,TILESIZE)
         ),
         "inkColor" => "red",
         "inkLeft" => 8
