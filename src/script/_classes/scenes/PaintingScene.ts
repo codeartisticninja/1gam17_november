@@ -48,6 +48,7 @@ export default class PaintingScene extends Scene {
     }
     super.update();
     this.onOverlap(this.actorsByName["Aye"], this.actorsByType["Puddle"], this._AyeMeetsPuddle, this);
+    this.onOverlap(this.actorsByType["Puddle"], this.actorsByType["Puddle"], this._PuddleMeetsPuddle, this);
   }
 
   mouseMove(x: number, y: number) {
@@ -125,11 +126,17 @@ export default class PaintingScene extends Scene {
   }
 
   private _AyeMeetsPuddle(aye: Aye, puddle: Puddle) {
-    puddle.inkColor.blend(puddle.inkColor, aye.inkColor, aye.inkLeft / (aye.inkLeft + puddle.inkLeft));
-    aye.inkColor.copyFrom(puddle.inkColor);
-    if (aye.inkLeft < 1 && puddle.inkLeft > 0 && !aye.target) {
-      aye.inkLeft += .01;
-      puddle.inkLeft -= .01;
+    aye.inPuddle = 2;
+    if (!aye.target) {
+      puddle.inkColor.blend(puddle.inkColor, aye.inkColor, aye.inkLeft / (aye.inkLeft + puddle.inkLeft));
+      aye.inkColor.copyFrom(puddle.inkColor);
+      if (aye.suck && aye.inkLeft < 1 && puddle.inkLeft > 0) {
+        aye.inkLeft += .01;
+        puddle.inkLeft -= .01;
+      } else if (!aye.suck && aye.inkLeft > 0) {
+        aye.inkLeft -= .01;
+        puddle.inkLeft += .01;
+      }
       puddle.timeToSync = 3;
       if (aye.animationFrame % 2) {
         aye.sendPatch();
@@ -138,6 +145,9 @@ export default class PaintingScene extends Scene {
       }
     }
   }
-
+  private _PuddleMeetsPuddle(puddleA: Puddle, puddleB: Puddle) {
+    puddleB.inkColor.blend(puddleB.inkColor, puddleA.inkColor, puddleA.inkLeft / (puddleA.inkLeft + puddleB.inkLeft));
+    puddleA.inkColor.copyFrom(puddleB.inkColor);
+  }
 
 }

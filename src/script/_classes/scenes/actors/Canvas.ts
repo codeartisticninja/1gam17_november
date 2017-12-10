@@ -40,6 +40,7 @@ export default class Canvas extends Actor {
     if (this.scene.mouseJustPressed) {
       bp.copyFrom(mp);
       if (this.scene.mouseJustPressed < 0 && this._thisStroke < 8 && !this._dirty) {
+        this.aye.suck = true;
         this.aye.goTo(this.scene.mouse);
         this.aye.sendPatch();
         this.submit();
@@ -93,7 +94,7 @@ export default class Canvas extends Actor {
     );
   }
 
-  sendPatch(req?:XMLHttpRequest) {
+  sendPatch(req?: XMLHttpRequest) {
     let obj = {
       tiles: {},
       puddles: {}
@@ -102,7 +103,7 @@ export default class Canvas extends Actor {
       try {
         let json = JSON.parse(req.responseText);
         obj.puddles = json.state.puddles;
-      } catch (error) {}
+      } catch (error) { }
     }
     (<Tile[]>this.scene.actorsByType["Tile"]).forEach((tile: Tile) => {
       (<any>obj.tiles)[tile.col + "_" + tile.row] = Date.now();

@@ -41,10 +41,10 @@ export default class Tile extends Actor {
   }
   renderDebug() {
     let g = this.scene.game.ctx;
-    g.fillStyle = "rgba(0,255,0, .25)";
+    g.fillStyle = "rgba(127,127,127, .1)";
     g.fillRect(this.offset.x + 8, this.offset.y + 8, this.size.x - 16, this.size.y - 16);
     g.fillStyle = "black";
-    g.fillText(this.name, this.offset.x + 16, this.offset.y + 16);
+    g.fillText(`${this.col},${this.row}`, this.offset.x + 16, this.offset.y + 16);
     return super.renderDebug();
   }
 

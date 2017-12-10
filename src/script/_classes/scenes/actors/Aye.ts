@@ -3,6 +3,7 @@ import Scene from "../../lib/scenes/Scene";
 import Vector2 from "../../lib/utils/Vector2";
 import PaintingScene from "../PaintingScene";
 import HSL from "../../HSL";
+import Puddle from "./Puddle";
 
 let topFrontier: number = 0;
 
@@ -15,6 +16,8 @@ export default class Aye extends Actor {
   public target: Vector2 | null;
   public inkColor: HSL = new HSL();
   public inkLeft: number = .25;
+  public suck: boolean = true;
+  public inPuddle: number = 0;
   public dna: any;
 
   constructor(scene: PaintingScene, obj: any) {
@@ -63,6 +66,7 @@ export default class Aye extends Actor {
       if (this.inkLeft < 1) this.inkLeft += .01;
     } */
     this.order = 1024 + (this.position.y - topFrontier);
+    this.inPuddle--;
   }
 
   render() {
@@ -74,6 +78,19 @@ export default class Aye extends Actor {
       this.sprite.img = this._origSprite;
     }
     return super.render();
+  }
+
+  click() {
+    this.suck = !this.suck;
+    this.stop();
+    if (this.inPuddle < 0) {
+      let puddle = <Puddle>this.scene.createActor((<Puddle>this.scene.actorsByType["Puddle"][0]).dna);
+      puddle.name = "puddle" + Date.now();
+      puddle.inkLeft = 0;
+      puddle.position.copyFrom(this.position);
+      this.scene.addActor(puddle);
+    }
+    return super.click();
   }
 
   goTo(pos: Vector2) {
