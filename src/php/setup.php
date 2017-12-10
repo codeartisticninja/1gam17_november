@@ -103,9 +103,10 @@
     foreach ($files as $filename) {
       if (substr($filename,0,1) !== ".") {
         $puddle = json_decode(file_get_contents(DATADIR."puddles/".$filename), true);
-        $out[$puddle["id"]] = $puddle;
         if ($puddle["inkLeft"] < 0.1) {
           unlink(DATADIR."puddles/".$filename);
+        } else {
+          $out[$puddle["id"]] = $puddle;
         }
       }
     }

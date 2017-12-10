@@ -150,8 +150,10 @@ export default class PaintingScene extends Scene {
     puddleB.inkColor.blend(puddleB.inkColor, puddleA.inkColor, puddleA.inkLeft / (puddleA.inkLeft + puddleB.inkLeft));
     puddleA.inkColor.copyFrom(puddleB.inkColor);
     if (puddleA.inkLeft > puddleB.inkLeft && puddleB.inkLeft > 0) {
-      puddleA.inkLeft += 0.1
+      puddleA.inkLeft += 0.1;
       puddleB.inkLeft -= 0.1;
+      puddleA.timeToSync = 3;
+      puddleB.timeToSync = 3;
     }
   }
 
