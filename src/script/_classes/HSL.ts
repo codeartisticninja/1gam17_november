@@ -67,7 +67,7 @@ export default class HSL {
     // while (result.hue > Math.PI) result.hue += -Math.PI * 2;
     result.saturation = Math.min(Math.max(0, this.saturation), 1);
     result.lightness = Math.min(Math.max(0, this.lightness), 1);
-    if (result.lightness === Math.round(result.lightness)) result.saturation = 0;
+    if (Math.abs(result.lightness - Math.round(result.lightness)) < .1) result.saturation = 0;
     ang.recycle();
     return result;
   }
