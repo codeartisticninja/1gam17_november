@@ -65,7 +65,7 @@
         "inkColor" => Array(
           "hue" => rand(0, 6.28),
           "saturation" => rand(0, 1),
-          "lightness" => rand(0, 1)
+          "lightness" => rand(0, 2)/2
         ),
         "inkLeft" => rand(1, 8)
       ));
@@ -90,7 +90,7 @@
 
   function get_puddle($id) {
     if (is_file(DATADIR."puddles/".md5($id).".json")) {
-      return json_decode(file_get_contents(DATADIR."puddles/".$id.".json"), true);
+      return json_decode(file_get_contents(DATADIR."puddles/".md5($id).".json"), true);
     } else {
       return Array(
         "id" => $id
