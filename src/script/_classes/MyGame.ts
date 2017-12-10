@@ -9,7 +9,6 @@ import PaintingScene from "./scenes/PaintingScene";
  */
 
 export default class MyGame extends Game {
-  public scriptVars={}
   
   constructor(container:string|HTMLElement) {
     super(container, 960);

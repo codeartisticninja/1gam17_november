@@ -29,6 +29,12 @@ export default class Aye extends Actor {
     this.shape = "circle";
     this.size.set(32);
     this.offset.multiplyXY(1, 1.8);
+    if (!this.scene.actorsByType["Aye"] && this.scene.game.saveFile.get("aye")) {
+      let obj = this.scene.game.saveFile.get("aye");
+      this.position.copyFrom(obj.pos);
+      this.inkColor.copyFrom(obj.inkColor);
+      this.inkLeft = obj.inkLeft;
+    }
   }
 
   update() {
@@ -61,6 +67,7 @@ export default class Aye extends Actor {
       this.scene.camera.y = Math.min(this.scene.camera.y, this.position.y - 192);
       this.scene.camera.x = Math.max(this.scene.camera.x, this.position.x - this.scene.size.x + 256);
       this.scene.camera.y = Math.max(this.scene.camera.y, this.position.y - this.scene.size.y + 192);
+      this.animationFrame || this.scene.game.saveFile.set("aye", this.toObj());
     }
     /*if (this.animation !== this.animations["idle"]) {
       if (this.inkLeft < 1) this.inkLeft += .01;
@@ -111,22 +118,29 @@ export default class Aye extends Actor {
   sendPatch() {
     let obj: any = {
       ayes: {
-        [this.scene.collab.peer.id]: {
-          // id: this.scene.collab.peer.id,
-          target: this.target ? {
-            x: this.target ? this.target.x : this.position.x,
-            y: this.target ? this.target.y : this.position.y
-          } : null,
-          inkColor: {
-            hue: this.inkColor.hue,
-            saturation: this.inkColor.saturation,
-            lightness: this.inkColor.lightness
-          },
-          inkLeft: this.inkLeft
-        }
+        [this.scene.collab.peer.id]: this.toObj()
       }
     };
     this.scene.sendPatch(obj);
+  }
+  toObj() {
+    let obj = {
+      pos: {
+        x: this.position.x,
+        y: this.position.y
+      },
+      target: this.target ? {
+        x: this.target ? this.target.x : this.position.x,
+        y: this.target ? this.target.y : this.position.y
+      } : null,
+      inkColor: {
+        hue: this.inkColor.hue,
+        saturation: this.inkColor.saturation,
+        lightness: this.inkColor.lightness
+      },
+      inkLeft: this.inkLeft
+    }
+    return obj;
   }
 
 
