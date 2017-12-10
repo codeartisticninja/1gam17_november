@@ -148,9 +148,9 @@ export default class PaintingScene extends Scene {
   private _PuddleMeetsPuddle(puddleA: Puddle, puddleB: Puddle) {
     puddleB.inkColor.blend(puddleB.inkColor, puddleA.inkColor, puddleA.inkLeft / (puddleA.inkLeft + puddleB.inkLeft));
     puddleA.inkColor.copyFrom(puddleB.inkColor);
-    if (puddleA.inkLeft > puddleB.inkLeft) {
-      puddleA.inkLeft += puddleB.inkLeft;
-      puddleB.inkLeft = 0;
+    if (puddleA.inkLeft > puddleB.inkLeft && puddleB.inkLeft > 0) {
+      puddleA.inkLeft += 0.1
+      puddleB.inkLeft -= 0.1;
     }
   }
 
