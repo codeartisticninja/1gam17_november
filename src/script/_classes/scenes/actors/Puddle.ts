@@ -14,7 +14,7 @@ let topFrontier: number = 0;
 export default class Puddle extends Actor {
   public scene: PaintingScene;
   public inkColor: HSL = new HSL();
-  public inkLeft: number = .25;
+  public inkLeft: number = 0;
   public dna: any;
   public timeToSync: number = -1;
 

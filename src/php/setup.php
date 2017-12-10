@@ -63,14 +63,14 @@
           "y" => $row*TILESIZE + rand(256,TILESIZE)
         ),
         "inkColor" => Array(
-          "hue" => rand(0, 6.28),
+          "hue" => rand(0, 6),
           "saturation" => rand(0, 1),
           "lightness" => rand(0, 2)/2
         ),
         "inkLeft" => rand(1, 8)
       ));
     }
-    if (!$img) {
+    if (!isset($img)) {
       $img = imagecreatetruecolor(TILESIZE, TILESIZE);
       $c = imagecolorallocatealpha($img, 255,255,255, 127);
       imagefill($img, 0,0, $c);

@@ -125,12 +125,15 @@ export default class PaintingScene extends Scene {
   }
 
   private _AyeMeetsPuddle(aye: Aye, puddle: Puddle) {
-    if (aye.inkLeft < 1 && puddle.inkLeft > 0) {
+    puddle.inkColor.blend(puddle.inkColor, aye.inkColor, aye.inkLeft / (aye.inkLeft + puddle.inkLeft));
+    aye.inkColor.copyFrom(puddle.inkColor);
+    if (aye.inkLeft < 1 && puddle.inkLeft > 0 && !aye.target) {
       aye.inkLeft += .01;
       puddle.inkLeft -= .01;
       puddle.timeToSync = 3;
-      if (aye.animationFrame === 0) {
+      if (aye.animationFrame % 2) {
         aye.sendPatch();
+      } else {
         puddle.sendPatch();
       }
     }
