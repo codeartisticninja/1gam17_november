@@ -20,7 +20,7 @@ if (!window.requestAnimationFrame) {
 /**
  * BaseGameApp class
  * 
- * @date 20-nov-2017
+ * @date 10-dec-2017
  */
 
 export default class Game {
@@ -234,13 +234,13 @@ export default class Game {
         break;
     }
     if (fn) {
-      if (e instanceof TouchEvent) {
+      if ((<TouchEvent>e).changedTouches) {
         [x, y] = this._absolutePosition(this._canvas);
-        x = e.changedTouches[0].pageX - x;
-        y = e.changedTouches[0].pageY - y;
+        x = (<TouchEvent>e).changedTouches[0].pageX - x;
+        y = (<TouchEvent>e).changedTouches[0].pageY - y;
       } else {
-        x = e.offsetX;
-        y = e.offsetY;
+        x = (<MouseEvent>e).offsetX;
+        y = (<MouseEvent>e).offsetY;
       }
       fn.call(this.scene, x * scaleX, y * scaleY);
     }

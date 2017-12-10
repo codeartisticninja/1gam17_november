@@ -73,7 +73,8 @@ export default class PaintingScene extends Scene {
           aye.name = id;
           this.addActor(aye);
         }
-        ayeObj.target ? aye.goTo(ayeObj.target) : aye.stop();
+        aye.stop();
+        aye.goTo(ayeObj.target);
         aye.inkColor.copyFrom(ayeObj.inkColor);
         aye.inkLeft = ayeObj.inkLeft;
       }

@@ -101,6 +101,7 @@ export default class Aye extends Actor {
   }
 
   goTo(pos: Vector2) {
+    if (!pos) return;
     if (!this.target) this.target = Vector2.dispense();
     this.target.copyFrom(pos);
     topFrontier = Math.min(topFrontier, pos.y);
@@ -151,6 +152,7 @@ export default class Aye extends Actor {
   private _origSprite: HTMLImageElement;
   private _inkedSprite: HTMLCanvasElement;
   private _spriteCtx: CanvasRenderingContext2D;
+  private _lastInkLeft: number;
 
   private _prepSprite() {
     this._origSprite = this.sprite.img;
@@ -163,6 +165,7 @@ export default class Aye extends Actor {
 
   private _updateSprite() {
     if (!this._spriteCtx) return;
+    if (this._lastInkLeft === this.inkLeft) return;
     let g = this._spriteCtx;
     g.globalCompositeOperation = "source-over";
     this.sprite.img.width += 0;
@@ -176,6 +179,7 @@ export default class Aye extends Actor {
       g.globalAlpha = Math.random();
       g.clearRect(x + Math.random(), 2 * Math.random() + this.sprite.img.height * (1 - this.inkLeft), 2, 1);
     }
+    this._lastInkLeft = this.inkLeft;
   }
 
 }
