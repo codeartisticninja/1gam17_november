@@ -61,7 +61,9 @@ export default class Puddle extends Actor {
       { setRequestHeader: ["Content-type", "application/x-www-form-urlencoded"] },
       this.sendPatch.bind(this)
     );
-    if (this.inkLeft < 0.1) this.scene.removeActor(this);
+    if (this.inkLeft < 0.1) {
+      this.scene.removeActor(this);
+    }
   }
 
   toObj() {

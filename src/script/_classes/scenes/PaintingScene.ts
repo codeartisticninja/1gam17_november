@@ -85,15 +85,16 @@ export default class PaintingScene extends Scene {
       for (let id in patch.puddles) {
         let puddleObj = patch.puddles[id];
         let puddle = <Puddle>this.actorsByName[id];
-
-        if (!puddle) {
-          puddle = <Puddle>this.createActor((<Puddle>this.actorsByType["Puddle"][0]).dna);
-          puddle.name = id;
-          this.addActor(puddle);
+        if (puddleObj.inkLeft >= .1) {
+          if (!puddle) {
+            puddle = <Puddle>this.createActor((<Puddle>this.actorsByType["Puddle"][0]).dna);
+            puddle.name = id;
+            this.addActor(puddle);
+          }
+          puddle.position.copyFrom(puddleObj.pos);
+          puddle.inkColor.copyFrom(puddleObj.inkColor);
+          puddle.inkLeft = puddleObj.inkLeft;
         }
-        puddle.position.copyFrom(puddleObj.pos);
-        puddle.inkColor.copyFrom(puddleObj.inkColor);
-        puddle.inkLeft = puddleObj.inkLeft;
       }
     }
     if (patch.tiles) {
