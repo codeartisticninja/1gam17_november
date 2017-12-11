@@ -72,6 +72,17 @@
                  "width":256,
                  "x":375,
                  "y":435
+                }, 
+                {
+                 "height":128,
+                 "id":150,
+                 "name":"SuckBtn",
+                 "rotation":0,
+                 "type":"SuckBtn",
+                 "visible":true,
+                 "width":90,
+                 "x":90,
+                 "y":60
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -79,7 +90,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":150,
+ "nextobjectid":151,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.0.3",

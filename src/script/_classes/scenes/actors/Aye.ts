@@ -88,20 +88,6 @@ export default class Aye extends Actor {
     return super.render();
   }
 
-  click() {
-    this.suck = !this.suck;
-    this.stop();
-    if (this.inPuddle < 0) {
-      let puddle = <Puddle>this.scene.createActor((<Puddle>this.scene.actorsByType["Puddle"][0]).dna);
-      puddle.name = "puddle" + Date.now();
-      puddle.inkColor.set(0, 0, 0);
-      puddle.inkLeft = 0;
-      puddle.position.copyFrom(this.position);
-      this.scene.addActor(puddle);
-    }
-    return super.click();
-  }
-
   goTo(pos: Vector2) {
     if (!pos) return;
     if (!this.target) this.target = Vector2.dispense();

@@ -28,7 +28,7 @@ export default class Puddle extends Actor {
   update() {
     this._pulse += .2;
     this.scale.set(this.inkLeft / 8);
-    this.scale.addXY(Math.sin(this._pulse) * .02, Math.cos(this._pulse) * .02);
+    this.scale.addXY(Math.sin(this._pulse) * .01, Math.cos(this._pulse) * .01);
     super.update();
     this.order = 512 // + (this.position.y - topFrontier);
     topFrontier = Math.min(topFrontier, this.position.y);
@@ -61,6 +61,7 @@ export default class Puddle extends Actor {
       { setRequestHeader: ["Content-type", "application/x-www-form-urlencoded"] },
       this.sendPatch.bind(this)
     );
+    if (this.inkLeft < 0.1) this.scene.removeActor(this);
   }
 
   toObj() {

@@ -8,6 +8,7 @@ import Aye from "./actors/Aye";
 import Canvas from "./actors/Canvas";
 import Tile from "./actors/Tile";
 import Puddle from "./actors/Puddle";
+import SuckBtn from "./actors/SuckBtn";
 
 
 /**
@@ -21,6 +22,7 @@ export default class PaintingScene extends Scene {
   constructor(game: MyGame, map: string) {
     super(game, map);
     this.actorTypes["Aye"] = Aye;
+    this.actorTypes["SuckBtn"] = SuckBtn;
     this.actorTypes["Canvas"] = Canvas;
     this.actorTypes["Tile"] = Tile;
     this.actorTypes["Puddle"] = Puddle;
