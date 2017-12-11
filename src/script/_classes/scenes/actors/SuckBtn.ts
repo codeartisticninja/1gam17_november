@@ -30,17 +30,20 @@ export default class SuckBtn extends Actor {
   }
 
   click() {
-    this.aye.suck = !this.aye.suck;
     this.aye.stop();
-    if (this.aye.inPuddle < 0) {
-      let puddle = <Puddle>this.scene.createActor((<Puddle>this.scene.actorsByType["Puddle"][0]).dna);
-      puddle.name = "puddle" + Date.now();
-      puddle.inkColor.set(0, 0, 0);
-      puddle.inkLeft = 0;
-      puddle.position.copyFrom(this.aye.position);
-      this.scene.addActor(puddle);
-    }
-    return super.click();
+    this.scene.setAlarm(1, () => {
+      this.aye.suck = !this.aye.suck;
+      this.aye.stop();
+      if (this.aye.inPuddle < 0) {
+        let puddle = <Puddle>this.scene.createActor((<Puddle>this.scene.actorsByType["Puddle"][0]).dna);
+        puddle.name = "puddle" + Date.now();
+        puddle.inkColor.set(0, 0, 0);
+        puddle.inkLeft = 0;
+        puddle.position.copyFrom(this.aye.position);
+        this.scene.addActor(puddle);
+      }
+      return super.click();
+    });
   }
 
   /*
