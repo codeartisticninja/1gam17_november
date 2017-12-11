@@ -26,7 +26,9 @@ export default class Puddle extends Actor {
   }
 
   update() {
+    this._pulse += .2;
     this.scale.set(this.inkLeft / 8);
+    this.scale.addXY(Math.sin(this._pulse) * .02, Math.cos(this._pulse) * .02);
     super.update();
     this.order = 512 // + (this.position.y - topFrontier);
     topFrontier = Math.min(topFrontier, this.position.y);
@@ -86,6 +88,7 @@ export default class Puddle extends Actor {
   private _inkedSprite: HTMLCanvasElement;
   private _spriteCtx: CanvasRenderingContext2D;
   private _lastInkLeft: number;
+  private _pulse: number = 0;
 
   private _prepSprite() {
     this._origSprite = this.sprite.img;
