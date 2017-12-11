@@ -64,7 +64,7 @@
         ),
         "inkColor" => Array(
           "hue" => rand(0, 6),
-          "saturation" => rand(0, 2),
+          "saturation" => 1,
           "lightness" => rand(0, 2)/2
         ),
         "inkLeft" => rand(1, 8)
