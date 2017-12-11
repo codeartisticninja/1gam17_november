@@ -34,6 +34,7 @@ export default class PaintingScene extends Scene {
   reset() {
     super.reset();
     this.game.mediaChannels.music.play("./assets/music/Dewdrop Fantasy.mp3", true);
+    this.camera.subtract(this.size).multiplyXY(.5);
   }
 
 
