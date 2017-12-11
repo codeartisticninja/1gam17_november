@@ -32,7 +32,7 @@ export default class SuckBtn extends Actor {
   click() {
     this.aye.stop();
     this.scene.setAlarm(1, () => {
-      this.aye.suck = !this.aye.suck;
+      this.aye.suck = false;
       this.aye.stop();
       if (this.aye.inPuddle < 0) {
         let puddle = <Puddle>this.scene.createActor((<Puddle>this.scene.actorsByType["Puddle"][0]).dna);
