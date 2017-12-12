@@ -94,7 +94,7 @@ export default class Aye extends Actor {
     this.target.copyFrom(pos);
     topFrontier = Math.min(topFrontier, pos.y);
     clearTimeout(this._deathClock);
-    setTimeout(this.die.bind(this), 1000 * 60 * 5); // 5 minutes
+    this._deathClock = setTimeout(this.die.bind(this), 1000 * 60 * 5); // 5 minutes
   }
 
   stop() {
