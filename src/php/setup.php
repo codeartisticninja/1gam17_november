@@ -1,6 +1,6 @@
 <?php
   const DATADIR = "../_data/";
-  const TILESIZE = 1024;
+  const TILESIZE = 512;
 
   if (!is_dir(DATADIR)) {
     mkdir(DATADIR);
@@ -67,7 +67,7 @@
           "saturation" => 1,
           "lightness" => rand(0, 2)/2
         ),
-        "inkLeft" => rand(1, 8)
+        "inkLeft" => rand(1, 4)
       ));
     }
     if (!isset($img)) {

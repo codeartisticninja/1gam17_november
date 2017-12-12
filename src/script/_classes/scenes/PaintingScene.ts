@@ -40,11 +40,11 @@ export default class PaintingScene extends Scene {
 
   update() {
     if (!this.actorsByType["Tile"]) return this._prepTiles();
-    let tilesize = (<Tile>this.actorsByType["Tile"][0]).img.width || 1024;
+    let tilesize = (<Tile>this.actorsByType["Tile"][0]).img.width || 512;
     let col = Math.floor(this.camera.x / tilesize);
     let row = Math.floor(this.camera.y / tilesize);
-    for (let y = 0; y < 2; y++) {
-      for (let x = 0; x < 2; x++) {
+    for (let y = 0; y < 3; y++) {
+      for (let x = 0; x < 3; x++) {
         let tile = <Tile>this.actorsByName[`tile_${x}_${y}`];
         tile.assign(col + x, row + y);
       }
@@ -118,8 +118,8 @@ export default class PaintingScene extends Scene {
   */
 
   private _prepTiles() {
-    for (let y = 0; y < 2; y++) {
-      for (let x = 0; x < 2; x++) {
+    for (let y = 0; y < 3; y++) {
+      for (let x = 0; x < 3; x++) {
         let tile = new Tile(this, {
           type: "Tile",
           name: `tile_${x}_${y}`,
