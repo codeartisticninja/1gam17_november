@@ -15,13 +15,18 @@ export default class Collab {
   public listeners: Function[] = [];
 
   constructor(public url: string) {
+    this.init();
+  }
+
+  init() {
+    this.peers = {};
     this.peer = new Peer({ key: "j6tp8oirpyx5stt9" });
     this.peer.on("open", () => {
       this.checkIn();
     });
-    this.peer.on("disconnected", ()=>{
+    this.peer.on("disconnected", () => {
       console.log("Connection lost..", "Reconnecting..");
-      this.peer.reconnect();
+      setTimeout(this.init.bind(this), this._recon_timeout *= 2);
     });
     this.peer.on("connection", this._incomming.bind(this));
   }
@@ -101,6 +106,7 @@ export default class Collab {
   /*
     _privates
   */
+  private _recon_timeout: number = 1;
 
   private _incomming(conn: PeerJs.DataConnection) {
     this.addPeer(conn.peer, conn);
