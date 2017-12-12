@@ -149,6 +149,7 @@ export default class Aye extends Actor {
   private _origSprite: HTMLImageElement;
   private _inkedSprite: HTMLCanvasElement;
   private _spriteCtx: CanvasRenderingContext2D;
+  private _lastInkColor: string;
   private _lastInkLeft: number;
 
   private _prepSprite() {
@@ -162,7 +163,7 @@ export default class Aye extends Actor {
 
   private _updateSprite() {
     if (!this._spriteCtx) return;
-    if (this._lastInkLeft === this.inkLeft) return;
+    if (this._lastInkColor === this.inkColor.toString() && this._lastInkLeft === this.inkLeft) return;
     let g = this._spriteCtx;
     g.globalCompositeOperation = "source-over";
     this.sprite.img.width += 0;
@@ -176,6 +177,7 @@ export default class Aye extends Actor {
       g.globalAlpha = Math.random();
       g.clearRect(x + Math.random(), 2 * Math.random() + this.sprite.img.height * (1 - this.inkLeft), 2, 1);
     }
+    this._lastInkColor = this.inkColor.toString();
     this._lastInkLeft = this.inkLeft;
   }
 

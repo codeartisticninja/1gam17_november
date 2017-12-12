@@ -90,6 +90,7 @@ export default class Puddle extends Actor {
   private _origSprite: HTMLImageElement;
   private _inkedSprite: HTMLCanvasElement;
   private _spriteCtx: CanvasRenderingContext2D;
+  private _lastInkColor: string;
   private _lastInkLeft: number;
   private _pulse: number = 0;
 
@@ -104,7 +105,7 @@ export default class Puddle extends Actor {
 
   private _updateSprite() {
     if (!this._spriteCtx) return;
-    if (this._lastInkLeft === this.inkLeft) return;
+    if (this._lastInkColor === this.inkColor.toString() && this._lastInkLeft === this.inkLeft) return;
     let g = this._spriteCtx;
     g.globalCompositeOperation = "source-over";
     this.sprite.img.width += 0;
@@ -113,6 +114,7 @@ export default class Puddle extends Actor {
     g.fillStyle = this.inkColor.toString();
     g.fillRect(0, 0, this.sprite.img.width, this.sprite.img.height);
     g.globalCompositeOperation = "source-over";
+    this._lastInkColor = this.inkColor.toString();
     this._lastInkLeft = this.inkLeft;
   }
 
