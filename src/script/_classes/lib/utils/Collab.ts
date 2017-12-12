@@ -5,7 +5,7 @@ import lazyJSON from "./lazyJSON";
 /**
  * Collab class
  * 
- * @date 08-dec-2017
+ * @date 12-dec-2017
  */
 
 export default class Collab {
@@ -18,6 +18,10 @@ export default class Collab {
     this.peer = new Peer({ key: "j6tp8oirpyx5stt9" });
     this.peer.on("open", () => {
       this.checkIn();
+    });
+    this.peer.on("disconnected", ()=>{
+      console.log("Connection lost..", "Reconnecting..");
+      this.peer.reconnect();
     });
     this.peer.on("connection", this._incomming.bind(this));
   }
