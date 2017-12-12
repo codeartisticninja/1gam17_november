@@ -19,6 +19,7 @@ export default class Aye extends Actor {
   public suck: boolean = true;
   public inPuddle: number = 0;
   public dna: any;
+  public timeToDie: number = 1024;
 
   constructor(scene: PaintingScene, obj: any) {
     super(scene, obj);
@@ -75,6 +76,13 @@ export default class Aye extends Actor {
     } */
     this.order = 1024 + (this.position.y - topFrontier);
     this.inPuddle--;
+    if (!this.timeToDie--) {
+      if (this.name === "Aye") {
+        location.assign("/");
+      } else {
+        this.scene.removeActor(this);
+      }
+    }
   }
 
   render() {
@@ -93,6 +101,7 @@ export default class Aye extends Actor {
     if (!this.target) this.target = Vector2.dispense();
     this.target.copyFrom(pos);
     topFrontier = Math.min(topFrontier, pos.y);
+    this.timeToDie = this.scene.game.frameRate * 60 * 5; // 5 minutes
   }
 
   stop() {
