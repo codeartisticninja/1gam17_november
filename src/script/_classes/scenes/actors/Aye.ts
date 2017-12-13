@@ -93,8 +93,6 @@ export default class Aye extends Actor {
     if (!this.target) this.target = Vector2.dispense();
     this.target.copyFrom(pos);
     topFrontier = Math.min(topFrontier, pos.y);
-    clearTimeout(this._deathClock);
-    this._deathClock = setTimeout(this.die.bind(this), 1000 * 60 * 5); // 5 minutes
   }
 
   stop() {
@@ -106,6 +104,11 @@ export default class Aye extends Actor {
     }
   }
 
+  wakeUp() {
+    clearTimeout(this._deathClock);
+    this._deathClock = setTimeout(this.die.bind(this), 1000 * 60 * 5); // 5 minutes
+  }
+
   sendPatch() {
     let obj: any = {
       ayes: {
@@ -113,6 +116,7 @@ export default class Aye extends Actor {
       }
     };
     this.scene.sendPatch(obj);
+    this.wakeUp();
   }
   toObj() {
     let obj = {
