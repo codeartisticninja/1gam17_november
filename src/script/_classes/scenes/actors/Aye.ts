@@ -116,7 +116,6 @@ export default class Aye extends Actor {
       }
     };
     this.scene.sendPatch(obj);
-    this.wakeUp();
   }
   toObj() {
     let obj = {

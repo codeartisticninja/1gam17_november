@@ -80,6 +80,7 @@ export default class PaintingScene extends Scene {
         aye.goTo(ayeObj.target);
         aye.inkColor.copyFrom(ayeObj.inkColor);
         aye.inkLeft = ayeObj.inkLeft;
+        aye.wakeUp();        
       }
     }
     if (patch.puddles) {
