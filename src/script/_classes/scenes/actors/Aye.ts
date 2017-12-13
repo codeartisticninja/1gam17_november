@@ -35,6 +35,7 @@ export default class Aye extends Actor {
       this.inkColor.copyFrom(obj.inkColor);
       this.inkLeft = obj.inkLeft;
     }
+    this.wakeUp();
     this.goTo(this.position);
   }
 
