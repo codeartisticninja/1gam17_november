@@ -140,7 +140,7 @@ export default class Aye extends Actor {
 
   die() {
     if (this.name === "Aye") {
-      location.assign("http://codeartistic.ninja/");
+      location.assign("./map.phtml");
     } else {
       this.scene.removeActor(this);
     }

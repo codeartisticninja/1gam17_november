@@ -1,0 +1,25 @@
+include _phug.pug
++php.
+  $mincol = 0;
+  $minrow = 0;
+  $maxcol = 0;
+  $maxrow = 0;
+
+  $tiles = scandir("_data/tiles");
+  foreach ($tiles as $tile) {
+    if (substr($tile, -4) === ".png") {
+      $parts = explode("_", $tile);
+      $col = intval($parts[0]);
+      $row = intval($parts[1]);
+      $mincol = min($mincol, $col);
+      $minrow = min($minrow, $row);
+      $maxcol = max($maxcol, $col);
+      $maxrow = max($maxrow, $row);
+    }
+  }
+include _layout
+  table
+    +for('$row=$minrow; $row<=$maxrow; $row++')
+      tr
+        +for('$col=$mincol; $col<=$maxcol; $col++')
+          td: img(alt!=xq('$col.",".$row'), src!=xq('"_data/tiles/".$col."_".$row.".png"'), width=256)
