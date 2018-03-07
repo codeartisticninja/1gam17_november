@@ -4,10 +4,10 @@ import lazyJSON from "./lazyJSON";
 /**
  * web module
  * 
- * @date 28-nov-2017
+ * @date 07-mar-2018
  */
-
 module web {
+  /** Do a HTTP GET request. */
   export function get(url: string, options?: any, cb?: Function) {
     let req = new XMLHttpRequest();
     req.open("GET", url, true);
@@ -24,6 +24,7 @@ module web {
     return req;
   }
 
+  /** Do a HTTP POST request. */
   export function post(url: string, data: string, options?: any, cb?: Function) {
     let req = new XMLHttpRequest();
     req.open("POST", url, true);
@@ -40,15 +41,18 @@ module web {
     return req;
   }
 
+  /** Get basename of path. */
   export function basename(path: string) {
     return path.substr(path.lastIndexOf("/") + 1);
   }
+  /** Get directory name of path. */
   export function dirname(path: string) {
     if (path.substr(-3) === "/..") return path + "/..";
     if (path.indexOf("/") < 0) path = "./" + path;
     return path.substr(0, path.lastIndexOf("/") || 1);
   }
 
+  /** Parse a URL into seperate components. */
   export function parseUrl(url: string) {
     let out: { [index: string]: string } = {};
     if (url.indexOf("#") >= 0) {
@@ -101,6 +105,7 @@ module web {
     return out;
   }
 
+  /** Serialize URL object to string. */
   export function stringifyUrl(url: { [index: string]: string }) {
     let str = "";
     if (url.scheme) str += url.scheme;
@@ -119,6 +124,7 @@ module web {
     return str;
   }
 
+  /** Resolve relative URL to absolute URL. */
   export function resolveUrl(abs: string, rel: string) {
     let absUrl = parseUrl(abs);
     let relUrl = parseUrl(rel);

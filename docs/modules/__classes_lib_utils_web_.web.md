@@ -6,7 +6,7 @@
 
 
 web module
-*__date__*: 28-nov-2017
+*__date__*: 07-mar-2018
 
 
 ## Index
@@ -34,6 +34,9 @@ web module
 
 
 
+
+
+Get basename of path.
 
 
 **Parameters:**
@@ -65,6 +68,9 @@ ___
 
 
 
+Get directory name of path.
+
+
 **Parameters:**
 
 | Param | Type | Description |
@@ -92,6 +98,9 @@ ___
 
 
 
+
+
+Do a HTTP GET request.
 
 
 **Parameters:**
@@ -125,6 +134,9 @@ ___
 
 
 
+Parse a URL into seperate components.
+
+
 **Parameters:**
 
 | Param | Type | Description |
@@ -152,6 +164,9 @@ ___
 
 
 
+
+
+Do a HTTP POST request.
 
 
 **Parameters:**
@@ -186,6 +201,9 @@ ___
 
 
 
+Resolve relative URL to absolute URL.
+
+
 **Parameters:**
 
 | Param | Type | Description |
@@ -214,6 +232,9 @@ ___
 
 
 
+
+
+Serialize URL object to string.
 
 
 **Parameters:**
