@@ -25,6 +25,7 @@
 
 **●  pool**:  *[HSL](../classes/__classes_hsl_.hsl.md)[]*  =  []
 
+*Defined in [_classes/HSL.ts:7](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L7)*
 
 
 

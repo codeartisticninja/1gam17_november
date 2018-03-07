@@ -40,6 +40,7 @@
 ### ⊕ **new StorageFile**(uri: *`string`*, data?: *`any`*): [StorageFile](__classes_lib_utils_storagefile_.storagefile.md)
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L16)*
 
 
 
@@ -66,6 +67,7 @@
 
 **●  data**:  *`any`* 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L18)*
 
 
 
@@ -79,6 +81,7 @@ ___
 
 **●  storage**:  *`Storage`*  =  localStorage
 
+*Defined in [_classes/lib/utils/StorageFile.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L14)*
 
 
 
@@ -92,6 +95,7 @@ ___
 
 **●  url**:  *`string`* 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L13)*
 
 
 
@@ -109,6 +113,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:109](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L109)*
 
 
 
@@ -130,6 +135,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:50](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L50)*
 
 
 
@@ -159,6 +165,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:55](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L55)*
 
 
 
@@ -188,6 +195,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:85](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L85)*
 
 
 
@@ -209,6 +217,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L31)*
 
 
 
@@ -230,6 +239,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L79)*
 
 
 
@@ -260,6 +270,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:105](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L105)*
 
 
 
@@ -289,6 +300,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L42)*
 
 
 
@@ -318,6 +330,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/StorageFile.ts:66](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/StorageFile.ts#L66)*
 
 
 

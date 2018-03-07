@@ -45,6 +45,7 @@ Collab class
 ### ⊕ **new Collab**(url: *`string`*): [Collab](__classes_lib_utils_collab_.collab.md)
 
 
+*Defined in [_classes/lib/utils/Collab.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L15)*
 
 
 
@@ -70,6 +71,7 @@ Collab class
 
 **●  listeners**:  *`Function`[]*  =  []
 
+*Defined in [_classes/lib/utils/Collab.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L15)*
 
 
 
@@ -83,6 +85,7 @@ ___
 
 **●  peer**:  *`Peer`*  =  <PeerJs.Peer>{}
 
+*Defined in [_classes/lib/utils/Collab.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L12)*
 
 
 
@@ -96,6 +99,7 @@ ___
 
 **●  peers**:  *`object`* 
 
+*Defined in [_classes/lib/utils/Collab.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L13)*
 
 
 #### Type declaration
@@ -116,6 +120,7 @@ ___
 
 **●  state**:  *`any`* 
 
+*Defined in [_classes/lib/utils/Collab.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L14)*
 
 
 
@@ -129,6 +134,7 @@ ___
 
 **●  url**:  *`string`* 
 
+*Defined in [_classes/lib/utils/Collab.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L17)*
 
 
 
@@ -146,6 +152,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:57](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L57)*
 
 
 
@@ -176,6 +183,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:86](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L86)*
 
 
 
@@ -205,6 +213,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L34)*
 
 
 
@@ -226,6 +235,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L21)*
 
 
 
@@ -247,6 +257,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:102](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L102)*
 
 
 
@@ -276,6 +287,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L79)*
 
 
 
@@ -305,6 +317,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Collab.ts:94](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Collab.ts#L94)*
 
 
 

@@ -43,6 +43,7 @@ Script class
 ### ⊕ **new Script**(url?: *`undefined`⎮`string`*, variables?: *`any`*): [Script](__classes_lib_utils_script_.script.md)
 
 
+*Defined in [_classes/lib/utils/Script.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L14)*
 
 
 
@@ -69,6 +70,7 @@ Script class
 
 **●  commands**:  *`object`* 
 
+*Defined in [_classes/lib/utils/Script.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L13)*
 
 
 #### Type declaration
@@ -89,6 +91,7 @@ ___
 
 **●  current**:  *`Element`⎮`null`*  =  null
 
+*Defined in [_classes/lib/utils/Script.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L14)*
 
 
 
@@ -102,6 +105,7 @@ ___
 
 **●  storyTree**:  *`XMLDocument`*  =  <XMLDocument>{}
 
+*Defined in [_classes/lib/utils/Script.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L12)*
 
 
 
@@ -115,6 +119,7 @@ ___
 
 **●  url**:  *`string`*  = ""
 
+*Defined in [_classes/lib/utils/Script.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L11)*
 
 
 
@@ -128,6 +133,7 @@ ___
 
 **●  variables**:  *`any`* 
 
+*Defined in [_classes/lib/utils/Script.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L17)*
 
 
 
@@ -145,6 +151,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Script.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L37)*
 
 
 
@@ -174,6 +181,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Script.ts:71](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L71)*
 
 
 
@@ -204,6 +212,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Script.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L67)*
 
 
 
@@ -234,6 +243,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Script.ts:62](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L62)*
 
 
 
@@ -263,6 +273,7 @@ ___
 
 
 
+*Defined in [_classes/lib/utils/Script.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Script.ts#L28)*
 
 
 

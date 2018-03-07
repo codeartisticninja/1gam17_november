@@ -85,6 +85,7 @@ Scene class
 ### ⊕ **new Scene**(game: *[Game](__classes_lib_game_.game.md)*, mapUrl?: *`undefined`⎮`string`*): [Scene](__classes_lib_scenes_scene_.scene.md)
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L36)*
 
 
 
@@ -111,6 +112,7 @@ Scene class
 
 **●  actorTypes**:  *`object`* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L21)*
 
 
 #### Type declaration
@@ -131,6 +133,7 @@ ___
 
 **●  actors**:  *[Actor](__classes_lib_scenes_actors_actor_.actor.md)[]*  =  []
 
+*Defined in [_classes/lib/scenes/Scene.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L22)*
 
 
 
@@ -144,6 +147,7 @@ ___
 
 **●  actorsByName**:  *`object`* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L24)*
 
 
 #### Type declaration
@@ -164,6 +168,7 @@ ___
 
 **●  actorsByType**:  *`object`* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L23)*
 
 
 #### Type declaration
@@ -184,6 +189,7 @@ ___
 
 **●  backgroundColor**:  *`string`*  = ""
 
+*Defined in [_classes/lib/scenes/Scene.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L36)*
 
 
 
@@ -197,6 +203,7 @@ ___
 
 **●  boundCamera**:  *`boolean`*  = true
 
+*Defined in [_classes/lib/scenes/Scene.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L31)*
 
 
 
@@ -210,6 +217,7 @@ ___
 
 **●  camera**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
+*Defined in [_classes/lib/scenes/Scene.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L29)*
 
 
 
@@ -223,6 +231,7 @@ ___
 
 **●  cameraRotation**:  *[Angle](__classes_lib_utils_angle_.angle.md)*  =  new Angle()
 
+*Defined in [_classes/lib/scenes/Scene.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L30)*
 
 
 
@@ -236,6 +245,7 @@ ___
 
 **●  game**:  *[Game](__classes_lib_game_.game.md)* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L38)*
 
 
 
@@ -249,6 +259,7 @@ ___
 
 **●  gravity**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
+*Defined in [_classes/lib/scenes/Scene.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L28)*
 
 
 
@@ -262,6 +273,7 @@ ___
 
 **●  mapData**:  *`any`* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L35)*
 
 
 
@@ -275,6 +287,7 @@ ___
 
 **●  mapUrl**:  *`undefined`⎮`string`* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L38)*
 
 
 
@@ -288,6 +301,7 @@ ___
 
 **●  mouse**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
+*Defined in [_classes/lib/scenes/Scene.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L32)*
 
 
 
@@ -301,6 +315,7 @@ ___
 
 **●  mouseJustPressed**:  *`number`*  = 0
 
+*Defined in [_classes/lib/scenes/Scene.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L34)*
 
 
 
@@ -314,6 +329,7 @@ ___
 
 **●  mousePressed**:  *`boolean`*  = false
 
+*Defined in [_classes/lib/scenes/Scene.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L33)*
 
 
 
@@ -327,6 +343,7 @@ ___
 
 **●  size**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
+*Defined in [_classes/lib/scenes/Scene.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L27)*
 
 
 
@@ -340,6 +357,7 @@ ___
 
 **●  spritesByFirstGid**:  *[Sprite](__classes_lib_scenes_actors_sprite_.sprite.md)[]*  =  []
 
+*Defined in [_classes/lib/scenes/Scene.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L25)*
 
 
 
@@ -353,6 +371,7 @@ ___
 
 **●  spritesByName**:  *`object`* 
 
+*Defined in [_classes/lib/scenes/Scene.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L26)*
 
 
 #### Type declaration
@@ -377,6 +396,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:163](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L163)*
 
 
 
@@ -407,6 +427,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:219](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L219)*
 
 
 
@@ -436,6 +457,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:205](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L205)*
 
 
 
@@ -466,6 +488,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:191](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L191)*
 
 
 
@@ -496,6 +519,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:266](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L266)*
 
 
 
@@ -525,6 +549,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:253](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L253)*
 
 
 
@@ -546,6 +571,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:153](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L153)*
 
 
 
@@ -575,6 +601,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:58](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L58)*
 
 
 
@@ -596,6 +623,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:60](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L60)*
 
 
 
@@ -617,6 +645,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:230](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L230)*
 
 
 
@@ -646,6 +675,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:236](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L236)*
 
 
 
@@ -675,6 +705,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L63)*
 
 
 
@@ -696,6 +727,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:273](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L273)*
 
 
 
@@ -726,6 +758,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:286](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L286)*
 
 
 
@@ -756,6 +789,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:290](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L290)*
 
 
 
@@ -786,6 +820,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:240](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L240)*
 
 
 
@@ -818,6 +853,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:177](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L177)*
 
 
 
@@ -848,6 +884,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:115](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L115)*
 
 
 
@@ -869,6 +906,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L42)*
 
 
 
@@ -890,6 +928,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:257](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L257)*
 
 
 
@@ -920,6 +959,7 @@ ___
 
 
 
+*Defined in [_classes/lib/scenes/Scene.ts:86](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L86)*
 
 
 
