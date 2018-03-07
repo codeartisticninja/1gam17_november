@@ -1,4 +1,4 @@
-"use strict";
+/// <reference types="PeerJs" />
 import web from "./web";
 import lazyJSON from "./lazyJSON";
 
