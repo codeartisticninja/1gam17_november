@@ -6,7 +6,7 @@
     "deploy": "jake deploy",
     "prepublish": "jake",
     "start": "statify -d ./build/",
-    "watch": "typedoc --module commonjs --excludePrivate --out docs --theme markdown && jake watch"
+    "watch": "typedoc --module commonjs --excludePrivate --out docs --theme markdown --mdHideSources && jake watch"
   },
   "devDependencies": {
     "@types/peerjs": "0.0.29",

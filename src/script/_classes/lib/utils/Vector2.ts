@@ -1,13 +1,10 @@
-"use strict";
+var pool: Vector2[] = [];
 
 /**
  * Class for storing and computing 2D vectors
  * 
  * @date 07-mar-2018
  */
-
-var pool: Vector2[] = [];
-
 export default class Vector2 {
 
   /**

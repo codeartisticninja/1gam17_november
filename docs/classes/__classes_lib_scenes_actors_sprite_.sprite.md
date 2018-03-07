@@ -43,7 +43,6 @@ Sprite class
 ### ⊕ **new Sprite**(obj?: *`any`*, mapFolder?: *`string`*): [Sprite](__classes_lib_scenes_actors_sprite_.sprite.md)
 
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L20)*
 
 
 
@@ -70,7 +69,6 @@ Sprite class
 
 **●  columns**:  *`number`*  = 0
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L18)*
 
 
 
@@ -84,7 +82,6 @@ ___
 
 **●  ctx**:  *`CanvasRenderingContext2D`* 
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L12)*
 
 
 
@@ -98,7 +95,6 @@ ___
 
 **●  firstGid**:  *`number`*  =  -1
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L16)*
 
 
 
@@ -112,7 +108,6 @@ ___
 
 **●  frames**:  *`number`*  = 0
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L17)*
 
 
 
@@ -126,7 +121,6 @@ ___
 
 **●  img**:  *`HTMLImageElement`* 
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L14)*
 
 
 
@@ -140,7 +134,6 @@ ___
 
 **●  margin**:  *`number`*  = 0
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L19)*
 
 
 
@@ -154,7 +147,6 @@ ___
 
 **●  name**:  *`string`*  = "_"
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L13)*
 
 
 
@@ -168,7 +160,6 @@ ___
 
 **●  size**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)* 
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L15)*
 
 
 
@@ -182,7 +173,6 @@ ___
 
 **●  spacing**:  *`number`*  = 0
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L20)*
 
 
 
@@ -200,7 +190,6 @@ ___
 
 
 
-*Defined in [_classes/lib/scenes/actors/Sprite.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/scenes/actors/Sprite.ts#L39)*
 
 
 

@@ -17,7 +17,6 @@ Sound class
 
 **●  duration**:  *`undefined`⎮`number`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Sound.ts#L12)*
 
 
 
@@ -31,7 +30,6 @@ ___
 
 **●  start**:  *`number`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Sound.ts#L11)*
 
 
 

@@ -4,6 +4,11 @@
 
 # Class: Vector2
 
+
+Class for storing and computing 2D vectors
+*__date__*: 07-mar-2018
+
+
 ## Index
 
 ### Constructors
@@ -49,7 +54,6 @@
 ### ⊕ **new Vector2**(x?: *`number`*, y?: *`number`*): [Vector2](__classes_lib_utils_vector2_.vector2.md)
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L26)*
 
 
 
@@ -76,7 +80,6 @@
 
 **●  x**:  *`number`* 
 
-*Defined in [_classes/lib/utils/Vector2.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L28)*
 
 
 
@@ -90,7 +93,6 @@ ___
 
 **●  y**:  *`number`* 
 
-*Defined in [_classes/lib/utils/Vector2.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L28)*
 
 
 
@@ -107,7 +109,6 @@ ___
 
 getangle(): `number`setangle(ang: *`number`*): `void`
 
-*Defined in [_classes/lib/utils/Vector2.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L31)*
 
 
 
@@ -115,7 +116,6 @@ getangle(): `number`setangle(ang: *`number`*): `void`
 
 **Returns:** `number`
 
-*Defined in [_classes/lib/utils/Vector2.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L35)*
 
 
 
@@ -142,7 +142,6 @@ ___
 
 getmagnitude(): `number`setmagnitude(mag: *`number`*): `void`
 
-*Defined in [_classes/lib/utils/Vector2.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L41)*
 
 
 
@@ -150,7 +149,6 @@ getmagnitude(): `number`setmagnitude(mag: *`number`*): `void`
 
 **Returns:** `number`
 
-*Defined in [_classes/lib/utils/Vector2.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L44)*
 
 
 
@@ -180,7 +178,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:69](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L69)*
 
 
 
@@ -211,7 +208,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L63)*
 
 
 
@@ -243,7 +239,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:55](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L55)*
 
 
 
@@ -273,7 +268,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:59](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L59)*
 
 
 
@@ -303,7 +297,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:87](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L87)*
 
 
 
@@ -334,7 +327,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:81](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L81)*
 
 
 
@@ -366,7 +358,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:91](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L91)*
 
 
 
@@ -396,7 +387,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:102](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L102)*
 
 
 
@@ -426,7 +416,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L23)*
 
 
 
@@ -453,7 +442,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L49)*
 
 
 
@@ -484,7 +472,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:77](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L77)*
 
 
 
@@ -515,7 +502,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:73](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L73)*
 
 
 
@@ -547,7 +533,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Vector2.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/6562fe6/src/script/_classes/lib/utils/Vector2.ts#L17)*
 
 
 
