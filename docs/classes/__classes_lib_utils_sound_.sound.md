@@ -42,7 +42,6 @@
 ### ⊕ **new Sound**(src: *`string`*, cb?: *`Function`*): [Sound](__classes_lib_utils_sound_.sound.md)
 
 
-*Defined in [_classes/lib/utils/Sound.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L25)*
 
 
 
@@ -69,7 +68,6 @@
 
 **●  buffer**:  *`AudioBuffer`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L23)*
 
 
 
@@ -83,7 +81,6 @@ ___
 
 **●  file**:  *`string`*  = ""
 
-*Defined in [_classes/lib/utils/Sound.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L21)*
 
 
 
@@ -97,7 +94,6 @@ ___
 
 **●  gainNode**:  *`GainNode`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L19)*
 
 
 
@@ -111,7 +107,6 @@ ___
 
 **●  mainNode**:  *`AudioNode`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L20)*
 
 
 
@@ -125,7 +120,6 @@ ___
 
 **●  marks**:  *`object`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L24)*
 
 
 #### Type declaration
@@ -146,7 +140,6 @@ ___
 
 **●  oneInstance**:  *`boolean`*  = false
 
-*Defined in [_classes/lib/utils/Sound.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L25)*
 
 
 
@@ -160,7 +153,6 @@ ___
 
 **●  source**:  *`AudioBufferSourceNode`⎮`null`*  =  null
 
-*Defined in [_classes/lib/utils/Sound.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L22)*
 
 
 
@@ -174,7 +166,6 @@ ___
 
 **●  ctx**:  *`AudioContext`* 
 
-*Defined in [_classes/lib/utils/Sound.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L18)*
 
 
 
@@ -188,7 +179,6 @@ ___
 
 **●  enabled**:  *`boolean`*  = true
 
-*Defined in [_classes/lib/utils/Sound.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L16)*
 
 
 
@@ -202,7 +192,6 @@ ___
 
 **●  volume**:  *`number`*  = 1
 
-*Defined in [_classes/lib/utils/Sound.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L17)*
 
 
 
@@ -220,7 +209,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Sound.ts:45](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L45)*
 
 
 
@@ -251,7 +239,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Sound.ts:57](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L57)*
 
 
 
@@ -282,7 +269,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Sound.ts:88](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L88)*
 
 
 
@@ -314,7 +300,6 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Sound.ts:77](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Sound.ts#L77)*
 
 
 

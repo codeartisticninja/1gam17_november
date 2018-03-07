@@ -94,9 +94,6 @@ Scenery class
 ### ⊕ **new Scenery**(scene: *[Scene](__classes_lib_scenes_scene_.scene.md)*, obj: *`any`*): [Scenery](__classes_lib_scenes_actors_scenery_.scenery.md)
 
 
-*Overrides [Actor](__classes_lib_scenes_actors_actor_.actor.md).[constructor](__classes_lib_scenes_actors_actor_.actor.md#constructor)*
-
-*Defined in [_classes/lib/scenes/actors/Scenery.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Scenery.ts#L12)*
 
 
 
@@ -123,9 +120,6 @@ Scenery class
 
 **●  angularFriction**:  *[Angle](__classes_lib_utils_angle_.angle.md)*  =  new Angle()
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[angularFriction](__classes_lib_scenes_actors_actor_.actor.md#angularfriction)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L42)*
 
 
 
@@ -139,9 +133,6 @@ ___
 
 **●  angularMomentum**:  *`number`*  = 1
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[angularMomentum](__classes_lib_scenes_actors_actor_.actor.md#angularmomentum)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L41)*
 
 
 
@@ -155,9 +146,6 @@ ___
 
 **●  angularVelocity**:  *[Angle](__classes_lib_utils_angle_.angle.md)*  =  new Angle()
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[angularVelocity](__classes_lib_scenes_actors_actor_.actor.md#angularvelocity)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L40)*
 
 
 
@@ -171,9 +159,6 @@ ___
 
 **●  animation**:  *[Animation](../interfaces/__classes_lib_scenes_actors_actor_.animation.md)* 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[animation](__classes_lib_scenes_actors_actor_.actor.md#animation)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:45](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L45)*
 
 
 
@@ -187,9 +172,6 @@ ___
 
 **●  animationFrame**:  *`number`*  = 0
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[animationFrame](__classes_lib_scenes_actors_actor_.actor.md#animationframe)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:46](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L46)*
 
 
 
@@ -203,9 +185,6 @@ ___
 
 **●  animations**:  *`object`* 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[animations](__classes_lib_scenes_actors_actor_.actor.md#animations)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L44)*
 
 
 #### Type declaration
@@ -226,9 +205,6 @@ ___
 
 **●  frame**:  *`number`*  =  -1
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[frame](__classes_lib_scenes_actors_actor_.actor.md#frame)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L24)*
 
 
 
@@ -242,9 +218,6 @@ ___
 
 **●  friction**:  *`number`*  = 0
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[friction](__classes_lib_scenes_actors_actor_.actor.md#friction)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L39)*
 
 
 
@@ -258,9 +231,6 @@ ___
 
 **●  gravity**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)* 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[gravity](__classes_lib_scenes_actors_actor_.actor.md#gravity)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L37)*
 
 
 
@@ -274,7 +244,6 @@ ___
 
 **●  img**:  *`HTMLImageElement`*  =  new Image()
 
-*Defined in [_classes/lib/scenes/actors/Scenery.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Scenery.ts#L12)*
 
 
 
@@ -288,9 +257,6 @@ ___
 
 **●  momentum**:  *`number`*  = 1
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[momentum](__classes_lib_scenes_actors_actor_.actor.md#momentum)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L38)*
 
 
 
@@ -304,9 +270,6 @@ ___
 
 **●  name**:  *`string`*  = "_"
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[name](__classes_lib_scenes_actors_actor_.actor.md#name)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L21)*
 
 
 
@@ -320,9 +283,6 @@ ___
 
 **●  nextAnimation**:  *[Animation](../interfaces/__classes_lib_scenes_actors_actor_.animation.md)* 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[nextAnimation](__classes_lib_scenes_actors_actor_.actor.md#nextanimation)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:47](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L47)*
 
 
 
@@ -336,9 +296,6 @@ ___
 
 **●  offset**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[offset](__classes_lib_scenes_actors_actor_.actor.md#offset)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L27)*
 
 
 
@@ -352,9 +309,6 @@ ___
 
 **●  opacity**:  *`number`*  = 1
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[opacity](__classes_lib_scenes_actors_actor_.actor.md#opacity)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L31)*
 
 
 
@@ -368,9 +322,6 @@ ___
 
 **●  order**:  *`number`*  = 0
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[order](__classes_lib_scenes_actors_actor_.actor.md#order)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L33)*
 
 
 
@@ -384,9 +335,6 @@ ___
 
 **●  parallax**:  *`number`*  = 1
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[parallax](__classes_lib_scenes_actors_actor_.actor.md#parallax)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L32)*
 
 
 
@@ -400,9 +348,6 @@ ___
 
 **●  position**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[position](__classes_lib_scenes_actors_actor_.actor.md#position)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L25)*
 
 
 
@@ -416,9 +361,6 @@ ___
 
 **●  rotation**:  *[Angle](__classes_lib_utils_angle_.angle.md)*  =  new Angle()
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[rotation](__classes_lib_scenes_actors_actor_.actor.md#rotation)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L30)*
 
 
 
@@ -432,9 +374,6 @@ ___
 
 **●  scale**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2(1)
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[scale](__classes_lib_scenes_actors_actor_.actor.md#scale)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L26)*
 
 
 
@@ -448,9 +387,6 @@ ___
 
 **●  scene**:  *[Scene](__classes_lib_scenes_scene_.scene.md)* 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[scene](__classes_lib_scenes_actors_actor_.actor.md#scene)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L49)*
 
 
 
@@ -464,9 +400,6 @@ ___
 
 **●  shape**:  *`string`*  = "aabb"
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[shape](__classes_lib_scenes_actors_actor_.actor.md#shape)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L29)*
 
 
 
@@ -480,9 +413,6 @@ ___
 
 **●  size**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2(32)
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[size](__classes_lib_scenes_actors_actor_.actor.md#size)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L28)*
 
 
 
@@ -496,9 +426,6 @@ ___
 
 **●  sprite**:  *[Sprite](__classes_lib_scenes_actors_sprite_.sprite.md)* 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[sprite](__classes_lib_scenes_actors_actor_.actor.md#sprite)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L23)*
 
 
 
@@ -512,9 +439,6 @@ ___
 
 **●  type**:  *`string`*  = "Actor"
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[type](__classes_lib_scenes_actors_actor_.actor.md#type)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L22)*
 
 
 
@@ -528,9 +452,6 @@ ___
 
 **●  velocity**:  *[Vector2](__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[velocity](__classes_lib_scenes_actors_actor_.actor.md#velocity)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L36)*
 
 
 
@@ -544,9 +465,6 @@ ___
 
 **●  visible**:  *`boolean`*  = true
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[visible](__classes_lib_scenes_actors_actor_.actor.md#visible)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L34)*
 
 
 
@@ -563,9 +481,6 @@ ___
 
 getbottom(): `number`
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[bottom](__classes_lib_scenes_actors_actor_.actor.md#bottom)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:81](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L81)*
 
 
 
@@ -584,9 +499,6 @@ ___
 
 getcircumference(): `number`
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[circumference](__classes_lib_scenes_actors_actor_.actor.md#circumference)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:87](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L87)*
 
 
 
@@ -605,9 +517,6 @@ ___
 
 getleft(): `number`
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[left](__classes_lib_scenes_actors_actor_.actor.md#left)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:72](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L72)*
 
 
 
@@ -626,9 +535,6 @@ ___
 
 getradius(): `number`
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[radius](__classes_lib_scenes_actors_actor_.actor.md#radius)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:84](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L84)*
 
 
 
@@ -647,9 +553,6 @@ ___
 
 getright(): `number`
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[right](__classes_lib_scenes_actors_actor_.actor.md#right)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:78](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L78)*
 
 
 
@@ -668,9 +571,6 @@ ___
 
 gettop(): `number`
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[top](__classes_lib_scenes_actors_actor_.actor.md#top)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:75](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L75)*
 
 
 
@@ -692,9 +592,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[addAnimation](__classes_lib_scenes_actors_actor_.actor.md#addanimation)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:235](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L235)*
 
 
 
@@ -726,9 +623,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[click](__classes_lib_scenes_actors_actor_.actor.md#click)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:256](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L256)*
 
 
 
@@ -750,9 +644,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[overlapsWith](__classes_lib_scenes_actors_actor_.actor.md#overlapswith)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:186](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L186)*
 
 
 
@@ -782,9 +673,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[overlapsWithPoint](__classes_lib_scenes_actors_actor_.actor.md#overlapswithpoint)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:175](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L175)*
 
 
 
@@ -814,9 +702,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[playAnimation](__classes_lib_scenes_actors_actor_.actor.md#playanimation)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:242](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L242)*
 
 
 
@@ -847,9 +732,6 @@ ___
 
 
 
-*Overrides [Actor](__classes_lib_scenes_actors_actor_.actor.md).[render](__classes_lib_scenes_actors_actor_.actor.md#render)*
-
-*Defined in [_classes/lib/scenes/actors/Scenery.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Scenery.ts#L30)*
 
 
 
@@ -871,9 +753,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[renderDebug](__classes_lib_scenes_actors_actor_.actor.md#renderdebug)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:142](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L142)*
 
 
 
@@ -895,9 +774,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[setAnchor](__classes_lib_scenes_actors_actor_.actor.md#setanchor)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:229](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L229)*
 
 
 
@@ -928,9 +804,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[snapToEdge](__classes_lib_scenes_actors_actor_.actor.md#snaptoedge)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:199](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L199)*
 
 
 
@@ -961,9 +834,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[stopAnimation](__classes_lib_scenes_actors_actor_.actor.md#stopanimation)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:252](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L252)*
 
 
 
@@ -985,9 +855,6 @@ ___
 
 
 
-*Inherited from [Actor](__classes_lib_scenes_actors_actor_.actor.md).[update](__classes_lib_scenes_actors_actor_.actor.md#update)*
-
-*Defined in [_classes/lib/scenes/actors/Actor.ts:91](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/actors/Actor.ts#L91)*
 
 
 

@@ -25,7 +25,6 @@
 
 **●  cache**:  *`any`* 
 
-*Defined in [_classes/scenes/actors/Tile.ts:5](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/actors/Tile.ts#L5)*
 
 
 

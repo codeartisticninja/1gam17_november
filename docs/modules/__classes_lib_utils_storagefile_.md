@@ -25,7 +25,6 @@
 
 **●  cache**:  *`object`* 
 
-*Defined in [_classes/lib/utils/StorageFile.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/StorageFile.ts#L10)*
 
 
 

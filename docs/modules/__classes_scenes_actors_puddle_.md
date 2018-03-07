@@ -25,7 +25,6 @@
 
 **●  topFrontier**:  *`number`*  = 0
 
-*Defined in [_classes/scenes/actors/Puddle.ts:8](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/actors/Puddle.ts#L8)*
 
 
 
