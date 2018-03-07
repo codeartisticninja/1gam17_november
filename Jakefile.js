@@ -266,7 +266,7 @@ namespace("js", function () {
             jake.mkdirP(path.dirname(outFile));
             fs.writeFileSync(outFile, output);
             if (--filesLeft <= 0) {
-              jake.exec("typedoc --module commonjs --excludePrivate --out docs --theme markdown --mdHideSources", complete);
+              jake.exec("typedoc --module commonjs --excludePrivate --out docs --theme markdown", complete);
               console.log("...dONE!");
             }
           }
