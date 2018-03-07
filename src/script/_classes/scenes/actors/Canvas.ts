@@ -12,14 +12,13 @@ import Tile from "./Tile";
  */
 
 export default class Canvas extends Actor {
-  public scene: PaintingScene;
   public canvasEl: HTMLCanvasElement;
   public canvasCtx: CanvasRenderingContext2D;
   public brushPos: Vector2 = new Vector2();
   public brushSize: number = 4;
-  public aye: Aye;
+  public aye?: Aye;
 
-  constructor(scene: PaintingScene, obj: any) {
+  constructor(public scene: PaintingScene, obj: any) {
     super(scene, obj);
     this.canvasEl = document.createElement("canvas");
     this.canvasEl.width = this.size.x;

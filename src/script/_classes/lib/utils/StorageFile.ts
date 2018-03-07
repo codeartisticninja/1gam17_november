@@ -4,27 +4,25 @@ import web from "../utils/web";
 /**
  * StorageFile class
  * 
- * @date 04-oct-2017
+ * @date 07-mar-2018
  */
 
-var cache:{[index:string]:StorageFile} = {};
+var cache: { [index: string]: StorageFile } = {};
 
 export default class StorageFile {
-  public url:string;
-  public storage:Storage;
-  private _onSetListeners:{[index:string]:Function[]} = {};
-  private _onSetValues:{[index:string]:string} = {};
+  public url: string;
+  public storage = localStorage;
+  private _onSetListeners: { [index: string]: Function[] } = {};
+  private _onSetValues: { [index: string]: string } = {};
 
-  constructor(uri:string, public data:any={}) {
+  constructor(uri: string, public data: any = {}) {
     this.url = web.resolveUrl(location.pathname, uri);
     if (cache[this.url]) {
       return cache[this.url];
     } else {
       cache[this.url] = this;
     }
-    if (this.url.indexOf("#") === -1) {
-      this.storage = localStorage;
-    } else {
+    if (this.url.indexOf("#") >= 0) {
       this.storage = sessionStorage;
     }
     this.load();
@@ -33,15 +31,15 @@ export default class StorageFile {
   load() {
     if (this.storage.getItem(this.url)) {
       try {
-        this.data = JSON.parse(""+this.storage.getItem(this.url));
+        this.data = JSON.parse("" + this.storage.getItem(this.url));
       } catch (err) {
-        this.data = ""+this.storage.getItem(this.url);
+        this.data = "" + this.storage.getItem(this.url);
       }
     }
     return this.data;
   }
 
-  save(data?:any) {
+  save(data?: any) {
     if (data !== undefined) {
       this.data = data;
     }
@@ -49,28 +47,28 @@ export default class StorageFile {
     this._runListeners();
   }
 
-  delete(data={}) {
+  delete(data = {}) {
     this.data = data;
     this.storage.removeItem(this.url);
   }
 
-  get(key:string) {
+  get(key: string) {
     // this.load();
     var keys = key.split(".");
     var data = this.data;
     while (keys.length > 1) {
       if (!data[keys[0]]) return undefined;
-      data = data[keys.shift()||0];
+      data = data[keys.shift() || 0];
     }
     return data[keys[0]];
   }
 
-  set(key:string, value:any, ifUndefined=false) {
+  set(key: string, value: any, ifUndefined = false) {
     var keys = key.split(".");
     var data = this.data;
     while (keys.length > 1) {
       if (!data[keys[0]]) data[keys[0]] = {};
-      data = data[keys.shift()||0];
+      data = data[keys.shift() || 0];
     }
     if (data[keys[0]] === value) return;
     if (ifUndefined && (data[keys[0]] !== undefined)) return;
@@ -78,23 +76,23 @@ export default class StorageFile {
     this.save();
   }
 
-  onSet(key:string, callback:Function) {
+  onSet(key: string, callback: Function) {
     this._onSetListeners[key] = this._onSetListeners[key] || [];
     this._onSetListeners[key].push(callback);
     this._onSetValues[key] = JSON.stringify(this.get(key));
   }
 
   list() {
-    var list:string[] = [], i:number, key:string;
+    var list: string[] = [], i: number, key: string;
     for (i = 0; i < this.storage.length; i++) {
-      key = ""+this.storage.key(i);
+      key = "" + this.storage.key(i);
       if (key.substr(0, this.url.length) === this.url) {
         key = key.substr(this.url.length);
         if (key.indexOf("/") !== -1) {
-          key = key.substr(0, key.indexOf("/")+1);
+          key = key.substr(0, key.indexOf("/") + 1);
         }
         if (key.indexOf("#") !== -1) {
-          key = key.substr(0, key.indexOf("#")+1);
+          key = key.substr(0, key.indexOf("#") + 1);
         }
         if (list.indexOf(key) === -1) {
           list.push(key);
@@ -104,12 +102,12 @@ export default class StorageFile {
     return list;
   }
 
-  open(uri:string) {
+  open(uri: string) {
     return new StorageFile(web.resolveUrl(this.url, uri));
   }
 
   _runListeners() {
-    var key:string, value:any, JSONvalue:string, listener:Function;
+    var key: string, value: any, JSONvalue: string, listener: Function;
     for (key in this._onSetListeners) {
       value = this.get(key);
       JSONvalue = JSON.stringify(value);

@@ -16,10 +16,9 @@ import SuckBtn from "./actors/SuckBtn";
  */
 
 export default class PaintingScene extends Scene {
-  public game: MyGame;
   public collab: Collab;
 
-  constructor(game: MyGame, map: string) {
+  constructor(public game: MyGame, map: string) {
     super(game, map);
     this.actorTypes["Aye"] = Aye;
     this.actorTypes["SuckBtn"] = SuckBtn;
@@ -80,7 +79,7 @@ export default class PaintingScene extends Scene {
         aye.goTo(ayeObj.target);
         aye.inkColor.copyFrom(ayeObj.inkColor);
         aye.inkLeft = ayeObj.inkLeft;
-        aye.wakeUp();        
+        aye.wakeUp();
       }
     }
     if (patch.puddles) {

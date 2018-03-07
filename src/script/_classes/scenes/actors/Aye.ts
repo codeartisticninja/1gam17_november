@@ -12,15 +12,14 @@ let topFrontier: number = 0;
  */
 
 export default class Aye extends Actor {
-  public scene: PaintingScene;
-  public target: Vector2 | null;
+  public target?: Vector2;
   public inkColor: HSL = new HSL();
   public inkLeft: number = .25;
   public suck: boolean = true;
   public inPuddle: number = 0;
   public dna: any;
 
-  constructor(scene: PaintingScene, obj: any) {
+  constructor(public scene: PaintingScene, obj: any) {
     super(scene, obj);
     this.dna = obj;
     this.addAnimation("idle", [0, 1, 2, 3, 4, 5, 6, 7]);
@@ -84,7 +83,7 @@ export default class Aye extends Actor {
       (<any>this.sprite.img) = this._inkedSprite;
       this._updateSprite();
       this.sprite.draw(this.frame + 16, 0, this.offset);
-      this.sprite.img = this._origSprite;
+      this.sprite.img = this._origSprite || this.sprite.img;
     }
     return super.render();
   }
@@ -99,7 +98,7 @@ export default class Aye extends Actor {
   stop() {
     if (this.target) {
       this.target.recycle();
-      this.target = null;
+      delete this.target;
       this.velocity.set(0);
       this.playAnimation("idle");
     }
@@ -150,15 +149,16 @@ export default class Aye extends Actor {
   /*
     _privates
   */
-  private _lastDist: number;
-  private _origSprite: HTMLImageElement;
-  private _inkedSprite: HTMLCanvasElement;
-  private _spriteCtx: CanvasRenderingContext2D;
-  private _lastInkColor: string;
-  private _lastInkLeft: number;
+  private _lastDist = 0;
+  private _origSprite?: HTMLImageElement;
+  private _inkedSprite?: HTMLCanvasElement;
+  private _spriteCtx?: CanvasRenderingContext2D;
+  private _lastInkColor = "";
+  private _lastInkLeft = 0;
   private _deathClock: any;
 
   private _prepSprite() {
+    if (!this.sprite) return;
     this._origSprite = this.sprite.img;
     this._inkedSprite = document.createElement("canvas");
     this._inkedSprite.width = this._origSprite.width;
@@ -168,7 +168,9 @@ export default class Aye extends Actor {
   }
 
   private _updateSprite() {
+    if (!this.sprite) return;
     if (!this._spriteCtx) return;
+    if (!this._origSprite) return;
     if (this._lastInkColor === this.inkColor.toString() && this._lastInkLeft === this.inkLeft) return;
     let g = this._spriteCtx;
     g.globalCompositeOperation = "source-over";

@@ -9,8 +9,8 @@ let cache: any = {};
  */
 
 export default class Tile extends Actor {
-  public col: number;
-  public row: number;
+  public col = NaN;
+  public row = NaN;
   public img: HTMLImageElement;
 
   constructor(scene: Scene, obj: any) {

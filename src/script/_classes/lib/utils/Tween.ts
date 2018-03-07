@@ -3,18 +3,18 @@
 /**
  * Tween class
  * 
- * @date 04-oct-2017
+ * @date 07-mar-2018
  */
 
 export default class Tween {
-  constructor(public object:any, public endProps:any, public duration:number, autostart=true) {
+  constructor(public object: any, public endProps: any, public duration: number, autostart = true) {
     this.update = this.update.bind(this);
     if (autostart) this.start();
   }
 
-  start(endProps=this.endProps, duration=this.duration) {
-    this.endProps=endProps;
-    this.duration=duration;
+  start(endProps = this.endProps, duration = this.duration) {
+    this.endProps = endProps;
+    this.duration = duration;
     this._startTime = Date.now();
     this._startProps = {};
     for (var key in this.endProps) {
@@ -46,10 +46,10 @@ export default class Tween {
     this.start();
   }
 
-  onEnd(cb:Function, forget=false) {
+  onEnd(cb: Function, forget = false) {
     let i = this._callbacks.indexOf(cb);
     if (forget) {
-      if (i !== -1) this._callbacks.splice(i,1);
+      if (i !== -1) this._callbacks.splice(i, 1);
     } else {
       if (i === -1) this._callbacks.push(cb);
     }
@@ -58,12 +58,12 @@ export default class Tween {
   /*
     _privates
   */
-  private _startProps:any;
-  private _startTime:number;
-  private _updateTO:any;
-  private _callbacks:Function[]=[];
+  private _startProps: any;
+  private _startTime = 0;
+  private _updateTO: any;
+  private _callbacks: Function[] = [];
 
-  private _setValues(object:any, startProps:any, endProps:any, progress:number) {
+  private _setValues(object: any, startProps: any, endProps: any, progress: number) {
     for (var key in endProps) {
       if (typeof object[key] === "object") {
         object[key] = object[key] || {};

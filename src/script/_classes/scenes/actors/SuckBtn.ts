@@ -8,10 +8,9 @@ import Puddle from "./Puddle";
  */
 
 export default class SuckBtn extends Actor {
-  public scene: PaintingScene;
-  public aye: Aye;
+  public aye?: Aye;
 
-  constructor(scene: PaintingScene, obj: any) {
+  constructor(public scene: PaintingScene, obj: any) {
     super(scene, obj);
     this.order = 4096;
   }
@@ -30,8 +29,10 @@ export default class SuckBtn extends Actor {
   }
 
   click() {
+    if (!this.aye) return;
     this.aye.stop();
     this.scene.setAlarm(1, () => {
+      if (!this.aye) return;
       this.aye.suck = false;
       this.aye.stop();
       if (this.aye.inPuddle < 0) {

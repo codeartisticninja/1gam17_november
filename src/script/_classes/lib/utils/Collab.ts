@@ -5,11 +5,11 @@ import lazyJSON from "./lazyJSON";
 /**
  * Collab class
  * 
- * @date 12-dec-2017
+ * @date 07-mar-2018
  */
 
 export default class Collab {
-  public peer: PeerJs.Peer;
+  public peer = <PeerJs.Peer>{};
   public peers: { [key: string]: PeerJs.DataConnection } = {};
   public state: any = {};
   public listeners: Function[] = [];

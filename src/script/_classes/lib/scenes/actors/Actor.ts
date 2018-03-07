@@ -9,7 +9,7 @@ import Angle from "../../utils/Angle";
 /**
  * Actor class
  * 
- * @date 17-nov-2017
+ * @date 07-mar-2018
  */
 
 interface Animation {
@@ -18,9 +18,9 @@ interface Animation {
 }
 
 export default class Actor {
-  public name: string;
-  public type: string;
-  public sprite: Sprite;
+  public name = "_";
+  public type = "Actor";
+  public sprite?: Sprite;
   public frame: number = -1;
   public position: Vector2 = new Vector2();
   public scale: Vector2 = new Vector2(1);
@@ -34,7 +34,7 @@ export default class Actor {
   public visible: boolean = true;
 
   public velocity: Vector2 = new Vector2();
-  public gravity: Vector2;
+  public gravity?: Vector2;
   public momentum: number = 1;
   public friction: number = 0;
   public angularVelocity: Angle = new Angle();
@@ -42,9 +42,9 @@ export default class Actor {
   public angularFriction: Angle = new Angle();
 
   public animations: { [index: string]: Animation } = {};
-  public animation: Animation | null;
-  public animationFrame: number;
-  public nextAnimation: Animation | null;
+  public animation?: Animation;
+  public animationFrame = 0;
+  public nextAnimation?: Animation;
 
   constructor(public scene: Scene, obj?: any) {
     if (obj) {
@@ -95,7 +95,7 @@ export default class Actor {
         || this.animationFrame < 0) {
         if (this.nextAnimation) {
           this.animation = this.nextAnimation;
-          this.nextAnimation = null;
+          delete this.nextAnimation;
           this.animationFrame = 0;
         } else {
           if (this.animationFrame < 0) {
@@ -250,7 +250,7 @@ export default class Actor {
     }
   }
   stopAnimation() {
-    this.animation = null;
+    delete this.animation;
   }
 
   click() {

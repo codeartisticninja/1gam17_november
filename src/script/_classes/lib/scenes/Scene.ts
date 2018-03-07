@@ -13,7 +13,7 @@ import Text from "./actors/Text";
 /**
  * Scene class
  * 
- * @date 28-nov-2017
+ * @date 07-mar-2018
  */
 
 
@@ -30,10 +30,10 @@ export default class Scene {
   public cameraRotation: Angle = new Angle();
   public boundCamera = true;
   public mouse: Vector2 = new Vector2();
-  public mousePressed: boolean;
+  public mousePressed = false;
   public mouseJustPressed: number = 0;
   public mapData: any;
-  public backgroundColor: string;
+  public backgroundColor = "";
 
   constructor(public game: Game, public mapUrl?: string) {
     this.size.set(game.canvas.width, game.canvas.height);
@@ -306,6 +306,6 @@ export default class Scene {
     _privates
   */
   private _alarms: any[] = [];
-  private _toBeClicked: Actor;
+  private _toBeClicked?: Actor;
 
 }

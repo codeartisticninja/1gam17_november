@@ -12,13 +12,12 @@ let topFrontier: number = 0;
  */
 
 export default class Puddle extends Actor {
-  public scene: PaintingScene;
   public inkColor: HSL = new HSL();
   public inkLeft: number = 0;
   public dna: any;
   public timeToSync: number = -1;
 
-  constructor(scene: PaintingScene, obj: any) {
+  constructor(public scene: PaintingScene, obj: any) {
     super(scene, obj);
     this.dna = obj;
     this.shape = "circle";
@@ -41,7 +40,7 @@ export default class Puddle extends Actor {
       (<any>this.sprite.img) = this._inkedSprite;
       this._updateSprite();
       super.render();
-      this.sprite.img = this._origSprite;
+      this.sprite.img = this._origSprite || this.sprite.img;
     }
   }
 
@@ -86,15 +85,16 @@ export default class Puddle extends Actor {
   /*
     _privates
   */
-  private _lastDist: number;
-  private _origSprite: HTMLImageElement;
-  private _inkedSprite: HTMLCanvasElement;
-  private _spriteCtx: CanvasRenderingContext2D;
-  private _lastInkColor: string;
-  private _lastInkLeft: number;
+  private _lastDist?: number;
+  private _origSprite?: HTMLImageElement;
+  private _inkedSprite?: HTMLCanvasElement;
+  private _spriteCtx?: CanvasRenderingContext2D;
+  private _lastInkColor?: string;
+  private _lastInkLeft?: number;
   private _pulse: number = 0;
 
   private _prepSprite() {
+    if (!this.sprite) return;
     this._origSprite = this.sprite.img;
     this._inkedSprite = document.createElement("canvas");
     this._inkedSprite.width = this._origSprite.width;
@@ -104,6 +104,8 @@ export default class Puddle extends Actor {
   }
 
   private _updateSprite() {
+    if (!this.sprite) return;
+    if (!this._origSprite) return;
     if (!this._spriteCtx) return;
     if (this._lastInkColor === this.inkColor.toString() && this._lastInkLeft === this.inkLeft) return;
     let g = this._spriteCtx;

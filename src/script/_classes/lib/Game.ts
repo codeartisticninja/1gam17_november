@@ -20,21 +20,21 @@ if (!window.requestAnimationFrame) {
 /**
  * BaseGameApp class
  * 
- * @date 10-dec-2017
+ * @date 07-mar-2018
  */
 
 export default class Game {
   public container: HTMLElement;
-  public canvas: HTMLCanvasElement;
-  public ctx: CanvasRenderingContext2D;
-  public debug: boolean;
+  public canvas = document.createElement("canvas");
+  public ctx = <CanvasRenderingContext2D>this.canvas.getContext("2d");
+  public debug = false;
   public loading = 0;
   public loaded = 0;
   public saveFile = new StorageFile("save.json");
   public prefs = new StorageFile("/prefs.json");
   public joypad = joypad;
   public scenes: { [index: string]: Scene } = {};
-  public scene: Scene;
+  public scene: Scene | undefined;
   public mediaChannels: { [index: string]: MediaPlayer } = {
     "sfx": new MediaPlayer(),
     "music": new MediaPlayer(),
@@ -123,8 +123,8 @@ export default class Game {
   /*
     _privates
   */
-  private _canvas: HTMLCanvasElement;
-  private _ctx: CanvasRenderingContext2D;
+  private _canvas = document.createElement("canvas");
+  private _ctx = <CanvasRenderingContext2D>this._canvas.getContext("2d");
   private _tickTO: any;
   private _frameInterval: number = 1000 / 30;
   private _nextFrameTime: number = 0;
@@ -135,15 +135,11 @@ export default class Game {
     this._tick = this._tick.bind(this);
     this.prefs.set("fullscreen", true, true);
     this.container.innerHTML = "";
-    this._canvas = document.createElement("canvas");
     this._canvas.width = width;
     this._canvas.height = height;
-    this._ctx = <CanvasRenderingContext2D>this._canvas.getContext("2d");
     this.container.appendChild(this._canvas);
-    this.canvas = document.createElement("canvas");
     this.canvas.width = width;
     this.canvas.height = height;
-    this.ctx = <CanvasRenderingContext2D>this.canvas.getContext("2d");
     for (let event of ["mousedown", "mousemove", "mouseup", "mousecancel", "touchstart", "touchmove", "touchend", "touchcancel"]) {
       this._canvas.addEventListener(event, this._mouseEvent.bind(this));
     }

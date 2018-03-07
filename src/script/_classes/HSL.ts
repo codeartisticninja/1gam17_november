@@ -42,7 +42,7 @@ export default class HSL {
     hueDiff.set(b.hue).subtractRad(a.hue);
     let satDiff = b.saturation - a.saturation;
     let litDiff = b.lightness - a.lightness;
-    
+
     if (a.saturation < b.saturation) {
       a.hue = a.hue + (satDiff / b.saturation) * hueDiff.rad;
       hueDiff.set(b.hue).subtractRad(a.hue);
@@ -83,6 +83,6 @@ export default class HSL {
     _privates
   */
 
-  private _hueDeg: number;
+  private _hueDeg = -1;
 
 }

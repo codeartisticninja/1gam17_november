@@ -5,20 +5,20 @@ import Scene from "../Scene";
 /**
  * Text class
  * 
- * @date 04-oct-2017
+ * @date 07-mar-2018
  */
 
 export default class Text extends Actor {
-  public fontSize:number=20;
-  public lineHeight:number=1;
-  public fontStyle:string="";
-  public fontFamily:string="";
-  public textBaseline:string="top";
-  public color:string="";
-  public outline:string;
-  public lines:string[]=[];
+  public fontSize: number = 20;
+  public lineHeight: number = 1;
+  public fontStyle: string = "";
+  public fontFamily: string = "";
+  public textBaseline: string = "top";
+  public color: string = "";
+  public outline = "";
+  public lines: string[] = [];
 
-  set text(txt:string) {
+  set text(txt: string) {
     if (this._text != txt) {
       this._text = txt;
       this.lines = [];
@@ -28,14 +28,14 @@ export default class Text extends Actor {
     return this._text;
   }
 
-  set textAlign(val:string) {
+  set textAlign(val: string) {
     this._textAlign = val;
-    switch(val) {
+    switch (val) {
       case "left":
         this.setAnchor(0, 0);
         break;
       case "center":
-        this.setAnchor(this.size.x/2, 0);
+        this.setAnchor(this.size.x / 2, 0);
         break;
       case "right":
         this.setAnchor(this.size.x, 0);
@@ -46,7 +46,7 @@ export default class Text extends Actor {
     return this._textAlign;
   }
 
-  constructor(scene:Scene, obj?:any) {
+  constructor(scene: Scene, obj?: any) {
     super(scene, obj);
     this.setAnchor(0);
     if (typeof obj.text === "object") {
@@ -61,10 +61,10 @@ export default class Text extends Actor {
   }
 
   render() {
-    var g = this.scene.game.ctx, x=0, y=0;
+    var g = this.scene.game.ctx, x = 0, y = 0;
     g.font = this.fontStyle + " " + this.fontSize + "px " + this.fontFamily;
     g.textBaseline = this.textBaseline;
-    g.textAlign    = this.textAlign;
+    g.textAlign = this.textAlign;
     if (!this.lines.length) this._wrap();
     if (this.color) {
       y = 0;
@@ -87,18 +87,18 @@ export default class Text extends Actor {
   /*
     _privates
   */
-  public _textAlign:string="left";
-  private _text:string="";
+  public _textAlign: string = "left";
+  private _text: string = "";
 
   private _wrap() {
     var g = this.scene.game.ctx, i = 0, y = 0;
     this.lines = this._text.split("\n");
     while (i < this.lines.length) {
       if (g.measureText(this.lines[i]).width > this.size.x) {
-        this.lines.splice(i+1, 0, "");
+        this.lines.splice(i + 1, 0, "");
       }
       while (g.measureText(this.lines[i]).width > this.size.x) {
-        this.lines[i+1] = (this.lines[i].substr(this.lines[i].lastIndexOf(" ")) + " " + this.lines[i+1]).trim();
+        this.lines[i + 1] = (this.lines[i].substr(this.lines[i].lastIndexOf(" ")) + " " + this.lines[i + 1]).trim();
         this.lines[i] = this.lines[i].substr(0, this.lines[i].lastIndexOf(" ")).trim();
       }
       i++;
