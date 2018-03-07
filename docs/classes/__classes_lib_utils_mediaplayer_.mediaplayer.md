@@ -43,7 +43,7 @@ MediaPlayer class
 ### ⊕ **new MediaPlayer**(url?: *`undefined`⎮`string`*): [MediaPlayer](__classes_lib_utils_mediaplayer_.mediaplayer.md)
 
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L30)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L30)*
 
 
 
@@ -69,7 +69,7 @@ MediaPlayer class
 
 **●  players**:  *`HTMLAudioElement`[]*  = []
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L11)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L11)*
 
 
 
@@ -86,7 +86,7 @@ ___
 
 getenabled(): `boolean`setenabled(val: *`boolean`*): `void`
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L13)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L13)*
 
 
 
@@ -94,7 +94,7 @@ getenabled(): `boolean`setenabled(val: *`boolean`*): `void`
 
 **Returns:** `boolean`
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L16)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L16)*
 
 
 
@@ -121,7 +121,7 @@ ___
 
 getvolume(): `number`setvolume(val: *`number`*): `void`
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L24)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L24)*
 
 
 
@@ -129,7 +129,7 @@ getvolume(): `number`setvolume(val: *`number`*): `void`
 
 **Returns:** `number`
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L27)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L27)*
 
 
 
@@ -159,7 +159,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L67)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L67)*
 
 
 
@@ -181,7 +181,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:58](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L58)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:58](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L58)*
 
 
 
@@ -211,7 +211,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/MediaPlayer.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/MediaPlayer.ts#L43)*
+*Defined in [_classes/lib/utils/MediaPlayer.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/MediaPlayer.ts#L43)*
 
 
 

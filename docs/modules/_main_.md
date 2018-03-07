@@ -25,7 +25,7 @@
 
 **●  game**:  *[MyGame](../classes/__classes_mygame_.mygame.md)* 
 
-*Defined in [main.ts:7](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/main.ts#L7)*
+*Defined in [main.ts:7](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/main.ts#L7)*
 
 
 
@@ -46,7 +46,7 @@ ___
 
 
 
-*Defined in [main.ts:9](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/main.ts#L9)*
+*Defined in [main.ts:9](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/main.ts#L9)*
 
 
 

@@ -46,7 +46,7 @@
 ### ⊕ **new Angle**(rad?: *`number`*): [Angle](__classes_lib_utils_angle_.angle.md)
 
 
-*Defined in [_classes/lib/utils/Angle.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L20)*
+*Defined in [_classes/lib/utils/Angle.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L20)*
 
 
 
@@ -72,7 +72,7 @@
 
 **●  rad**:  *`number`* 
 
-*Defined in [_classes/lib/utils/Angle.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L22)*
+*Defined in [_classes/lib/utils/Angle.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L22)*
 
 
 
@@ -89,7 +89,7 @@ ___
 
 getdeg(): `number`setdeg(deg: *`number`*): `void`
 
-*Defined in [_classes/lib/utils/Angle.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L26)*
+*Defined in [_classes/lib/utils/Angle.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L26)*
 
 
 
@@ -97,7 +97,7 @@ getdeg(): `number`setdeg(deg: *`number`*): `void`
 
 **Returns:** `number`
 
-*Defined in [_classes/lib/utils/Angle.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L29)*
+*Defined in [_classes/lib/utils/Angle.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L29)*
 
 
 
@@ -127,7 +127,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:51](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L51)*
+*Defined in [_classes/lib/utils/Angle.ts:51](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L51)*
 
 
 
@@ -158,7 +158,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:46](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L46)*
+*Defined in [_classes/lib/utils/Angle.ts:46](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L46)*
 
 
 
@@ -189,7 +189,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L38)*
+*Defined in [_classes/lib/utils/Angle.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L38)*
 
 
 
@@ -219,7 +219,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L42)*
+*Defined in [_classes/lib/utils/Angle.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L42)*
 
 
 
@@ -249,7 +249,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L63)*
+*Defined in [_classes/lib/utils/Angle.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L63)*
 
 
 
@@ -280,7 +280,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:68](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L68)*
+*Defined in [_classes/lib/utils/Angle.ts:68](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L68)*
 
 
 
@@ -310,7 +310,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:75](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L75)*
+*Defined in [_classes/lib/utils/Angle.ts:75](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L75)*
 
 
 
@@ -340,7 +340,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L17)*
+*Defined in [_classes/lib/utils/Angle.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L17)*
 
 
 
@@ -362,7 +362,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L33)*
+*Defined in [_classes/lib/utils/Angle.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L33)*
 
 
 
@@ -392,7 +392,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:59](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L59)*
+*Defined in [_classes/lib/utils/Angle.ts:59](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L59)*
 
 
 
@@ -423,7 +423,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:55](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L55)*
+*Defined in [_classes/lib/utils/Angle.ts:55](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L55)*
 
 
 
@@ -454,7 +454,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/Angle.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/Angle.ts#L13)*
+*Defined in [_classes/lib/utils/Angle.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/Angle.ts#L13)*
 
 
 

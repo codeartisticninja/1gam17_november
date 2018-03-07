@@ -39,7 +39,7 @@
 ### ⊕ **new HSL**(hue?: *`number`*, saturation?: *`number`*, lightness?: *`number`*): [HSL](__classes_hsl_.hsl.md)
 
 
-*Defined in [_classes/HSL.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L18)*
+*Defined in [_classes/HSL.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L18)*
 
 
 
@@ -67,7 +67,7 @@
 
 **●  hue**:  *`number`* 
 
-*Defined in [_classes/HSL.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L20)*
+*Defined in [_classes/HSL.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L20)*
 
 
 
@@ -81,7 +81,7 @@ ___
 
 **●  lightness**:  *`number`* 
 
-*Defined in [_classes/HSL.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L20)*
+*Defined in [_classes/HSL.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L20)*
 
 
 
@@ -95,7 +95,7 @@ ___
 
 **●  saturation**:  *`number`* 
 
-*Defined in [_classes/HSL.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L20)*
+*Defined in [_classes/HSL.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L20)*
 
 
 
@@ -113,7 +113,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L39)*
+*Defined in [_classes/HSL.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L39)*
 
 
 
@@ -146,7 +146,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L31)*
+*Defined in [_classes/HSL.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L31)*
 
 
 
@@ -176,7 +176,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L35)*
+*Defined in [_classes/HSL.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L35)*
 
 
 
@@ -206,7 +206,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L63)*
+*Defined in [_classes/HSL.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L63)*
 
 
 
@@ -236,7 +236,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L15)*
+*Defined in [_classes/HSL.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L15)*
 
 
 
@@ -258,7 +258,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L24)*
+*Defined in [_classes/HSL.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L24)*
 
 
 
@@ -290,7 +290,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:77](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L77)*
+*Defined in [_classes/HSL.ts:77](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L77)*
 
 
 
@@ -312,7 +312,7 @@ ___
 
 
 
-*Defined in [_classes/HSL.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/HSL.ts#L11)*
+*Defined in [_classes/HSL.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/HSL.ts#L11)*
 
 
 

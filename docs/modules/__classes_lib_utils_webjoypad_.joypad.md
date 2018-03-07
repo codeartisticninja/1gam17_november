@@ -69,7 +69,7 @@
 
 **●  UIparent**:  *`HTMLElement`*  =  document.body
 
-*Defined in [_classes/lib/utils/webJoypad.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L25)*
+*Defined in [_classes/lib/utils/webJoypad.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L25)*
 
 
 
@@ -83,10 +83,10 @@ ___
 
 **●  _**:  *`any`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:176](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L176)*
-*Defined in [_classes/lib/utils/webJoypad.ts:251](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L251)*
-*Defined in [_classes/lib/utils/webJoypad.ts:442](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L442)*
-*Defined in [_classes/lib/utils/webJoypad.ts:498](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L498)*
+*Defined in [_classes/lib/utils/webJoypad.ts:176](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L176)*
+*Defined in [_classes/lib/utils/webJoypad.ts:251](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L251)*
+*Defined in [_classes/lib/utils/webJoypad.ts:442](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L442)*
+*Defined in [_classes/lib/utils/webJoypad.ts:498](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L498)*
 
 
 
@@ -100,7 +100,7 @@ ___
 
 **●  _activatingGamepad**:  *`boolean`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:440](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L440)*
+*Defined in [_classes/lib/utils/webJoypad.ts:440](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L440)*
 
 
 
@@ -114,7 +114,7 @@ ___
 
 **●  _gamepadEnabled**:  *`boolean`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:439](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L439)*
+*Defined in [_classes/lib/utils/webJoypad.ts:439](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L439)*
 
 
 
@@ -128,7 +128,7 @@ ___
 
 **●  _goingBack**:  *`number`*  = 0
 
-*Defined in [_classes/lib/utils/webJoypad.ts:441](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L441)*
+*Defined in [_classes/lib/utils/webJoypad.ts:441](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L441)*
 
 
 
@@ -142,7 +142,7 @@ ___
 
 **●  _keyMap**:  *`string`[]*  =  _getKeyMap()
 
-*Defined in [_classes/lib/utils/webJoypad.ts:173](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L173)*
+*Defined in [_classes/lib/utils/webJoypad.ts:173](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L173)*
 
 
 
@@ -156,7 +156,7 @@ ___
 
 **●  _keyboardEnabled**:  *`boolean`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:172](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L172)*
+*Defined in [_classes/lib/utils/webJoypad.ts:172](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L172)*
 
 
 
@@ -170,7 +170,7 @@ ___
 
 **●  _keysDown**:  *`object`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:174](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L174)*
+*Defined in [_classes/lib/utils/webJoypad.ts:174](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L174)*
 
 
 #### Type declaration
@@ -191,7 +191,7 @@ ___
 
 **●  _lastState**:  *`any`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:496](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L496)*
+*Defined in [_classes/lib/utils/webJoypad.ts:496](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L496)*
 
 
 
@@ -205,7 +205,7 @@ ___
 
 **●  _leftThumb**:  *[JoyTouch](../interfaces/__classes_lib_utils_webjoypad_.joytouch.md)* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:248](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L248)*
+*Defined in [_classes/lib/utils/webJoypad.ts:248](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L248)*
 
 
 
@@ -219,7 +219,7 @@ ___
 
 **●  _rightThumb**:  *[JoyTouch](../interfaces/__classes_lib_utils_webjoypad_.joytouch.md)* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:249](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L249)*
+*Defined in [_classes/lib/utils/webJoypad.ts:249](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L249)*
 
 
 
@@ -233,7 +233,7 @@ ___
 
 **●  _shiftKey**:  *`boolean`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:175](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L175)*
+*Defined in [_classes/lib/utils/webJoypad.ts:175](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L175)*
 
 
 
@@ -247,7 +247,7 @@ ___
 
 **●  _stickRadius**:  *`number`*  = 32
 
-*Defined in [_classes/lib/utils/webJoypad.ts:250](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L250)*
+*Defined in [_classes/lib/utils/webJoypad.ts:250](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L250)*
 
 
 
@@ -261,7 +261,7 @@ ___
 
 **●  _suspended**:  *`string`[]⎮`null`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:497](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L497)*
+*Defined in [_classes/lib/utils/webJoypad.ts:497](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L497)*
 
 
 
@@ -275,7 +275,7 @@ ___
 
 **●  _touchEnabled**:  *`boolean`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:246](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L246)*
+*Defined in [_classes/lib/utils/webJoypad.ts:246](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L246)*
 
 
 
@@ -289,7 +289,7 @@ ___
 
 **●  _touchUI**:  *`HTMLElement`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:247](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L247)*
+*Defined in [_classes/lib/utils/webJoypad.ts:247](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L247)*
 
 
 
@@ -303,7 +303,7 @@ ___
 
 **●  _updateTO**:  *`any`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:495](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L495)*
+*Defined in [_classes/lib/utils/webJoypad.ts:495](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L495)*
 
 
 
@@ -317,7 +317,7 @@ ___
 
 **●  device**:  *`string`*  =  ""+localStorage.getItem("joypad.device")
 
-*Defined in [_classes/lib/utils/webJoypad.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L23)*
+*Defined in [_classes/lib/utils/webJoypad.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L23)*
 
 
 
@@ -331,7 +331,7 @@ ___
 
 **●  dir**:  *[Vector2](../classes/__classes_lib_utils_vector2_.vector2.md)*  =  new Vector2()
 
-*Defined in [_classes/lib/utils/webJoypad.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L27)*
+*Defined in [_classes/lib/utils/webJoypad.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L27)*
 
 
 
@@ -345,7 +345,7 @@ ___
 
 **●  enabled**:  *`boolean`*  = false
 
-*Defined in [_classes/lib/utils/webJoypad.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L22)*
+*Defined in [_classes/lib/utils/webJoypad.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L22)*
 
 
 
@@ -359,7 +359,7 @@ ___
 
 **●  fire**:  *`boolean`*  = false
 
-*Defined in [_classes/lib/utils/webJoypad.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L28)*
+*Defined in [_classes/lib/utils/webJoypad.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L28)*
 
 
 
@@ -373,7 +373,7 @@ ___
 
 **●  mode**:  *`string`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L24)*
+*Defined in [_classes/lib/utils/webJoypad.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L24)*
 
 
 
@@ -391,7 +391,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:426](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L426)*
+*Defined in [_classes/lib/utils/webJoypad.ts:426](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L426)*
 
 
 
@@ -413,7 +413,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:188](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L188)*
+*Defined in [_classes/lib/utils/webJoypad.ts:188](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L188)*
 
 
 
@@ -435,7 +435,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:374](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L374)*
+*Defined in [_classes/lib/utils/webJoypad.ts:374](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L374)*
 
 
 
@@ -457,7 +457,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:206](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L206)*
+*Defined in [_classes/lib/utils/webJoypad.ts:206](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L206)*
 
 
 
@@ -487,7 +487,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:226](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L226)*
+*Defined in [_classes/lib/utils/webJoypad.ts:226](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L226)*
 
 
 
@@ -517,7 +517,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:275](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L275)*
+*Defined in [_classes/lib/utils/webJoypad.ts:275](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L275)*
 
 
 
@@ -547,7 +547,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:300](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L300)*
+*Defined in [_classes/lib/utils/webJoypad.ts:300](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L300)*
 
 
 
@@ -577,7 +577,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:322](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L322)*
+*Defined in [_classes/lib/utils/webJoypad.ts:322](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L322)*
 
 
 
@@ -607,7 +607,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:444](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L444)*
+*Defined in [_classes/lib/utils/webJoypad.ts:444](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L444)*
 
 
 
@@ -629,7 +629,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:178](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L178)*
+*Defined in [_classes/lib/utils/webJoypad.ts:178](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L178)*
 
 
 
@@ -651,7 +651,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:253](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L253)*
+*Defined in [_classes/lib/utils/webJoypad.ts:253](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L253)*
 
 
 
@@ -673,7 +673,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:338](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L338)*
+*Defined in [_classes/lib/utils/webJoypad.ts:338](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L338)*
 
 
 
@@ -695,7 +695,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:384](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L384)*
+*Defined in [_classes/lib/utils/webJoypad.ts:384](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L384)*
 
 
 
@@ -717,7 +717,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:162](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L162)*
+*Defined in [_classes/lib/utils/webJoypad.ts:162](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L162)*
 
 
 
@@ -739,7 +739,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:71](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L71)*
+*Defined in [_classes/lib/utils/webJoypad.ts:71](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L71)*
 
 
 
@@ -769,7 +769,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L31)*
+*Defined in [_classes/lib/utils/webJoypad.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L31)*
 
 
 
@@ -800,7 +800,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:126](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L126)*
+*Defined in [_classes/lib/utils/webJoypad.ts:126](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L126)*
 
 
 
@@ -822,7 +822,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:108](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L108)*
+*Defined in [_classes/lib/utils/webJoypad.ts:108](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L108)*
 
 
 
@@ -844,7 +844,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:135](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L135)*
+*Defined in [_classes/lib/utils/webJoypad.ts:135](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L135)*
 
 
 
@@ -870,7 +870,7 @@ ___
 
 **●  dir**:  *`number`*  = 0
 
-*Defined in [_classes/lib/utils/webJoypad.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L29)*
+*Defined in [_classes/lib/utils/webJoypad.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L29)*
 
 
 
@@ -883,7 +883,7 @@ ___
 
 **●  fire**:  *`number`*  = 0
 
-*Defined in [_classes/lib/utils/webJoypad.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L29)*
+*Defined in [_classes/lib/utils/webJoypad.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L29)*
 
 
 

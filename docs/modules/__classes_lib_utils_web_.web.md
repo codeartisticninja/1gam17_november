@@ -33,7 +33,7 @@ web module
 
 
 
-*Defined in [_classes/lib/utils/web.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L43)*
+*Defined in [_classes/lib/utils/web.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L43)*
 
 
 
@@ -63,7 +63,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/web.ts:46](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L46)*
+*Defined in [_classes/lib/utils/web.ts:46](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L46)*
 
 
 
@@ -93,7 +93,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/web.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L11)*
+*Defined in [_classes/lib/utils/web.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L11)*
 
 
 
@@ -125,7 +125,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/web.ts:52](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L52)*
+*Defined in [_classes/lib/utils/web.ts:52](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L52)*
 
 
 
@@ -155,7 +155,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/web.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L27)*
+*Defined in [_classes/lib/utils/web.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L27)*
 
 
 
@@ -188,7 +188,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/web.ts:122](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L122)*
+*Defined in [_classes/lib/utils/web.ts:122](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L122)*
 
 
 
@@ -219,7 +219,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/web.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/web.ts#L104)*
+*Defined in [_classes/lib/utils/web.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/web.ts#L104)*
 
 
 

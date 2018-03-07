@@ -88,7 +88,7 @@ PaintingScene class
 
 *Overrides [Scene](__classes_lib_scenes_scene_.scene.md).[constructor](__classes_lib_scenes_scene_.scene.md#constructor)*
 
-*Defined in [_classes/scenes/PaintingScene.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L19)*
+*Defined in [_classes/scenes/PaintingScene.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L19)*
 
 
 
@@ -117,7 +117,7 @@ PaintingScene class
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[actorTypes](__classes_lib_scenes_scene_.scene.md#actortypes)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L21)*
+*Defined in [_classes/lib/scenes/Scene.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L21)*
 
 
 #### Type declaration
@@ -140,7 +140,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[actors](__classes_lib_scenes_scene_.scene.md#actors)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L22)*
+*Defined in [_classes/lib/scenes/Scene.ts:22](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L22)*
 
 
 
@@ -156,7 +156,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[actorsByName](__classes_lib_scenes_scene_.scene.md#actorsbyname)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L24)*
+*Defined in [_classes/lib/scenes/Scene.ts:24](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L24)*
 
 
 #### Type declaration
@@ -179,7 +179,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[actorsByType](__classes_lib_scenes_scene_.scene.md#actorsbytype)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L23)*
+*Defined in [_classes/lib/scenes/Scene.ts:23](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L23)*
 
 
 #### Type declaration
@@ -202,7 +202,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[backgroundColor](__classes_lib_scenes_scene_.scene.md#backgroundcolor)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L36)*
+*Defined in [_classes/lib/scenes/Scene.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L36)*
 
 
 
@@ -218,7 +218,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[boundCamera](__classes_lib_scenes_scene_.scene.md#boundcamera)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L31)*
+*Defined in [_classes/lib/scenes/Scene.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L31)*
 
 
 
@@ -234,7 +234,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[camera](__classes_lib_scenes_scene_.scene.md#camera)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L29)*
+*Defined in [_classes/lib/scenes/Scene.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L29)*
 
 
 
@@ -250,7 +250,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[cameraRotation](__classes_lib_scenes_scene_.scene.md#camerarotation)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L30)*
+*Defined in [_classes/lib/scenes/Scene.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L30)*
 
 
 
@@ -264,7 +264,7 @@ ___
 
 **●  collab**:  *[Collab](__classes_lib_utils_collab_.collab.md)* 
 
-*Defined in [_classes/scenes/PaintingScene.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L19)*
+*Defined in [_classes/scenes/PaintingScene.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L19)*
 
 
 
@@ -280,7 +280,7 @@ ___
 
 *Overrides [Scene](__classes_lib_scenes_scene_.scene.md).[game](__classes_lib_scenes_scene_.scene.md#game)*
 
-*Defined in [_classes/scenes/PaintingScene.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L21)*
+*Defined in [_classes/scenes/PaintingScene.ts:21](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L21)*
 
 
 
@@ -296,7 +296,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[gravity](__classes_lib_scenes_scene_.scene.md#gravity)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L28)*
+*Defined in [_classes/lib/scenes/Scene.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L28)*
 
 
 
@@ -312,7 +312,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mapData](__classes_lib_scenes_scene_.scene.md#mapdata)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L35)*
+*Defined in [_classes/lib/scenes/Scene.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L35)*
 
 
 
@@ -328,7 +328,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mapUrl](__classes_lib_scenes_scene_.scene.md#mapurl)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L38)*
+*Defined in [_classes/lib/scenes/Scene.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L38)*
 
 
 
@@ -344,7 +344,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mouse](__classes_lib_scenes_scene_.scene.md#mouse)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L32)*
+*Defined in [_classes/lib/scenes/Scene.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L32)*
 
 
 
@@ -360,7 +360,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mouseJustPressed](__classes_lib_scenes_scene_.scene.md#mousejustpressed)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L34)*
+*Defined in [_classes/lib/scenes/Scene.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L34)*
 
 
 
@@ -376,7 +376,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mousePressed](__classes_lib_scenes_scene_.scene.md#mousepressed)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L33)*
+*Defined in [_classes/lib/scenes/Scene.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L33)*
 
 
 
@@ -392,7 +392,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[size](__classes_lib_scenes_scene_.scene.md#size)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L27)*
+*Defined in [_classes/lib/scenes/Scene.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L27)*
 
 
 
@@ -408,7 +408,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[spritesByFirstGid](__classes_lib_scenes_scene_.scene.md#spritesbyfirstgid)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L25)*
+*Defined in [_classes/lib/scenes/Scene.ts:25](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L25)*
 
 
 
@@ -424,7 +424,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[spritesByName](__classes_lib_scenes_scene_.scene.md#spritesbyname)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L26)*
+*Defined in [_classes/lib/scenes/Scene.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L26)*
 
 
 #### Type declaration
@@ -451,7 +451,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[addActor](__classes_lib_scenes_scene_.scene.md#addactor)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:163](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L163)*
+*Defined in [_classes/lib/scenes/Scene.ts:163](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L163)*
 
 
 
@@ -484,7 +484,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[addSprite](__classes_lib_scenes_scene_.scene.md#addsprite)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:219](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L219)*
+*Defined in [_classes/lib/scenes/Scene.ts:219](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L219)*
 
 
 
@@ -514,7 +514,7 @@ ___
 
 
 
-*Defined in [_classes/scenes/PaintingScene.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L63)*
+*Defined in [_classes/scenes/PaintingScene.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L63)*
 
 
 
@@ -546,7 +546,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[bringActorToBack](__classes_lib_scenes_scene_.scene.md#bringactortoback)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:205](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L205)*
+*Defined in [_classes/lib/scenes/Scene.ts:205](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L205)*
 
 
 
@@ -579,7 +579,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[bringActorToFront](__classes_lib_scenes_scene_.scene.md#bringactortofront)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:191](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L191)*
+*Defined in [_classes/lib/scenes/Scene.ts:191](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L191)*
 
 
 
@@ -612,7 +612,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[clearAlarm](__classes_lib_scenes_scene_.scene.md#clearalarm)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:266](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L266)*
+*Defined in [_classes/lib/scenes/Scene.ts:266](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L266)*
 
 
 
@@ -644,7 +644,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[clearAllAlarms](__classes_lib_scenes_scene_.scene.md#clearallalarms)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:253](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L253)*
+*Defined in [_classes/lib/scenes/Scene.ts:253](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L253)*
 
 
 
@@ -668,7 +668,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[createActor](__classes_lib_scenes_scene_.scene.md#createactor)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:153](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L153)*
+*Defined in [_classes/lib/scenes/Scene.ts:153](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L153)*
 
 
 
@@ -700,7 +700,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[enter](__classes_lib_scenes_scene_.scene.md#enter)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:58](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L58)*
+*Defined in [_classes/lib/scenes/Scene.ts:58](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L58)*
 
 
 
@@ -724,7 +724,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[exit](__classes_lib_scenes_scene_.scene.md#exit)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:60](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L60)*
+*Defined in [_classes/lib/scenes/Scene.ts:60](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L60)*
 
 
 
@@ -748,7 +748,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[getSpriteByGid](__classes_lib_scenes_scene_.scene.md#getspritebygid)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:230](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L230)*
+*Defined in [_classes/lib/scenes/Scene.ts:230](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L230)*
 
 
 
@@ -780,7 +780,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[getSpriteByName](__classes_lib_scenes_scene_.scene.md#getspritebyname)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:236](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L236)*
+*Defined in [_classes/lib/scenes/Scene.ts:236](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L236)*
 
 
 
@@ -812,7 +812,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[loadMap](__classes_lib_scenes_scene_.scene.md#loadmap)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L63)*
+*Defined in [_classes/lib/scenes/Scene.ts:63](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L63)*
 
 
 
@@ -836,7 +836,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mouseDown](__classes_lib_scenes_scene_.scene.md#mousedown)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:273](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L273)*
+*Defined in [_classes/lib/scenes/Scene.ts:273](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L273)*
 
 
 
@@ -869,7 +869,7 @@ ___
 
 *Overrides [Scene](__classes_lib_scenes_scene_.scene.md).[mouseMove](__classes_lib_scenes_scene_.scene.md#mousemove)*
 
-*Defined in [_classes/scenes/PaintingScene.ts:56](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L56)*
+*Defined in [_classes/scenes/PaintingScene.ts:56](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L56)*
 
 
 
@@ -902,7 +902,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[mouseUp](__classes_lib_scenes_scene_.scene.md#mouseup)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:290](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L290)*
+*Defined in [_classes/lib/scenes/Scene.ts:290](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L290)*
 
 
 
@@ -935,7 +935,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[onOverlap](__classes_lib_scenes_scene_.scene.md#onoverlap)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:240](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L240)*
+*Defined in [_classes/lib/scenes/Scene.ts:240](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L240)*
 
 
 
@@ -970,7 +970,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[removeActor](__classes_lib_scenes_scene_.scene.md#removeactor)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:177](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L177)*
+*Defined in [_classes/lib/scenes/Scene.ts:177](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L177)*
 
 
 
@@ -1003,7 +1003,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[render](__classes_lib_scenes_scene_.scene.md#render)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:115](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L115)*
+*Defined in [_classes/lib/scenes/Scene.ts:115](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L115)*
 
 
 
@@ -1027,7 +1027,7 @@ ___
 
 *Overrides [Scene](__classes_lib_scenes_scene_.scene.md).[reset](__classes_lib_scenes_scene_.scene.md#reset)*
 
-*Defined in [_classes/scenes/PaintingScene.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L33)*
+*Defined in [_classes/scenes/PaintingScene.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L33)*
 
 
 
@@ -1049,7 +1049,7 @@ ___
 
 
 
-*Defined in [_classes/scenes/PaintingScene.ts:111](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L111)*
+*Defined in [_classes/scenes/PaintingScene.ts:111](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L111)*
 
 
 
@@ -1081,7 +1081,7 @@ ___
 
 *Inherited from [Scene](__classes_lib_scenes_scene_.scene.md).[setAlarm](__classes_lib_scenes_scene_.scene.md#setalarm)*
 
-*Defined in [_classes/lib/scenes/Scene.ts:257](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/scenes/Scene.ts#L257)*
+*Defined in [_classes/lib/scenes/Scene.ts:257](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/scenes/Scene.ts#L257)*
 
 
 
@@ -1114,7 +1114,7 @@ ___
 
 *Overrides [Scene](__classes_lib_scenes_scene_.scene.md).[update](__classes_lib_scenes_scene_.scene.md#update)*
 
-*Defined in [_classes/scenes/PaintingScene.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/scenes/PaintingScene.ts#L40)*
+*Defined in [_classes/scenes/PaintingScene.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/scenes/PaintingScene.ts#L40)*
 
 
 

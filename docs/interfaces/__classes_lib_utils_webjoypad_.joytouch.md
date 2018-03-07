@@ -12,7 +12,7 @@
 
 **●  btn**:  *`boolean`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L15)*
+*Defined in [_classes/lib/utils/webJoypad.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L15)*
 
 
 
@@ -26,7 +26,7 @@ ___
 
 **●  center**:  *[Vector2](../classes/__classes_lib_utils_vector2_.vector2.md)* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L16)*
+*Defined in [_classes/lib/utils/webJoypad.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L16)*
 
 
 
@@ -40,7 +40,7 @@ ___
 
 **●  dir**:  *[Vector2](../classes/__classes_lib_utils_vector2_.vector2.md)* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L17)*
+*Defined in [_classes/lib/utils/webJoypad.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L17)*
 
 
 
@@ -54,7 +54,7 @@ ___
 
 **●  id**:  *`any`* 
 
-*Defined in [_classes/lib/utils/webJoypad.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/webJoypad.ts#L14)*
+*Defined in [_classes/lib/utils/webJoypad.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/webJoypad.ts#L14)*
 
 
 

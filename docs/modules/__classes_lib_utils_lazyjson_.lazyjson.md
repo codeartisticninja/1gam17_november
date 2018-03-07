@@ -34,7 +34,7 @@ lazyJSON module
 
 **●  _**:  *`any`* 
 
-*Defined in [_classes/lib/utils/lazyJSON.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/lazyJSON.ts#L44)*
+*Defined in [_classes/lib/utils/lazyJSON.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/lazyJSON.ts#L44)*
 
 
 
@@ -48,7 +48,7 @@ ___
 
 **●  _lastState**:  *`any`* 
 
-*Defined in [_classes/lib/utils/lazyJSON.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/lazyJSON.ts#L42)*
+*Defined in [_classes/lib/utils/lazyJSON.ts:42](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/lazyJSON.ts#L42)*
 
 
 
@@ -62,7 +62,7 @@ ___
 
 **●  _suspended**:  *`string`[]* 
 
-*Defined in [_classes/lib/utils/lazyJSON.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/lazyJSON.ts#L43)*
+*Defined in [_classes/lib/utils/lazyJSON.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/lazyJSON.ts#L43)*
 
 
 
@@ -76,7 +76,7 @@ ___
 
 **●  _updateTO**:  *`any`* 
 
-*Defined in [_classes/lib/utils/lazyJSON.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/lazyJSON.ts#L41)*
+*Defined in [_classes/lib/utils/lazyJSON.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/lazyJSON.ts#L41)*
 
 
 
@@ -94,7 +94,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/lazyJSON.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/lazyJSON.ts#L11)*
+*Defined in [_classes/lib/utils/lazyJSON.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/lazyJSON.ts#L11)*
 
 
 
@@ -124,7 +124,7 @@ ___
 
 
 
-*Defined in [_classes/lib/utils/lazyJSON.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/5dc4a7e/src/script/_classes/lib/utils/lazyJSON.ts#L19)*
+*Defined in [_classes/lib/utils/lazyJSON.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/73a0be6/src/script/_classes/lib/utils/lazyJSON.ts#L19)*
 
 
 
