@@ -20,7 +20,7 @@ var os = require("os"),
 * Jakefile.js
 * For building web apps
 *
-* @date 20-dec-2017
+* @date 07-mar-2018
 */
 var srcDir = "./src/",
   outDir = "./build/",
