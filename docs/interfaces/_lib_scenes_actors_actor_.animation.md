@@ -17,7 +17,7 @@ Actor class
 
 **●  frames**:  *`number`[]* 
 
-*Defined in [lib/scenes/actors/Actor.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Actor.ts#L16)*
+*Defined in [lib/scenes/actors/Actor.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Actor.ts#L16)*
 
 
 
@@ -31,7 +31,7 @@ ___
 
 **●  speed**:  *`number`* 
 
-*Defined in [lib/scenes/actors/Actor.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Actor.ts#L17)*
+*Defined in [lib/scenes/actors/Actor.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Actor.ts#L17)*
 
 
 

@@ -41,7 +41,7 @@ Tween class
 ### ⊕ **new Tween**(object: *`any`*, endProps: *`any`*, duration: *`number`*, autostart?: *`boolean`*): [Tween](_lib_utils_tween_.tween.md)
 
 
-*Defined in [lib/utils/Tween.ts:9](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L9)*
+*Defined in [lib/utils/Tween.ts:9](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L9)*
 
 
 
@@ -70,7 +70,7 @@ Tween class
 
 **●  duration**:  *`number`* 
 
-*Defined in [lib/utils/Tween.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L10)*
+*Defined in [lib/utils/Tween.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L10)*
 
 
 
@@ -84,7 +84,7 @@ ___
 
 **●  endProps**:  *`any`* 
 
-*Defined in [lib/utils/Tween.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L10)*
+*Defined in [lib/utils/Tween.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L10)*
 
 
 
@@ -98,7 +98,7 @@ ___
 
 **●  object**:  *`any`* 
 
-*Defined in [lib/utils/Tween.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L10)*
+*Defined in [lib/utils/Tween.ts:10](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L10)*
 
 
 
@@ -116,7 +116,7 @@ ___
 
 
 
-*Defined in [lib/utils/Tween.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L49)*
+*Defined in [lib/utils/Tween.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L49)*
 
 
 
@@ -147,7 +147,7 @@ ___
 
 
 
-*Defined in [lib/utils/Tween.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L43)*
+*Defined in [lib/utils/Tween.ts:43](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L43)*
 
 
 
@@ -169,7 +169,7 @@ ___
 
 
 
-*Defined in [lib/utils/Tween.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L15)*
+*Defined in [lib/utils/Tween.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L15)*
 
 
 
@@ -200,7 +200,7 @@ ___
 
 
 
-*Defined in [lib/utils/Tween.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L39)*
+*Defined in [lib/utils/Tween.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L39)*
 
 
 
@@ -222,7 +222,7 @@ ___
 
 
 
-*Defined in [lib/utils/Tween.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Tween.ts#L26)*
+*Defined in [lib/utils/Tween.ts:26](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Tween.ts#L26)*
 
 
 

@@ -25,7 +25,7 @@
 
 **●  topFrontier**:  *`number`*  = 0
 
-*Defined in [scenes/actors/Aye.ts:8](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/scenes/actors/Aye.ts#L8)*
+*Defined in [scenes/actors/Aye.ts:8](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/scenes/actors/Aye.ts#L8)*
 
 
 

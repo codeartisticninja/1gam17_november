@@ -77,7 +77,7 @@ MyGame class
 
 *Overrides [Game](_lib_game_.game.md).[constructor](_lib_game_.game.md#constructor)*
 
-*Defined in [MyGame.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/MyGame.ts#L11)*
+*Defined in [MyGame.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/MyGame.ts#L11)*
 
 
 
@@ -105,7 +105,7 @@ MyGame class
 
 *Inherited from [Game](_lib_game_.game.md).[canvas](_lib_game_.game.md#canvas)*
 
-*Defined in [lib/Game.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L28)*
+*Defined in [lib/Game.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L28)*
 
 
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[container](_lib_game_.game.md#container)*
 
-*Defined in [lib/Game.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L27)*
+*Defined in [lib/Game.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L27)*
 
 
 
@@ -137,7 +137,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[ctx](_lib_game_.game.md#ctx)*
 
-*Defined in [lib/Game.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L29)*
+*Defined in [lib/Game.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L29)*
 
 
 
@@ -153,7 +153,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[debug](_lib_game_.game.md#debug)*
 
-*Defined in [lib/Game.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L30)*
+*Defined in [lib/Game.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L30)*
 
 
 
@@ -169,7 +169,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[joypad](_lib_game_.game.md#joypad)*
 
-*Defined in [lib/Game.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L35)*
+*Defined in [lib/Game.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L35)*
 
 
 
@@ -185,7 +185,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[loaded](_lib_game_.game.md#loaded)*
 
-*Defined in [lib/Game.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L32)*
+*Defined in [lib/Game.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L32)*
 
 
 
@@ -201,7 +201,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[loading](_lib_game_.game.md#loading)*
 
-*Defined in [lib/Game.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L31)*
+*Defined in [lib/Game.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L31)*
 
 
 
@@ -217,7 +217,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[prefs](_lib_game_.game.md#prefs)*
 
-*Defined in [lib/Game.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L34)*
+*Defined in [lib/Game.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L34)*
 
 
 
@@ -233,7 +233,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[saveFile](_lib_game_.game.md#savefile)*
 
-*Defined in [lib/Game.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L33)*
+*Defined in [lib/Game.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L33)*
 
 
 
@@ -249,7 +249,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[scene](_lib_game_.game.md#scene)*
 
-*Defined in [lib/Game.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L37)*
+*Defined in [lib/Game.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L37)*
 
 
 
@@ -265,7 +265,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[scenes](_lib_game_.game.md#scenes)*
 
-*Defined in [lib/Game.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L36)*
+*Defined in [lib/Game.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L36)*
 
 
 #### Type declaration
@@ -291,7 +291,7 @@ getframeRate(): `number`setframeRate(val: *`number`*): `void`
 
 *Inherited from [Game](_lib_game_.game.md).[frameRate](_lib_game_.game.md#framerate)*
 
-*Defined in [lib/Game.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L44)*
+*Defined in [lib/Game.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L44)*
 
 
 
@@ -301,7 +301,7 @@ getframeRate(): `number`setframeRate(val: *`number`*): `void`
 
 *Inherited from [Game](_lib_game_.game.md).[frameRate](_lib_game_.game.md#framerate)*
 
-*Defined in [lib/Game.ts:47](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L47)*
+*Defined in [lib/Game.ts:47](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L47)*
 
 
 
@@ -333,7 +333,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[addScene](_lib_game_.game.md#addscene)*
 
-*Defined in [lib/Game.ts:92](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L92)*
+*Defined in [lib/Game.ts:92](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L92)*
 
 
 
@@ -366,7 +366,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[applySoundPrefs](_lib_game_.game.md#applysoundprefs)*
 
-*Defined in [lib/Game.ts:83](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L83)*
+*Defined in [lib/Game.ts:83](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L83)*
 
 
 
@@ -390,7 +390,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[goFullscreen](_lib_game_.game.md#gofullscreen)*
 
-*Defined in [lib/Game.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L79)*
+*Defined in [lib/Game.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L79)*
 
 
 
@@ -414,7 +414,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[pause](_lib_game_.game.md#pause)*
 
-*Defined in [lib/Game.ts:110](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L110)*
+*Defined in [lib/Game.ts:110](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L110)*
 
 
 
@@ -438,7 +438,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[removeScene](_lib_game_.game.md#removescene)*
 
-*Defined in [lib/Game.ts:98](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L98)*
+*Defined in [lib/Game.ts:98](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L98)*
 
 
 
@@ -470,7 +470,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[render](_lib_game_.game.md#render)*
 
-*Defined in [lib/Game.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L67)*
+*Defined in [lib/Game.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L67)*
 
 
 
@@ -494,7 +494,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[resume](_lib_game_.game.md#resume)*
 
-*Defined in [lib/Game.ts:113](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L113)*
+*Defined in [lib/Game.ts:113](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L113)*
 
 
 
@@ -518,7 +518,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[startScene](_lib_game_.game.md#startscene)*
 
-*Defined in [lib/Game.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L104)*
+*Defined in [lib/Game.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L104)*
 
 
 
@@ -550,7 +550,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[trackEvent](_lib_game_.game.md#trackevent)*
 
-*Defined in [lib/Game.ts:117](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L117)*
+*Defined in [lib/Game.ts:117](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L117)*
 
 
 
@@ -582,7 +582,7 @@ ___
 
 *Inherited from [Game](_lib_game_.game.md).[update](_lib_game_.game.md#update)*
 
-*Defined in [lib/Game.ts:62](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L62)*
+*Defined in [lib/Game.ts:62](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L62)*
 
 
 
@@ -608,7 +608,7 @@ ___
 
 **●  ambiance**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
 
-*Defined in [lib/Game.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L41)*
+*Defined in [lib/Game.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L41)*
 
 
 
@@ -621,7 +621,7 @@ ___
 
 **●  music**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
 
-*Defined in [lib/Game.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L40)*
+*Defined in [lib/Game.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L40)*
 
 
 
@@ -634,7 +634,7 @@ ___
 
 **●  sfx**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
 
-*Defined in [lib/Game.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L39)*
+*Defined in [lib/Game.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L39)*
 
 
 

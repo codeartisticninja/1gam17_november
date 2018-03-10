@@ -33,7 +33,7 @@ web module
 
 
 
-*Defined in [lib/utils/web.ts:45](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L45)*
+*Defined in [lib/utils/web.ts:45](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L45)*
 
 
 
@@ -66,7 +66,7 @@ ___
 
 
 
-*Defined in [lib/utils/web.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L49)*
+*Defined in [lib/utils/web.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L49)*
 
 
 
@@ -99,7 +99,7 @@ ___
 
 
 
-*Defined in [lib/utils/web.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L11)*
+*Defined in [lib/utils/web.ts:11](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L11)*
 
 
 
@@ -134,7 +134,7 @@ ___
 
 
 
-*Defined in [lib/utils/web.ts:56](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L56)*
+*Defined in [lib/utils/web.ts:56](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L56)*
 
 
 
@@ -167,7 +167,7 @@ ___
 
 
 
-*Defined in [lib/utils/web.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L28)*
+*Defined in [lib/utils/web.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L28)*
 
 
 
@@ -203,7 +203,7 @@ ___
 
 
 
-*Defined in [lib/utils/web.ts:128](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L128)*
+*Defined in [lib/utils/web.ts:128](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L128)*
 
 
 
@@ -237,7 +237,7 @@ ___
 
 
 
-*Defined in [lib/utils/web.ts:109](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/web.ts#L109)*
+*Defined in [lib/utils/web.ts:109](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/web.ts#L109)*
 
 
 

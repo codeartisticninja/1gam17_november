@@ -250,7 +250,7 @@ namespace("js", function () {
       "target": "es6",
       "excludePrivate": true,
       "theme": "markdown",
-      "mdHideSources": true
+      "gitRevision": "HEAD"
     },
     tsify_opts = require("./tsconfig.json").compilerOptions;
 

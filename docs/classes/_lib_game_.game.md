@@ -77,7 +77,7 @@ BaseGameApp class
 ### ⊕ **new Game**(container: *`string`⎮`HTMLElement`*, width: *`number`*, height?: *`number`*): [Game](_lib_game_.game.md)
 
 
-*Defined in [lib/Game.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L49)*
+*Defined in [lib/Game.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L49)*
 
 
 
@@ -105,7 +105,7 @@ BaseGameApp class
 
 **●  canvas**:  *`HTMLCanvasElement`*  =  document.createElement("canvas")
 
-*Defined in [lib/Game.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L28)*
+*Defined in [lib/Game.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L28)*
 
 
 
@@ -119,7 +119,7 @@ ___
 
 **●  container**:  *`HTMLElement`* 
 
-*Defined in [lib/Game.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L27)*
+*Defined in [lib/Game.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L27)*
 
 
 
@@ -133,7 +133,7 @@ ___
 
 **●  ctx**:  *`CanvasRenderingContext2D`*  =  <CanvasRenderingContext2D>this.canvas.getContext("2d")
 
-*Defined in [lib/Game.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L29)*
+*Defined in [lib/Game.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L29)*
 
 
 
@@ -147,7 +147,7 @@ ___
 
 **●  debug**:  *`boolean`*  = false
 
-*Defined in [lib/Game.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L30)*
+*Defined in [lib/Game.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L30)*
 
 
 
@@ -161,7 +161,7 @@ ___
 
 **●  joypad**:  *[joypad](../modules/_lib_utils_webjoypad_.joypad.md)*  =  joypad
 
-*Defined in [lib/Game.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L35)*
+*Defined in [lib/Game.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L35)*
 
 
 
@@ -175,7 +175,7 @@ ___
 
 **●  loaded**:  *`number`*  = 0
 
-*Defined in [lib/Game.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L32)*
+*Defined in [lib/Game.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L32)*
 
 
 
@@ -189,7 +189,7 @@ ___
 
 **●  loading**:  *`number`*  = 0
 
-*Defined in [lib/Game.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L31)*
+*Defined in [lib/Game.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L31)*
 
 
 
@@ -203,7 +203,7 @@ ___
 
 **●  prefs**:  *[StorageFile](_lib_utils_storagefile_.storagefile.md)*  =  new StorageFile("/prefs.json")
 
-*Defined in [lib/Game.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L34)*
+*Defined in [lib/Game.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L34)*
 
 
 
@@ -217,7 +217,7 @@ ___
 
 **●  saveFile**:  *[StorageFile](_lib_utils_storagefile_.storagefile.md)*  =  new StorageFile("save.json")
 
-*Defined in [lib/Game.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L33)*
+*Defined in [lib/Game.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L33)*
 
 
 
@@ -231,7 +231,7 @@ ___
 
 **●  scene**:  *[Scene](_lib_scenes_scene_.scene.md)⎮`undefined`* 
 
-*Defined in [lib/Game.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L37)*
+*Defined in [lib/Game.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L37)*
 
 
 
@@ -245,7 +245,7 @@ ___
 
 **●  scenes**:  *`object`* 
 
-*Defined in [lib/Game.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L36)*
+*Defined in [lib/Game.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L36)*
 
 
 #### Type declaration
@@ -269,7 +269,7 @@ ___
 
 getframeRate(): `number`setframeRate(val: *`number`*): `void`
 
-*Defined in [lib/Game.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L44)*
+*Defined in [lib/Game.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L44)*
 
 
 
@@ -277,7 +277,7 @@ getframeRate(): `number`setframeRate(val: *`number`*): `void`
 
 **Returns:** `number`
 
-*Defined in [lib/Game.ts:47](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L47)*
+*Defined in [lib/Game.ts:47](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L47)*
 
 
 
@@ -307,7 +307,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:92](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L92)*
+*Defined in [lib/Game.ts:92](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L92)*
 
 
 
@@ -338,7 +338,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:83](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L83)*
+*Defined in [lib/Game.ts:83](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L83)*
 
 
 
@@ -360,7 +360,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L79)*
+*Defined in [lib/Game.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L79)*
 
 
 
@@ -382,7 +382,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:110](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L110)*
+*Defined in [lib/Game.ts:110](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L110)*
 
 
 
@@ -404,7 +404,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:98](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L98)*
+*Defined in [lib/Game.ts:98](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L98)*
 
 
 
@@ -434,7 +434,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L67)*
+*Defined in [lib/Game.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L67)*
 
 
 
@@ -456,7 +456,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:113](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L113)*
+*Defined in [lib/Game.ts:113](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L113)*
 
 
 
@@ -478,7 +478,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L104)*
+*Defined in [lib/Game.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L104)*
 
 
 
@@ -508,7 +508,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:117](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L117)*
+*Defined in [lib/Game.ts:117](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L117)*
 
 
 
@@ -538,7 +538,7 @@ ___
 
 
 
-*Defined in [lib/Game.ts:62](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L62)*
+*Defined in [lib/Game.ts:62](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L62)*
 
 
 
@@ -564,7 +564,7 @@ ___
 
 **●  ambiance**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
 
-*Defined in [lib/Game.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L41)*
+*Defined in [lib/Game.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L41)*
 
 
 
@@ -577,7 +577,7 @@ ___
 
 **●  music**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
 
-*Defined in [lib/Game.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L40)*
+*Defined in [lib/Game.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L40)*
 
 
 
@@ -590,7 +590,7 @@ ___
 
 **●  sfx**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
 
-*Defined in [lib/Game.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/Game.ts#L39)*
+*Defined in [lib/Game.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L39)*
 
 
 

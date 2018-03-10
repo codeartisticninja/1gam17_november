@@ -43,7 +43,7 @@ Sprite class
 ### ⊕ **new Sprite**(obj?: *`any`*, mapFolder?: *`string`*): [Sprite](_lib_scenes_actors_sprite_.sprite.md)
 
 
-*Defined in [lib/scenes/actors/Sprite.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L20)*
+*Defined in [lib/scenes/actors/Sprite.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L20)*
 
 
 
@@ -70,7 +70,7 @@ Sprite class
 
 **●  columns**:  *`number`*  = 0
 
-*Defined in [lib/scenes/actors/Sprite.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L18)*
+*Defined in [lib/scenes/actors/Sprite.ts:18](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L18)*
 
 
 
@@ -84,7 +84,7 @@ ___
 
 **●  ctx**:  *`CanvasRenderingContext2D`* 
 
-*Defined in [lib/scenes/actors/Sprite.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L12)*
+*Defined in [lib/scenes/actors/Sprite.ts:12](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L12)*
 
 
 
@@ -98,7 +98,7 @@ ___
 
 **●  firstGid**:  *`number`*  =  -1
 
-*Defined in [lib/scenes/actors/Sprite.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L16)*
+*Defined in [lib/scenes/actors/Sprite.ts:16](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L16)*
 
 
 
@@ -112,7 +112,7 @@ ___
 
 **●  frames**:  *`number`*  = 0
 
-*Defined in [lib/scenes/actors/Sprite.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L17)*
+*Defined in [lib/scenes/actors/Sprite.ts:17](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L17)*
 
 
 
@@ -126,7 +126,7 @@ ___
 
 **●  img**:  *`HTMLImageElement`* 
 
-*Defined in [lib/scenes/actors/Sprite.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L14)*
+*Defined in [lib/scenes/actors/Sprite.ts:14](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L14)*
 
 
 
@@ -140,7 +140,7 @@ ___
 
 **●  margin**:  *`number`*  = 0
 
-*Defined in [lib/scenes/actors/Sprite.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L19)*
+*Defined in [lib/scenes/actors/Sprite.ts:19](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L19)*
 
 
 
@@ -154,7 +154,7 @@ ___
 
 **●  name**:  *`string`*  = "_"
 
-*Defined in [lib/scenes/actors/Sprite.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L13)*
+*Defined in [lib/scenes/actors/Sprite.ts:13](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L13)*
 
 
 
@@ -168,7 +168,7 @@ ___
 
 **●  size**:  *[Vector2](_lib_utils_vector2_.vector2.md)* 
 
-*Defined in [lib/scenes/actors/Sprite.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L15)*
+*Defined in [lib/scenes/actors/Sprite.ts:15](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L15)*
 
 
 
@@ -182,7 +182,7 @@ ___
 
 **●  spacing**:  *`number`*  = 0
 
-*Defined in [lib/scenes/actors/Sprite.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L20)*
+*Defined in [lib/scenes/actors/Sprite.ts:20](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L20)*
 
 
 
@@ -200,7 +200,7 @@ ___
 
 
 
-*Defined in [lib/scenes/actors/Sprite.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/scenes/actors/Sprite.ts#L39)*
+*Defined in [lib/scenes/actors/Sprite.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/scenes/actors/Sprite.ts#L39)*
 
 
 

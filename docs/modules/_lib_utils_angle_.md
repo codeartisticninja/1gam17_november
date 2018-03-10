@@ -25,7 +25,7 @@
 
 **●  pool**:  *[Angle](../classes/_lib_utils_angle_.angle.md)[]*  = []
 
-*Defined in [lib/utils/Angle.ts:9](https://github.com/codeartisticninja/cost_of_creation/blob/a194b56/src/script/_classes/lib/utils/Angle.ts#L9)*
+*Defined in [lib/utils/Angle.ts:9](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/utils/Angle.ts#L9)*
 
 
 
