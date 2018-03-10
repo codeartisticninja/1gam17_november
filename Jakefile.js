@@ -13,6 +13,7 @@ var os = require("os"),
   browserify = require("browserify"),
   tsify = require("tsify"),
   jsmin = require("jsmin").jsmin,
+  typedoc = require("typedoc"),
   FtpClient = require("ftp"),
   md5 = require("md5");
 
@@ -20,7 +21,7 @@ var os = require("os"),
 * Jakefile.js
 * For building web apps
 *
-* @date 07-mar-2018
+* @date 10-mar-2018
 */
 var srcDir = "./src/",
   outDir = "./build/",
@@ -244,12 +245,22 @@ namespace("js", function () {
   var browserify_opts = {
     debug: true
   },
+    typedoc_opts = {
+      "module": "commonjs",
+      "target": "es6",
+      "excludePrivate": true,
+      "theme": "markdown",
+      "mdHideSources": true
+    },
     tsify_opts = require("./tsconfig.json").compilerOptions;
 
   task("ts", { async: true }, function () {
     console.log("\nCompiling TypeScript...");
     var filesLeft = fileTypeList(".ts").length;
-    if (!filesLeft) { console.log("...dONE!"); complete(); }
+    if (!filesLeft) { console.log("...dONE!"); complete(); } else {
+      let docs = new typedoc.Application(typedoc_opts);
+      docs.generateDocs(fileTypeList(".ts"), "./docs");
+    }
     fileTypeList(".ts").forEach(function (inFile) {
       var outFile = outputFile(inFile, ".js");
       console.log(inFile, "->", outFile);
@@ -266,8 +277,8 @@ namespace("js", function () {
             jake.mkdirP(path.dirname(outFile));
             fs.writeFileSync(outFile, output);
             if (--filesLeft <= 0) {
-              jake.exec("typedoc --module commonjs --excludePrivate --out docs --theme markdown --mdHideSources", complete);
               console.log("...dONE!");
+              complete();
             }
           }
         });

@@ -23,8 +23,9 @@
 
 ###  game
 
-**●  game**:  *[MyGame](../classes/__classes_mygame_.mygame.md)* 
+**●  game**:  *[MyGame](../classes/_mygame_.mygame.md)* 
 
+*Defined in main.ts:7*
 
 
 
@@ -45,6 +46,7 @@ ___
 
 
 
+*Defined in main.ts:9*
 
 
 
