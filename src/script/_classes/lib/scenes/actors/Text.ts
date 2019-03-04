@@ -5,7 +5,7 @@ import Scene from "../Scene";
 /**
  * Text class
  * 
- * @date 07-mar-2018
+ * @date 04-mar-2019
  */
 
 export default class Text extends Actor {
@@ -63,8 +63,8 @@ export default class Text extends Actor {
   render() {
     var g = this.scene.game.ctx, x = 0, y = 0;
     g.font = this.fontStyle + " " + this.fontSize + "px " + this.fontFamily;
-    g.textBaseline = this.textBaseline;
-    g.textAlign = this.textAlign;
+    g.textBaseline = <CanvasTextBaseline>this.textBaseline;
+    g.textAlign = <CanvasTextAlign>this.textAlign;
     if (!this.lines.length) this._wrap();
     if (this.color) {
       y = 0;

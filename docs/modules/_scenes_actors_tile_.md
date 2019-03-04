@@ -1,7 +1,5 @@
 [cost_of_creation](../README.md) > ["scenes/actors/Tile"](../modules/_scenes_actors_tile_.md)
 
-
-
 # External module: "scenes/actors/Tile"
 
 ## Index
@@ -10,27 +8,21 @@
 
 * [Tile](../classes/_scenes_actors_tile_.tile.md)
 
-
 ### Variables
 
 * [cache](_scenes_actors_tile_.md#cache)
 
-
-
 ---
+
 ## Variables
+
 <a id="cache"></a>
 
-### «Let» cache
+### `<Let>` cache
 
-**●  cache**:  *`any`* 
+**● cache**: *`any`*
 
 *Defined in [scenes/actors/Tile.ts:5](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/scenes/actors/Tile.ts#L5)*
 
-
-
-
-
 ___
-
 

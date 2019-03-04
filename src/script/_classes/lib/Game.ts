@@ -20,7 +20,7 @@ if (!window.requestAnimationFrame) {
 /**
  * BaseGameApp class
  * 
- * @date 07-mar-2018
+ * @date 04-mar-2019
  */
 
 export default class Game {
@@ -209,7 +209,7 @@ export default class Game {
     this.container.style.cursor = "none";
   }
 
-  private _mouseEvent(e: MouseEvent | TouchEvent) {
+  private _mouseEvent(e: Event) {
     if (!this.scene) return;
     let scaleX = this._canvas.width / this._canvas.offsetWidth;
     let scaleY = this._canvas.height / this._canvas.offsetHeight;

@@ -1,13 +1,10 @@
 [cost_of_creation](../README.md) > ["lib/Game"](../modules/_lib_game_.md) > [Game](../classes/_lib_game_.game.md)
 
-
-
 # Class: Game
 
-
 BaseGameApp class
-*__date__*: 07-mar-2018
 
+*__date__*: 04-mar-2019
 
 ## Hierarchy
 
@@ -15,19 +12,11 @@ BaseGameApp class
 
 ↳  [MyGame](_mygame_.mygame.md)
 
-
-
-
-
-
-
-
 ## Index
 
 ### Constructors
 
 * [constructor](_lib_game_.game.md#constructor)
-
 
 ### Properties
 
@@ -43,11 +32,9 @@ BaseGameApp class
 * [scene](_lib_game_.game.md#scene)
 * [scenes](_lib_game_.game.md#scenes)
 
-
 ### Accessors
 
 * [frameRate](_lib_game_.game.md#framerate)
-
 
 ### Methods
 
@@ -62,540 +49,341 @@ BaseGameApp class
 * [trackEvent](_lib_game_.game.md#trackevent)
 * [update](_lib_game_.game.md#update)
 
-
 ### Object literals
 
 * [mediaChannels](_lib_game_.game.md#mediachannels)
 
-
-
 ---
+
 ## Constructors
+
 <a id="constructor"></a>
 
+###  constructor
 
-### ⊕ **new Game**(container: *`string`⎮`HTMLElement`*, width: *`number`*, height?: *`number`*): [Game](_lib_game_.game.md)
-
+⊕ **new Game**(container: *`string` \| `HTMLElement`*, width: *`number`*, height?: *`number`*): [Game](_lib_game_.game.md)
 
 *Defined in [lib/Game.ts:49](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L49)*
 
-
-
 **Parameters:**
 
-| Param | Type | Default value | Description |
-| ------ | ------ | ------ | ------ |
-| container | `string`⎮`HTMLElement`  | - |   - |
-| width | `number`  | - |   - |
-| height | `number`  |  width / 16 * 9 |   - |
-
-
-
-
+| Name | Type | Default value |
+| ------ | ------ | ------ |
+| container | `string` \| `HTMLElement` | - |
+| width | `number` | - |
+| `Default value` height | `number` |  width / 16 * 9 |
 
 **Returns:** [Game](_lib_game_.game.md)
 
----
-
+___
 
 ## Properties
+
 <a id="canvas"></a>
 
 ###  canvas
 
-**●  canvas**:  *`HTMLCanvasElement`*  =  document.createElement("canvas")
+**● canvas**: *`HTMLCanvasElement`* =  document.createElement("canvas")
 
 *Defined in [lib/Game.ts:28](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L28)*
 
-
-
-
-
 ___
-
 <a id="container"></a>
 
 ###  container
 
-**●  container**:  *`HTMLElement`* 
+**● container**: *`HTMLElement`*
 
 *Defined in [lib/Game.ts:27](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L27)*
 
-
-
-
-
 ___
-
 <a id="ctx"></a>
 
 ###  ctx
 
-**●  ctx**:  *`CanvasRenderingContext2D`*  =  <CanvasRenderingContext2D>this.canvas.getContext("2d")
+**● ctx**: *`CanvasRenderingContext2D`* =  <CanvasRenderingContext2D>this.canvas.getContext("2d")
 
 *Defined in [lib/Game.ts:29](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L29)*
 
-
-
-
-
 ___
-
 <a id="debug"></a>
 
 ###  debug
 
-**●  debug**:  *`boolean`*  = false
+**● debug**: *`boolean`* = false
 
 *Defined in [lib/Game.ts:30](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L30)*
 
-
-
-
-
 ___
-
 <a id="joypad"></a>
 
 ###  joypad
 
-**●  joypad**:  *[joypad](../modules/_lib_utils_webjoypad_.joypad.md)*  =  joypad
+**● joypad**: *[joypad](../modules/_lib_utils_webjoypad_.joypad.md)* =  joypad
 
 *Defined in [lib/Game.ts:35](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L35)*
 
-
-
-
-
 ___
-
 <a id="loaded"></a>
 
 ###  loaded
 
-**●  loaded**:  *`number`*  = 0
+**● loaded**: *`number`* = 0
 
 *Defined in [lib/Game.ts:32](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L32)*
 
-
-
-
-
 ___
-
 <a id="loading"></a>
 
 ###  loading
 
-**●  loading**:  *`number`*  = 0
+**● loading**: *`number`* = 0
 
 *Defined in [lib/Game.ts:31](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L31)*
 
-
-
-
-
 ___
-
 <a id="prefs"></a>
 
 ###  prefs
 
-**●  prefs**:  *[StorageFile](_lib_utils_storagefile_.storagefile.md)*  =  new StorageFile("/prefs.json")
+**● prefs**: *[StorageFile](_lib_utils_storagefile_.storagefile.md)* =  new StorageFile("/prefs.json")
 
 *Defined in [lib/Game.ts:34](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L34)*
 
-
-
-
-
 ___
-
 <a id="savefile"></a>
 
 ###  saveFile
 
-**●  saveFile**:  *[StorageFile](_lib_utils_storagefile_.storagefile.md)*  =  new StorageFile("save.json")
+**● saveFile**: *[StorageFile](_lib_utils_storagefile_.storagefile.md)* =  new StorageFile("save.json")
 
 *Defined in [lib/Game.ts:33](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L33)*
 
-
-
-
-
 ___
-
 <a id="scene"></a>
 
 ###  scene
 
-**●  scene**:  *[Scene](_lib_scenes_scene_.scene.md)⎮`undefined`* 
+**● scene**: *[Scene](_lib_scenes_scene_.scene.md) \| `undefined`*
 
 *Defined in [lib/Game.ts:37](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L37)*
 
-
-
-
-
 ___
-
 <a id="scenes"></a>
 
 ###  scenes
 
-**●  scenes**:  *`object`* 
+**● scenes**: *`object`*
 
 *Defined in [lib/Game.ts:36](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L36)*
 
-
 #### Type declaration
-
 
 [index: `string`]: [Scene](_lib_scenes_scene_.scene.md)
 
-
-
-
-
-
 ___
 
-
 ## Accessors
+
 <a id="framerate"></a>
 
 ###  frameRate
 
+**get frameRate**(): `number`
 
-getframeRate(): `number`setframeRate(val: *`number`*): `void`
+**set frameRate**(val: *`number`*): `void`
 
 *Defined in [lib/Game.ts:44](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L44)*
-
-
-
-
 
 **Returns:** `number`
 
 *Defined in [lib/Game.ts:47](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L47)*
 
-
-
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| val | `number`   |  - |
-
-
-
-
+| Name | Type |
+| ------ | ------ |
+| val | `number` |
 
 **Returns:** `void`
 
-
-
 ___
 
-
 ## Methods
+
 <a id="addscene"></a>
 
 ###  addScene
 
-► **addScene**(sceneName: *`string`*, scene: *[Scene](_lib_scenes_scene_.scene.md)*): `void`
-
-
+▸ **addScene**(sceneName: *`string`*, scene: *[Scene](_lib_scenes_scene_.scene.md)*): `void`
 
 *Defined in [lib/Game.ts:92](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L92)*
 
-
-
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| sceneName | `string`   |  - |
-| scene | [Scene](_lib_scenes_scene_.scene.md)   |  - |
-
-
-
-
+| Name | Type |
+| ------ | ------ |
+| sceneName | `string` |
+| scene | [Scene](_lib_scenes_scene_.scene.md) |
 
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="applysoundprefs"></a>
 
 ###  applySoundPrefs
 
-► **applySoundPrefs**(): `void`
-
-
+▸ **applySoundPrefs**(): `void`
 
 *Defined in [lib/Game.ts:83](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L83)*
 
-
-
-
-
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="gofullscreen"></a>
 
 ###  goFullscreen
 
-► **goFullscreen**(): `void`
-
-
+▸ **goFullscreen**(): `void`
 
 *Defined in [lib/Game.ts:79](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L79)*
 
-
-
-
-
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="pause"></a>
 
 ###  pause
 
-► **pause**(): `void`
-
-
+▸ **pause**(): `void`
 
 *Defined in [lib/Game.ts:110](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L110)*
 
-
-
-
-
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="removescene"></a>
 
 ###  removeScene
 
-► **removeScene**(sceneName: *`string`*): `void`
-
-
+▸ **removeScene**(sceneName: *`string`*): `void`
 
 *Defined in [lib/Game.ts:98](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L98)*
 
-
-
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| sceneName | `string`   |  - |
-
-
-
-
+| Name | Type |
+| ------ | ------ |
+| sceneName | `string` |
 
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="render"></a>
 
 ###  render
 
-► **render**(): `void`
-
-
+▸ **render**(): `void`
 
 *Defined in [lib/Game.ts:67](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L67)*
 
-
-
-
-
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="resume"></a>
 
 ###  resume
 
-► **resume**(): `void`
-
-
+▸ **resume**(): `void`
 
 *Defined in [lib/Game.ts:113](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L113)*
 
-
-
-
-
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="startscene"></a>
 
 ###  startScene
 
-► **startScene**(sceneName: *`string`*): `void`
-
-
+▸ **startScene**(sceneName: *`string`*): `void`
 
 *Defined in [lib/Game.ts:104](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L104)*
 
-
-
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| sceneName | `string`   |  - |
-
-
-
-
+| Name | Type |
+| ------ | ------ |
+| sceneName | `string` |
 
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="trackevent"></a>
 
 ###  trackEvent
 
-► **trackEvent**(event: *`string`*): `void`
-
-
+▸ **trackEvent**(event: *`string`*): `void`
 
 *Defined in [lib/Game.ts:117](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L117)*
 
-
-
 **Parameters:**
 
-| Param | Type | Description |
-| ------ | ------ | ------ |
-| event | `string`   |  - |
-
-
-
-
+| Name | Type |
+| ------ | ------ |
+| event | `string` |
 
 **Returns:** `void`
 
-
-
-
-
 ___
-
 <a id="update"></a>
 
 ###  update
 
-► **update**(): `void`
-
-
+▸ **update**(): `void`
 
 *Defined in [lib/Game.ts:62](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L62)*
 
-
-
-
-
 **Returns:** `void`
-
-
-
-
 
 ___
 
+## Object literals
 
 <a id="mediachannels"></a>
 
-## Object literal: mediaChannels
+###  mediaChannels
 
+**mediaChannels**: *`object`*
+
+*Defined in [lib/Game.ts:38](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L38)*
 
 <a id="mediachannels.ambiance"></a>
 
-###  ambiance
+####  ambiance
 
-**●  ambiance**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
+**● ambiance**: *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)* =  new MediaPlayer()
 
 *Defined in [lib/Game.ts:41](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L41)*
-
-
-
-
 
 ___
 <a id="mediachannels.music"></a>
 
-###  music
+####  music
 
-**●  music**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
+**● music**: *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)* =  new MediaPlayer()
 
 *Defined in [lib/Game.ts:40](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L40)*
-
-
-
-
 
 ___
 <a id="mediachannels.sfx"></a>
 
-###  sfx
+####  sfx
 
-**●  sfx**:  *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)*  =  new MediaPlayer()
+**● sfx**: *[MediaPlayer](_lib_utils_mediaplayer_.mediaplayer.md)* =  new MediaPlayer()
 
 *Defined in [lib/Game.ts:39](https://github.com/codeartisticninja/cost_of_creation/blob/HEAD/src/script/_classes/lib/Game.ts#L39)*
 
-
-
-
-
 ___
 
+___
 
